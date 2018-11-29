@@ -2,10 +2,10 @@
 <widget id="me.patwilken.assignment5" version="1.0.0" xmlns="http://www.w3.org/ns/widgets" xmlns:cdv="http://cordova.apache.org/ns/1.0">
     <name>A5</name>
     <description>
-        A sample Apache Cordova application that responds to the deviceready event.
+        INFO3130 - Assignment 5
     </description>
-    <author email="dev@cordova.apache.org" href="http://cordova.io">
-        Apache Cordova Team
+    <author email="pat@patwilken.me" href="https://patwilken.me/">
+        Pat Wilken
     </author>
     <content src="index.html" />
     <plugin name="cordova-plugin-whitelist" spec="1" />

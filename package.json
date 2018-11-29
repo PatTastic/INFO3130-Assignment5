@@ -20,5 +20,7 @@
         "platforms": [
             "android"
         ]
+    },
+    "devDependencies": {
     }
 }

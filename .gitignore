@@ -1,5 +1,8 @@
+.vs/
+
 node_modules/
 platforms/
 plugins/
+www/
 
 src/node_modules/
