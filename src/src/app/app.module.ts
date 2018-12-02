@@ -12,6 +12,7 @@ import { StatsComponent } from './partials/stats/stats.component';
 import { SuggestionsComponent } from './partials/suggestions/suggestions.component';
 
 import { UtilitiesService } from './_helpers/utilities.service';
+import { DatabaseService } from './_data/database.service';
 import { ApiService } from './_services/api.service';
 import { DataService } from './_data/data.service';
 
@@ -60,7 +61,9 @@ const appRoutes: Routes = [
   ],
   providers: [
     UtilitiesService,
-    ApiService
+    DatabaseService,
+    ApiService,
+    DataService
   ],
   bootstrap: [AppComponent]
 })

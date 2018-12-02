@@ -1,4 +1,6 @@
-import { Component } from '@angular/core';
+﻿import { Component } from '@angular/core';
+
+import { DatabaseService } from './_data/database.service';
 
 @Component({
   selector: 'app-root',
@@ -7,4 +9,13 @@ import { Component } from '@angular/core';
 })
 export class AppComponent {
   title = 'app';
+
+  constructor(private _db: DatabaseService) {
+    
+  }
+
+  loadNewGeo() {
+    let geo = localStorage.getItem('new-points');
+    console.log('geo', geo);
+  }
 }
