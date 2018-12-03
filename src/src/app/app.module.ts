@@ -11,10 +11,13 @@ import { TimelineComponent } from './partials/timeline/timeline.component';
 import { StatsComponent } from './partials/stats/stats.component';
 import { SuggestionsComponent } from './partials/suggestions/suggestions.component';
 
+import { ConfigService } from './_helpers/config.service';
 import { UtilitiesService } from './_helpers/utilities.service';
 import { DatabaseService } from './_data/database.service';
 import { ApiService } from './_services/api.service';
 import { DataService } from './_data/data.service';
+import { NavComponent } from './partials/nav/nav.component';
+import { ViewSuggestionComponent } from './partials/view-suggestion/view-suggestion.component';
 
 const appRoutes: Routes = [
   {
@@ -34,6 +37,10 @@ const appRoutes: Routes = [
     component: SuggestionsComponent
   },
   {
+    path: 'view-suggestion',
+    component: ViewSuggestionComponent
+  },
+  {
     path: '',
     redirectTo: '/stats',
     pathMatch: 'full'
@@ -50,7 +57,9 @@ const appRoutes: Routes = [
     TrackingComponent,
     TimelineComponent,
     StatsComponent,
-    SuggestionsComponent
+    SuggestionsComponent,
+    NavComponent,
+    ViewSuggestionComponent
   ],
   imports: [
     BrowserModule,
@@ -60,6 +69,7 @@ const appRoutes: Routes = [
     LeafletModule.forRoot()
   ],
   providers: [
+    ConfigService,
     UtilitiesService,
     DatabaseService,
     ApiService,

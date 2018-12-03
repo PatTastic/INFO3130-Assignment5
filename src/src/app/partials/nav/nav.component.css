@@ -1,0 +1,20 @@
+﻿#app-nav-bar {
+  background-color: #2d2d2d;
+  color: #f9f9f9;
+  margin-bottom: 10px;
+}
+#app-nav-bar ul {
+  display: flex;
+}
+
+.link {
+  width: 100%;
+  list-style: none;
+  text-align: center;
+  padding: 20px 0;
+  cursor: pointer;
+}
+
+.active-link {
+  background-color: #BB9046;
+}
