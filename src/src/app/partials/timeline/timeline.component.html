@@ -1,3 +1,6 @@
-<p>
-  timeline works!
-</p>
+﻿<section id="app-timeline">
+  <div *ngIf="options.loaded"
+       leaflet
+       [leafletOptions]="options">
+  </div>
+</section>

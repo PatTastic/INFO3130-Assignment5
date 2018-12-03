@@ -1,0 +1,8 @@
+﻿#app-timeline {
+  height: calc(100vh - 65px);
+  margin-top: -15px;
+}
+
+.leaflet-container{
+  height: 100%;
+}
