@@ -1,4 +1,22 @@
-﻿/* Global */
+﻿/* Brand */
+/*:root {
+  --brand-main-gold: #BB9046;
+  --brand-main-grey: #e7e7e8;
+}*/
+
+/* Global */
+* {
+  margin: 0;
+  padding: 0;
+  clear: both;
+  font-family: sans-serif;
+  outline: none !important;
+}
+
 .cordova-hook{
   display: none;
+}
+
+.btn-center{
+  text-align: center;
 }
