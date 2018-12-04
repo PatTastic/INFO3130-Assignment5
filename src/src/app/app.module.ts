@@ -1,8 +1,11 @@
 ﻿import { BrowserModule } from '@angular/platform-browser';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { NgModule } from '@angular/core';
+import { MatNativeDateModule, MatDatepickerModule } from '@angular/material';
 import { RouterModule, Routes, Router } from '@angular/router';
 import { FontAwesomeModule } from '@fortawesome/angular-fontawesome';
+import { library } from '@fortawesome/fontawesome-svg-core';
+import { faCalendarAlt } from '@fortawesome/free-regular-svg-icons';
 import { LeafletModule } from '@asymmetrik/ngx-leaflet';
 
 import { AppComponent } from './app.component';
@@ -42,12 +45,12 @@ const appRoutes: Routes = [
   },
   {
     path: '',
-    redirectTo: '/stats',
+    redirectTo: '/timeline',
     pathMatch: 'full'
   },
   {
     path: '**',
-    redirectTo: '/stats',
+    redirectTo: '/timeline',
   }
 ];
 
@@ -66,9 +69,12 @@ const appRoutes: Routes = [
     BrowserAnimationsModule,
     RouterModule.forRoot(appRoutes),
     FontAwesomeModule,
-    LeafletModule.forRoot()
+    LeafletModule.forRoot(),
+    MatNativeDateModule,
+    MatDatepickerModule
   ],
   providers: [
+    MatDatepickerModule,
     ConfigService,
     UtilitiesService,
     DatabaseService,
@@ -77,4 +83,8 @@ const appRoutes: Routes = [
   ],
   bootstrap: [AppComponent]
 })
-export class AppModule { }
+export class AppModule {
+  constructor() {
+    library.add(faCalendarAlt);
+  }
+}
