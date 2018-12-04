@@ -1,4 +1,12 @@
 ﻿<section id="app-timeline">
+  <div class="top-content">
+    <h2>{{selectedDay.date}}</h2>
+    <fa-icon [icon]="['far', 'calendar-alt']" (click)="toggleCalendar($event)" class="calendar-icon"></fa-icon>
+    <div class="calendar-container" [hidden]="!showCalendar" (click)="toggleCalendar($event)">
+      <h3 *ngIf="selectedDay.dateMsg != ''">{{selectedDay.dateMsg}}</h3>
+      <mat-calendar (selectedChange)="onCalendarSelectedChange($event)"></mat-calendar>
+    </div>
+  </div>
   <div *ngIf="options.loaded"
        leaflet
        [leafletOptions]="options">
