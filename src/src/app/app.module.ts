@@ -7,6 +7,7 @@ import { FontAwesomeModule } from '@fortawesome/angular-fontawesome';
 import { library } from '@fortawesome/fontawesome-svg-core';
 import { faCalendarAlt } from '@fortawesome/free-regular-svg-icons';
 import { LeafletModule } from '@asymmetrik/ngx-leaflet';
+import { HttpClientModule } from '@angular/common/http';
 
 import { AppComponent } from './app.component';
 import { TrackingComponent } from './partials/tracking/tracking.component';
@@ -71,7 +72,8 @@ const appRoutes: Routes = [
     FontAwesomeModule,
     LeafletModule.forRoot(),
     MatNativeDateModule,
-    MatDatepickerModule
+    MatDatepickerModule,
+    HttpClientModule
   ],
   providers: [
     MatDatepickerModule,

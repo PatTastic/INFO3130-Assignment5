@@ -1,6 +1,7 @@
 ﻿import { Component, OnInit } from '@angular/core';
 import * as L from 'leaflet';
 import * as moment from 'moment';
+declare var HeatmapOverlay;
 
 import { ConfigService } from '../../_helpers/config.service';
 import { DatabaseService } from '../../_data/database.service';
@@ -17,11 +18,24 @@ export class TimelineComponent implements OnInit {
   options: any;
   selectedDay: any;
   showCalendar: boolean;
+  dataPoints: any[];
+
+  heatmapLayer = new HeatmapOverlay({
+    radius: 20,
+    maxOpacity: 0.8,
+    scaleRadius: false,
+    useLocalExtrema: true,
+    latField: 'lat',
+    lngField: 'lng',
+    valueField: 'count'
+  });
 
   constructor(private _db: DatabaseService) {
     this.showCalendar = false;
     this.options = ConfigService.getDefaultMapOptions();
+    this.options.layers.push(this.heatmapLayer);
     this.options.loaded = true;
+    this.dataPoints = [];
 
     this.selectedDay = {
       date: moment(new Date()).format('MMMM Do, YYYY'),
@@ -36,7 +50,6 @@ export class TimelineComponent implements OnInit {
   }
   
   onCalendarSelectedChange(date: string) {
-    this.selectedDay.date = moment(new Date(date)).format('MMMM Do, YYYY');
     let formattedDate = UtilitiesService.convertDateToUniformDate(date);
     let isActiveDay = false;
 
@@ -48,9 +61,10 @@ export class TimelineComponent implements OnInit {
     }
 
     if (isActiveDay) {
+      this.selectedDay.date = moment(new Date(date)).format('MMMM Do, YYYY');
       this.selectedDay.dateMsg = '';
       this.toggleCalendar({ target: { nodeName: 'svg' } });
-      //this.loadDay(formattedDate);
+      this.loadDay(formattedDate);
     }
     else {
       this.selectedDay.dateMsg = 'No data for selected date';
@@ -58,6 +72,16 @@ export class TimelineComponent implements OnInit {
         this.selectedDay.dateMsg = '';
       }, 3000)
     }
+  }
+
+  onMapReady(map: L.Map) {
+    //map.on('mousemove', (event: L.LeafletMouseEvent) => {
+    //  this.heatmapLayer.setData([{
+    //    lat: event.latlng.lat,
+    //    lng: event.latlng.lng,
+    //    count: 1
+    //  }]);
+    //});
   }
 
   toggleCalendar(event: any) {
@@ -71,7 +95,25 @@ export class TimelineComponent implements OnInit {
     }
 
     if (toggle) {
-        this.showCalendar = !this.showCalendar;
-      }
+      this.showCalendar = !this.showCalendar;
     }
+  }
+
+  loadDay(day: string) {
+    this._db.getDay(day).then((res) => {
+      this.dataPoints = UtilitiesService.deepCopy(res);
+      let onlyHeatMapData = [];
+
+      for (let i = 0; i < this.dataPoints.length; i++) {
+        onlyHeatMapData.push({
+          lat: this.dataPoints[i].lat,
+          lng: this.dataPoints[i].lng,
+          count: 1
+        });
+      }
+
+      this.heatmapLayer.setData({ data: onlyHeatMapData });
+      console.log(this.dataPoints);
+    })
+  }
 }

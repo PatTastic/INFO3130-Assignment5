@@ -9,6 +9,7 @@
   </div>
   <div *ngIf="options.loaded"
        leaflet
-       [leafletOptions]="options">
+       [leafletOptions]="options"
+       (leafletMapReady)="onMapReady($event)">
   </div>
 </section>

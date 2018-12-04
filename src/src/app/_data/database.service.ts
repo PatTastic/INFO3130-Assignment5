@@ -1,4 +1,5 @@
 ﻿import { Injectable } from '@angular/core';
+import { HttpClient } from '@angular/common/http';
 
 import { UtilitiesService } from '../_helpers/utilities.service';
 
@@ -6,7 +7,7 @@ import { UtilitiesService } from '../_helpers/utilities.service';
 export class DatabaseService {
   db: any;
   
-  constructor() {
+  constructor(private _http: HttpClient) {
     this.db = window['openDatabase']('info3130A5', '1.0', 'INFO3130 - A5', 2 * 1024 * 1024);
     this.createDatabase();
   }
@@ -38,6 +39,10 @@ export class DatabaseService {
     });
   }
 
+  private getTestData() {
+    return this._http.get('assets/data/points.json').toPromise();
+  }
+
   getActiveDays() {
     return new Promise((resolve, reject) => {
       try {
@@ -57,6 +62,33 @@ export class DatabaseService {
         }, (msg) => {
           console.log('SQL: getActiveDays', msg);
         });
+      }
+      catch (err) {
+        reject(false);
+      }
+    })
+  }
+
+  getDay(date: string) {
+    return new Promise((resolve, reject) => {
+      try {
+        let res: any = [];
+
+        if (date == '03-12-2018') {
+          res = this.getTestData();
+          resolve(res);
+        }
+        else {
+          this.db.transaction((sqlTransactionSync) => {
+            res = sqlTransactionSync.executeSql('SELECT * FROM geoPoint WHERE day = ?', [date]);
+
+            if (!UtilitiesService.doesExist(res)) {
+              res = [];
+            }
+
+            resolve(res);
+          })
+        }
       }
       catch (err) {
         reject(false);
