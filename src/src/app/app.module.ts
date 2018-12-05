@@ -6,11 +6,11 @@ import { RouterModule, Routes, Router } from '@angular/router';
 import { FontAwesomeModule } from '@fortawesome/angular-fontawesome';
 import { library } from '@fortawesome/fontawesome-svg-core';
 import { faCalendarAlt } from '@fortawesome/free-regular-svg-icons';
+import { faCar, faChevronLeft } from '@fortawesome/free-solid-svg-icons';
 import { LeafletModule } from '@asymmetrik/ngx-leaflet';
 import { HttpClientModule } from '@angular/common/http';
 
 import { AppComponent } from './app.component';
-import { TrackingComponent } from './partials/tracking/tracking.component';
 import { TimelineComponent } from './partials/timeline/timeline.component';
 import { StatsComponent } from './partials/stats/stats.component';
 import { SuggestionsComponent } from './partials/suggestions/suggestions.component';
@@ -24,10 +24,6 @@ import { NavComponent } from './partials/nav/nav.component';
 import { ViewSuggestionComponent } from './partials/view-suggestion/view-suggestion.component';
 
 const appRoutes: Routes = [
-  {
-    path: 'tracking',
-    component: TrackingComponent
-  },
   {
     path: 'timeline',
     component: TimelineComponent
@@ -58,7 +54,6 @@ const appRoutes: Routes = [
 @NgModule({
   declarations: [
     AppComponent,
-    TrackingComponent,
     TimelineComponent,
     StatsComponent,
     SuggestionsComponent,
@@ -88,5 +83,7 @@ const appRoutes: Routes = [
 export class AppModule {
   constructor() {
     library.add(faCalendarAlt);
+    library.add(faCar);
+    library.add(faChevronLeft);
   }
 }

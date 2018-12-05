@@ -56,6 +56,7 @@ export class DatabaseService {
           for (let i = 0; i < res.length; i++) {
             res[i] = UtilitiesService.convertDateToUniformDate(res[i]);
           }
+          res.push('03-12-2018');
           res.push(UtilitiesService.convertDateToUniformDate(new Date().toString()));
 
           resolve(res);
@@ -89,6 +90,60 @@ export class DatabaseService {
             resolve(res);
           })
         }
+      }
+      catch (err) {
+        reject(false);
+      }
+    })
+  }
+
+  saveGeoPoint(point: any) {
+    return new Promise((resolve, reject) => {
+      try {
+        this.db.transaction((sqlTransactionSync) => {
+          sqlTransactionSync.executeSql(
+            'INSERT INTO geoPoint(lat, lng, address, ts, day, weight) VALUES (?, ?, ?, ?, ?, ?)',
+            [point.lat, point.lng, point.address, point.ts, point.day, point.weight]
+          );
+
+          resolve(true);
+        })
+      }
+      catch (err) {
+        reject(false);
+      }
+    })
+  }
+
+  updateGeoPointWeight(point: any) {
+    return new Promise((resolve, reject) => {
+      try {
+        this.db.transaction((sqlTransactionSync) => {
+          sqlTransactionSync.executeSql(
+            'UPDATE geoPoint SET weight = ? WHERE id = ?',
+            [point.weight, point.id]
+          );
+
+          resolve(true);
+        })
+      }
+      catch (err) {
+        reject(false);
+      }
+    })
+  }
+
+  updateGeoPointAddress(point: any) {
+    return new Promise((resolve, reject) => {
+      try {
+        this.db.transaction((sqlTransactionSync) => {
+          sqlTransactionSync.executeSql(
+            'UPDATE geoPoint SET address = ? WHERE id = ?',
+            [point.address, point.id]
+          );
+        })
+
+        resolve(true);
       }
       catch (err) {
         reject(false);

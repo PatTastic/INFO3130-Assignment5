@@ -14,11 +14,13 @@ import { UtilitiesService } from '../../_helpers/utilities.service';
 })
 export class TimelineComponent implements OnInit {
   private activeDays: string[];
+  private dateBackup: any;
 
   options: any;
   selectedDay: any;
   showCalendar: boolean;
   dataPoints: any[];
+  isLiveTracking: boolean;
 
   heatmapLayer = new HeatmapOverlay({
     radius: 20,
@@ -36,6 +38,8 @@ export class TimelineComponent implements OnInit {
     this.options.layers.push(this.heatmapLayer);
     this.options.loaded = true;
     this.dataPoints = [];
+    this.isLiveTracking = false;
+    this.dateBackup = {};
 
     this.selectedDay = {
       date: moment(new Date()).format('MMMM Do, YYYY'),
@@ -115,5 +119,37 @@ export class TimelineComponent implements OnInit {
       this.heatmapLayer.setData({ data: onlyHeatMapData });
       console.log(this.dataPoints);
     })
+  }
+
+  enterLiveTracking() {
+    this.isLiveTracking = true;
+
+    let todaysData: any = localStorage.getItem('new-points');
+    if (UtilitiesService.doesExist(todaysData)) {
+      todaysData = JSON.parse(todaysData);
+    }
+    else {
+      todaysData = [];
+    }
+
+    this.heatmapLayer.setData({ data: todaysData });
+
+    this.dateBackup = {
+      selectedDay: UtilitiesService.deepCopy(this.selectedDay),
+      dataPoints: UtilitiesService.deepCopy(this.dataPoints)
+    };
+  }
+
+  exitLiveTracking() {
+    this.isLiveTracking = false;
+
+    this.selectedDay = UtilitiesService.deepCopy(this.dateBackup.selectedDay);
+    this.dataPoints = UtilitiesService.deepCopy(this.dateBackup.dataPoints);
+
+    if (this.dataPoints.length > 0) {
+      this.heatmapLayer.setData({ data: this.dataPoints });
+    }
+
+    this.dateBackup = {};
   }
 }

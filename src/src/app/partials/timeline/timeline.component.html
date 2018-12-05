@@ -1,5 +1,5 @@
 ﻿<section id="app-timeline">
-  <div class="top-content">
+  <div class="top-content" *ngIf="!isLiveTracking">
     <h2>{{selectedDay.date}}</h2>
     <fa-icon [icon]="['far', 'calendar-alt']" (click)="toggleCalendar($event)" class="calendar-icon"></fa-icon>
     <div class="calendar-container" [hidden]="!showCalendar" (click)="toggleCalendar($event)">
@@ -7,9 +7,14 @@
       <mat-calendar (selectedChange)="onCalendarSelectedChange($event)"></mat-calendar>
     </div>
   </div>
+  <div class="top-content text-right" *ngIf="isLiveTracking">
+    <fa-icon [icon]="['fas', 'chevron-left']" (click)="exitLiveTracking()" class="back-icon"></fa-icon>
+    <h2>Live Tracking</h2>
+  </div>
   <div *ngIf="options.loaded"
        leaflet
        [leafletOptions]="options"
        (leafletMapReady)="onMapReady($event)">
   </div>
+  <fa-icon [icon]="['fas', 'car']" *ngIf="!isLiveTracking" (click)="enterLiveTracking()" class="live-tracking-icon"></fa-icon>
 </section>
