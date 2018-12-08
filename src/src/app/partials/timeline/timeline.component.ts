@@ -1,4 +1,4 @@
-﻿import { Component, OnInit } from '@angular/core';
+﻿import { Component, OnInit, OnDestroy } from '@angular/core';
 import * as L from 'leaflet';
 import * as moment from 'moment';
 declare var HeatmapOverlay;
@@ -12,9 +12,11 @@ import { UtilitiesService } from '../../_helpers/utilities.service';
   templateUrl: './timeline.component.html',
   styleUrls: ['./timeline.component.css']
 })
-export class TimelineComponent implements OnInit {
+export class TimelineComponent implements OnInit, OnDestroy {
   private activeDays: string[];
   private dateBackup: any;
+  private liveTrackingInterval: any;
+  private liveTrackingLatest: any;
 
   options: any;
   selectedDay: any;
@@ -33,6 +35,8 @@ export class TimelineComponent implements OnInit {
   });
 
   constructor(private _db: DatabaseService) {
+    this.liveTrackingLatest = null;
+    this.liveTrackingInterval = -1;
     this.showCalendar = false;
     this.options = ConfigService.getDefaultMapOptions();
     this.options.layers.push(this.heatmapLayer);
@@ -51,6 +55,13 @@ export class TimelineComponent implements OnInit {
     this._db.getActiveDays().then((res) => {
       this.activeDays = UtilitiesService.deepCopy(res);
     })
+  }
+
+  ngOnDestroy() {
+    if (this.liveTrackingInterval != -1) {
+      clearInterval(this.liveTrackingInterval);
+      this.liveTrackingInterval = -1;
+    }
   }
   
   onCalendarSelectedChange(date: string) {
@@ -112,7 +123,7 @@ export class TimelineComponent implements OnInit {
         onlyHeatMapData.push({
           lat: this.dataPoints[i].lat,
           lng: this.dataPoints[i].lng,
-          count: 1
+          count: 0.1
         });
       }
 
@@ -127,9 +138,11 @@ export class TimelineComponent implements OnInit {
     let todaysData: any = localStorage.getItem('new-points');
     if (UtilitiesService.doesExist(todaysData)) {
       todaysData = JSON.parse(todaysData);
+      this.liveTrackingLatest = todaysData[todaysData.length - 1];
     }
     else {
       todaysData = [];
+      this.liveTrackingLatest = null;
     }
 
     this.heatmapLayer.setData({ data: todaysData });
@@ -138,6 +151,8 @@ export class TimelineComponent implements OnInit {
       selectedDay: UtilitiesService.deepCopy(this.selectedDay),
       dataPoints: UtilitiesService.deepCopy(this.dataPoints)
     };
+
+    this.liveTrackingInterval = setInterval(() => { this.checkLiveTracking() }, 5000);
   }
 
   exitLiveTracking() {
@@ -151,5 +166,36 @@ export class TimelineComponent implements OnInit {
     }
 
     this.dateBackup = {};
+    clearInterval(this.liveTrackingInterval);
+    this.liveTrackingInterval = -1;
+  }
+
+  checkLiveTracking() {
+    let todaysData: any = localStorage.getItem('new-points');
+    let newData = [];
+
+    if (UtilitiesService.doesExist(todaysData)) {
+      todaysData = JSON.parse(todaysData);
+
+      if (todaysData !== null) {
+        for (let i = 0; i < todaysData.length; i++) {
+          if (todaysData[i].ts == this.liveTrackingLatest.ts) {
+            if (i != (todaysData.length - 1)) {
+              newData = todaysData.splice(0, i);
+              break;
+            }
+          }
+        }
+      }
+      else {
+        newData = UtilitiesService.deepCopy(todaysData);
+      }
+
+      this.liveTrackingLatest = UtilitiesService.deepCopy(todaysData[todaysData.length - 1]);
+
+      if (newData.length > 0) {
+        this.heatmapLayer.addData({ data: newData });
+      }
+    }
   }
 }
