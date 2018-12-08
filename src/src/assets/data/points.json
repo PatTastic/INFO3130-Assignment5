@@ -1,0 +1,1289 @@
+﻿[
+  {
+    "id": 1,
+    "lat": 43.390622,
+    "lng": -80.403003,
+    "address": "299 Doon Valley Dr, Kitchener, Ontario, Canada",
+    "ts": 1543896468420,
+    "day": "03-12-2018",
+    "weight": 1
+  },
+  {
+    "id": 2,
+    "lat": 43.390614,
+    "lng": -80.402992,
+    "address": "299 Doon Valley Dr, Kitchener, Ontario, Canada",
+    "ts": 1543896408420,
+    "day": "03-12-2018",
+    "weight": 1
+  },
+  {
+    "id": 3,
+    "lat": 43.390626,
+    "lng": -80.402927,
+    "address": "299 Doon Valley Dr, Kitchener, Ontario, Canada",
+    "ts": 1543896348420,
+    "day": "03-12-2018",
+    "weight": 1
+  },
+  {
+    "id": 4,
+    "lat": 43.390637,
+    "lng": -80.402852,
+    "address": "299 Doon Valley Dr, Kitchener, Ontario, Canada",
+    "ts": 1543896288420,
+    "day": "03-12-2018",
+    "weight": 1
+  },
+  {
+    "id": 5,
+    "lat": 43.390559,
+    "lng": -80.40282,
+    "address": "299 Doon Valley Dr, Kitchener, Ontario, Canada",
+    "ts": 1543896228420,
+    "day": "03-12-2018",
+    "weight": 1
+  },
+  {
+    "id": 6,
+    "lat": 43.390481,
+    "lng": -80.402804,
+    "address": "299 Doon Valley Dr, Kitchener, Ontario, Canada",
+    "ts": 1543896168420,
+    "day": "03-12-2018",
+    "weight": 1
+  },
+  {
+    "id": 7,
+    "lat": 43.390446,
+    "lng": -80.402863,
+    "address": "299 Doon Valley Dr, Kitchener, Ontario, Canada",
+    "ts": 1543896108420,
+    "day": "03-12-2018",
+    "weight": 1
+  },
+  {
+    "id": 8,
+    "lat": 43.390442,
+    "lng": -80.402922,
+    "address": "299 Doon Valley Dr, Kitchener, Ontario, Canada",
+    "ts": 1543896048420,
+    "day": "03-12-2018",
+    "weight": 1
+  },
+  {
+    "id": 9,
+    "lat": 43.390411,
+    "lng": -80.40304,
+    "address": "299 Doon Valley Dr, Kitchener, Ontario, Canada",
+    "ts": 1543895988420,
+    "day": "03-12-2018",
+    "weight": 1
+  },
+  {
+    "id": 10,
+    "lat": 43.3904,
+    "lng": -80.403126,
+    "address": "299 Doon Valley Dr, Kitchener, Ontario, Canada",
+    "ts": 1543895928420,
+    "day": "03-12-2018",
+    "weight": 1
+  },
+  {
+    "id": 11,
+    "lat": 43.3904,
+    "lng": -80.403201,
+    "address": "299 Doon Valley Dr, Kitchener, Ontario, Canada",
+    "ts": 1543895868420,
+    "day": "03-12-2018",
+    "weight": 1
+  },
+  {
+    "id": 12,
+    "lat": 43.390458,
+    "lng": -80.403217,
+    "address": "299 Doon Valley Dr, Kitchener, Ontario, Canada",
+    "ts": 1543895808420,
+    "day": "03-12-2018",
+    "weight": 1
+  },
+  {
+    "id": 13,
+    "lat": 43.390462,
+    "lng": -80.403319,
+    "address": "299 Doon Valley Dr, Kitchener, Ontario, Canada",
+    "ts": 1543895748420,
+    "day": "03-12-2018",
+    "weight": 1
+  },
+  {
+    "id": 14,
+    "lat": 43.390462,
+    "lng": -80.403314,
+    "address": "299 Doon Valley Dr, Kitchener, Ontario, Canada",
+    "ts": 1543895688420,
+    "day": "03-12-2018",
+    "weight": 1
+  },
+  {
+    "id": 15,
+    "lat": 43.390493,
+    "lng": -80.403335,
+    "address": "299 Doon Valley Dr, Kitchener, Ontario, Canada",
+    "ts": 1543895628420,
+    "day": "03-12-2018",
+    "weight": 1
+  },
+  {
+    "id": 16,
+    "lat": 43.390466,
+    "lng": -80.403319,
+    "address": "299 Doon Valley Dr, Kitchener, Ontario, Canada",
+    "ts": 1543895568420,
+    "day": "03-12-2018",
+    "weight": 1
+  },
+  {
+    "id": 17,
+    "lat": 43.390462,
+    "lng": -80.403324,
+    "address": "299 Doon Valley Dr, Kitchener, Ontario, Canada",
+    "ts": 1543895508420,
+    "day": "03-12-2018",
+    "weight": 1
+  },
+  {
+    "id": 18,
+    "lat": 43.390489,
+    "lng": -80.403255,
+    "address": "299 Doon Valley Dr, Kitchener, Ontario, Canada",
+    "ts": 1543895448420,
+    "day": "03-12-2018",
+    "weight": 1
+  },
+  {
+    "id": 19,
+    "lat": 43.390559,
+    "lng": -80.403265,
+    "address": "299 Doon Valley Dr, Kitchener, Ontario, Canada",
+    "ts": 1543895388420,
+    "day": "03-12-2018",
+    "weight": 1
+  },
+  {
+    "id": 20,
+    "lat": 43.390618,
+    "lng": -80.403276,
+    "address": "299 Doon Valley Dr, Kitchener, Ontario, Canada",
+    "ts": 1543895328420,
+    "day": "03-12-2018",
+    "weight": 1
+  },
+  {
+    "id": 21,
+    "lat": 43.390676,
+    "lng": -80.403287,
+    "address": "299 Doon Valley Dr, Kitchener, Ontario, Canada",
+    "ts": 1543895268420,
+    "day": "03-12-2018",
+    "weight": 1
+  },
+  {
+    "id": 22,
+    "lat": 43.390719,
+    "lng": -80.403298,
+    "address": "299 Doon Valley Dr, Kitchener, Ontario, Canada",
+    "ts": 1543895208420,
+    "day": "03-12-2018",
+    "weight": 1
+  },
+  {
+    "id": 23,
+    "lat": 43.390739,
+    "lng": -80.40319,
+    "address": "299 Doon Valley Dr, Kitchener, Ontario, Canada",
+    "ts": 1543895148420,
+    "day": "03-12-2018",
+    "weight": 1
+  },
+  {
+    "id": 24,
+    "lat": 43.390762,
+    "lng": -80.403088,
+    "address": "299 Doon Valley Dr, Kitchener, Ontario, Canada",
+    "ts": 1543895088420,
+    "day": "03-12-2018",
+    "weight": 1
+  },
+  {
+    "id": 25,
+    "lat": 43.390766,
+    "lng": -80.402986,
+    "address": "299 Doon Valley Dr, Kitchener, Ontario, Canada",
+    "ts": 1543895028420,
+    "day": "03-12-2018",
+    "weight": 1
+  },
+  {
+    "id": 26,
+    "lat": 43.390778,
+    "lng": -80.402906,
+    "address": "299 Doon Valley Dr, Kitchener, Ontario, Canada",
+    "ts": 1543894968420,
+    "day": "03-12-2018",
+    "weight": 1
+  },
+  {
+    "id": 27,
+    "lat": 43.390793,
+    "lng": -80.402825,
+    "address": "299 Doon Valley Dr, Kitchener, Ontario, Canada",
+    "ts": 1543894908420,
+    "day": "03-12-2018",
+    "weight": 1
+  },
+  {
+    "id": 28,
+    "lat": 43.390813,
+    "lng": -80.402724,
+    "address": "299 Doon Valley Dr, Kitchener, Ontario, Canada",
+    "ts": 1543894848420,
+    "day": "03-12-2018",
+    "weight": 1
+  },
+  {
+    "id": 29,
+    "lat": 43.390821,
+    "lng": -80.402659,
+    "address": "299 Doon Valley Dr, Kitchener, Ontario, Canada",
+    "ts": 1543894788420,
+    "day": "03-12-2018",
+    "weight": 1
+  },
+  {
+    "id": 30,
+    "lat": 43.390836,
+    "lng": -80.402568,
+    "address": "299 Doon Valley Dr, Kitchener, Ontario, Canada",
+    "ts": 1543894728420,
+    "day": "03-12-2018",
+    "weight": 1
+  },
+  {
+    "id": 31,
+    "lat": 43.390863,
+    "lng": -80.402509,
+    "address": "299 Doon Valley Dr, Kitchener, Ontario, Canada",
+    "ts": 1543894668420,
+    "day": "03-12-2018",
+    "weight": 1
+  },
+  {
+    "id": 32,
+    "lat": 43.390883,
+    "lng": -80.402429,
+    "address": "299 Doon Valley Dr, Kitchener, Ontario, Canada",
+    "ts": 1543894608420,
+    "day": "03-12-2018",
+    "weight": 1
+  },
+  {
+    "id": 33,
+    "lat": 43.390895,
+    "lng": -80.402327,
+    "address": "299 Doon Valley Dr, Kitchener, Ontario, Canada",
+    "ts": 1543894548420,
+    "day": "03-12-2018",
+    "weight": 1
+  },
+  {
+    "id": 34,
+    "lat": 43.390902,
+    "lng": -80.402251,
+    "address": "299 Doon Valley Dr, Kitchener, Ontario, Canada",
+    "ts": 1543894488420,
+    "day": "03-12-2018",
+    "weight": 1
+  },
+  {
+    "id": 35,
+    "lat": 43.390926,
+    "lng": -80.402192,
+    "address": "299 Doon Valley Dr, Kitchener, Ontario, Canada",
+    "ts": 1543894428420,
+    "day": "03-12-2018",
+    "weight": 1
+  },
+  {
+    "id": 36,
+    "lat": 43.390996,
+    "lng": -80.402198,
+    "address": "299 Doon Valley Dr, Kitchener, Ontario, Canada",
+    "ts": 1543894368420,
+    "day": "03-12-2018",
+    "weight": 1
+  },
+  {
+    "id": 37,
+    "lat": 43.391062,
+    "lng": -80.402225,
+    "address": "299 Doon Valley Dr, Kitchener, Ontario, Canada",
+    "ts": 1543894308420,
+    "day": "03-12-2018",
+    "weight": 1
+  },
+  {
+    "id": 38,
+    "lat": 43.391136,
+    "lng": -80.402241,
+    "address": "299 Doon Valley Dr, Kitchener, Ontario, Canada",
+    "ts": 1543894248420,
+    "day": "03-12-2018",
+    "weight": 1
+  },
+  {
+    "id": 39,
+    "lat": 43.391207,
+    "lng": -80.402262,
+    "address": "299 Doon Valley Dr, Kitchener, Ontario, Canada",
+    "ts": 1543894188420,
+    "day": "03-12-2018",
+    "weight": 1
+  },
+  {
+    "id": 40,
+    "lat": 43.391257,
+    "lng": -80.402278,
+    "address": "299 Doon Valley Dr, Kitchener, Ontario, Canada",
+    "ts": 1543894128420,
+    "day": "03-12-2018",
+    "weight": 1
+  },
+  {
+    "id": 41,
+    "lat": 43.391323,
+    "lng": -80.4023,
+    "address": "299 Doon Valley Dr, Kitchener, Ontario, Canada",
+    "ts": 1543894068420,
+    "day": "03-12-2018",
+    "weight": 1
+  },
+  {
+    "id": 42,
+    "lat": 43.39137,
+    "lng": -80.402337,
+    "address": "299 Doon Valley Dr, Kitchener, Ontario, Canada",
+    "ts": 1543894008420,
+    "day": "03-12-2018",
+    "weight": 1
+  },
+  {
+    "id": 43,
+    "lat": 43.391448,
+    "lng": -80.402348,
+    "address": "299 Doon Valley Dr, Kitchener, Ontario, Canada",
+    "ts": 1543893948420,
+    "day": "03-12-2018",
+    "weight": 1
+  },
+  {
+    "id": 44,
+    "lat": 43.391499,
+    "lng": -80.402364,
+    "address": "Doon Valley Drive, Kitchener, Ontario, Canada",
+    "ts": 1543893888420,
+    "day": "03-12-2018",
+    "weight": 1
+  },
+  {
+    "id": 45,
+    "lat": 43.391561,
+    "lng": -80.402396,
+    "address": "Doon Valley Drive, Kitchener, Ontario, Canada",
+    "ts": 1543893828420,
+    "day": "03-12-2018",
+    "weight": 1
+  },
+  {
+    "id": 46,
+    "lat": 43.391573,
+    "lng": -80.402305,
+    "address": "Doon Valley Drive, Kitchener, Ontario, Canada",
+    "ts": 1543893768420,
+    "day": "03-12-2018",
+    "weight": 1
+  },
+  {
+    "id": 47,
+    "lat": 43.391604,
+    "lng": -80.40223,
+    "address": "Doon Valley Drive, Kitchener, Ontario, Canada",
+    "ts": 1543893708420,
+    "day": "03-12-2018",
+    "weight": 1
+  },
+  {
+    "id": 48,
+    "lat": 43.391674,
+    "lng": -80.402268,
+    "address": "Doon Valley Drive, Kitchener, Ontario, Canada",
+    "ts": 1543893648420,
+    "day": "03-12-2018",
+    "weight": 1
+  },
+  {
+    "id": 49,
+    "lat": 43.39176,
+    "lng": -80.402294,
+    "address": "Doon Valley Drive, Kitchener, Ontario, Canada",
+    "ts": 1543893588420,
+    "day": "03-12-2018",
+    "weight": 1
+  },
+  {
+    "id": 50,
+    "lat": 43.39185,
+    "lng": -80.402321,
+    "address": "Doon Valley Drive, Kitchener, Ontario, Canada",
+    "ts": 1543893528420,
+    "day": "03-12-2018",
+    "weight": 1
+  },
+  {
+    "id": 51,
+    "lat": 43.391951,
+    "lng": -80.40231,
+    "address": "Doon Valley Drive, Kitchener, Ontario, Canada",
+    "ts": 1543893468420,
+    "day": "03-12-2018",
+    "weight": 1
+  },
+  {
+    "id": 52,
+    "lat": 43.391928,
+    "lng": -80.402321,
+    "address": "Doon Valley Drive, Kitchener, Ontario, Canada",
+    "ts": 1543893408420,
+    "day": "03-12-2018",
+    "weight": 1
+  },
+  {
+    "id": 53,
+    "lat": 43.391951,
+    "lng": -80.402343,
+    "address": "Doon Valley Drive, Kitchener, Ontario, Canada",
+    "ts": 1543893348420,
+    "day": "03-12-2018",
+    "weight": 1
+  },
+  {
+    "id": 54,
+    "lat": 43.391943,
+    "lng": -80.402321,
+    "address": "Doon Valley Drive, Kitchener, Ontario, Canada",
+    "ts": 1543893288420,
+    "day": "03-12-2018",
+    "weight": 1
+  },
+  {
+    "id": 55,
+    "lat": 43.391971,
+    "lng": -80.402268,
+    "address": "Doon Valley Drive, Kitchener, Ontario, Canada",
+    "ts": 1543893228420,
+    "day": "03-12-2018",
+    "weight": 1
+  },
+  {
+    "id": 56,
+    "lat": 43.392041,
+    "lng": -80.402262,
+    "address": "Doon Valley Drive, Kitchener, Ontario, Canada",
+    "ts": 1543893168420,
+    "day": "03-12-2018",
+    "weight": 1
+  },
+  {
+    "id": 57,
+    "lat": 43.392119,
+    "lng": -80.402289,
+    "address": "Doon Valley Drive, Kitchener, Ontario, Canada",
+    "ts": 1543893108420,
+    "day": "03-12-2018",
+    "weight": 1
+  },
+  {
+    "id": 58,
+    "lat": 43.39222,
+    "lng": -80.402273,
+    "address": "Doon Valley Drive, Kitchener, Ontario, Canada",
+    "ts": 1543893048420,
+    "day": "03-12-2018",
+    "weight": 1
+  },
+  {
+    "id": 59,
+    "lat": 43.392306,
+    "lng": -80.402219,
+    "address": "Doon Valley Drive, Kitchener, Ontario, Canada",
+    "ts": 1543892988420,
+    "day": "03-12-2018",
+    "weight": 1
+  },
+  {
+    "id": 60,
+    "lat": 43.392392,
+    "lng": -80.40215,
+    "address": "Doon Valley Drive, Kitchener, Ontario, Canada",
+    "ts": 1543892928420,
+    "day": "03-12-2018",
+    "weight": 1
+  },
+  {
+    "id": 61,
+    "lat": 43.392446,
+    "lng": -80.402096,
+    "address": "Doon Valley Drive, Kitchener, Ontario, Canada",
+    "ts": 1543892868420,
+    "day": "03-12-2018",
+    "weight": 1
+  },
+  {
+    "id": 62,
+    "lat": 43.392505,
+    "lng": -80.402005,
+    "address": "Doon Valley Drive, Kitchener, Ontario, Canada",
+    "ts": 1543892808420,
+    "day": "03-12-2018",
+    "weight": 1
+  },
+  {
+    "id": 63,
+    "lat": 43.39252,
+    "lng": -80.40186,
+    "address": "Doon Valley Drive, Kitchener, Ontario, Canada",
+    "ts": 1543892748420,
+    "day": "03-12-2018",
+    "weight": 1
+  },
+  {
+    "id": 64,
+    "lat": 43.392544,
+    "lng": -80.401704,
+    "address": "Doon Valley Drive, Kitchener, Ontario, Canada",
+    "ts": 1543892688420,
+    "day": "03-12-2018",
+    "weight": 1
+  },
+  {
+    "id": 65,
+    "lat": 43.392559,
+    "lng": -80.401618,
+    "address": "Doon Valley Drive, Kitchener, Ontario, Canada",
+    "ts": 1543892628420,
+    "day": "03-12-2018",
+    "weight": 1
+  },
+  {
+    "id": 66,
+    "lat": 43.392618,
+    "lng": -80.401635,
+    "address": "Doon Valley Drive, Kitchener, Ontario, Canada",
+    "ts": 1543892568420,
+    "day": "03-12-2018",
+    "weight": 1
+  },
+  {
+    "id": 67,
+    "lat": 43.392715,
+    "lng": -80.401667,
+    "address": "Doon Valley Drive, Kitchener, Ontario, Canada",
+    "ts": 1543892508420,
+    "day": "03-12-2018",
+    "weight": 1
+  },
+  {
+    "id": 68,
+    "lat": 43.392742,
+    "lng": -80.401844,
+    "address": "Doon Valley Drive, Kitchener, Ontario, Canada",
+    "ts": 1543892448420,
+    "day": "03-12-2018",
+    "weight": 1
+  },
+  {
+    "id": 69,
+    "lat": 43.392711,
+    "lng": -80.402069,
+    "address": "Doon Valley Drive, Kitchener, Ontario, Canada",
+    "ts": 1543892388420,
+    "day": "03-12-2018",
+    "weight": 1
+  },
+  {
+    "id": 70,
+    "lat": 43.392649,
+    "lng": -80.402386,
+    "address": "Doon Valley Drive, Kitchener, Ontario, Canada",
+    "ts": 1543892328420,
+    "day": "03-12-2018",
+    "weight": 1
+  },
+  {
+    "id": 71,
+    "lat": 43.392567,
+    "lng": -80.402884,
+    "address": "Doon Valley Drive, Kitchener, Ontario, Canada",
+    "ts": 1543892268420,
+    "day": "03-12-2018",
+    "weight": 1
+  },
+  {
+    "id": 72,
+    "lat": 43.392466,
+    "lng": -80.40348,
+    "address": "Doon Valley Drive, Kitchener, Ontario, Canada",
+    "ts": 1543892208420,
+    "day": "03-12-2018",
+    "weight": 1
+  },
+  {
+    "id": 73,
+    "lat": 43.392329,
+    "lng": -80.404354,
+    "address": "Doon Valley Drive, Kitchener, Ontario, Canada",
+    "ts": 1543892148420,
+    "day": "03-12-2018",
+    "weight": 1
+  },
+  {
+    "id": 74,
+    "lat": 43.392162,
+    "lng": -80.40539,
+    "address": "Doon Valley Drive, Kitchener, Ontario, Canada",
+    "ts": 1543892088420,
+    "day": "03-12-2018",
+    "weight": 1
+  },
+  {
+    "id": 75,
+    "lat": 43.39201,
+    "lng": -80.406312,
+    "address": "Doon Valley Drive, Kitchener, Ontario, Canada",
+    "ts": 1543892028420,
+    "day": "03-12-2018",
+    "weight": 1
+  },
+  {
+    "id": 76,
+    "lat": 43.39185,
+    "lng": -80.407219,
+    "address": "Doon Valley Drive, Kitchener, Ontario, Canada",
+    "ts": 1543891968420,
+    "day": "03-12-2018",
+    "weight": 1
+  },
+  {
+    "id": 77,
+    "lat": 43.391717,
+    "lng": -80.407965,
+    "address": "Doon Valley Drive, Kitchener, Ontario, Canada",
+    "ts": 1543891908420,
+    "day": "03-12-2018",
+    "weight": 1
+  },
+  {
+    "id": 78,
+    "lat": 43.3916,
+    "lng": -80.408694,
+    "address": "Doon Valley Drive, Kitchener, Ontario, Canada",
+    "ts": 1543891848420,
+    "day": "03-12-2018",
+    "weight": 1
+  },
+  {
+    "id": 79,
+    "lat": 43.391464,
+    "lng": -80.409134,
+    "address": "Doon Valley Drive, Kitchener, Ontario, Canada",
+    "ts": 1543891788420,
+    "day": "03-12-2018",
+    "weight": 1
+  },
+  {
+    "id": 80,
+    "lat": 43.391316,
+    "lng": -80.409504,
+    "address": "Doon Valley Drive, Kitchener, Ontario, Canada",
+    "ts": 1543891728420,
+    "day": "03-12-2018",
+    "weight": 1
+  },
+  {
+    "id": 81,
+    "lat": 43.391082,
+    "lng": -80.409805,
+    "address": "Doon Valley Drive, Kitchener, Ontario, Canada",
+    "ts": 1543891668420,
+    "day": "03-12-2018",
+    "weight": 1
+  },
+  {
+    "id": 82,
+    "lat": 43.390785,
+    "lng": -80.41003,
+    "address": "Doon Valley Drive, Kitchener, Ontario, Canada",
+    "ts": 1543891608420,
+    "day": "03-12-2018",
+    "weight": 1
+  },
+  {
+    "id": 83,
+    "lat": 43.390501,
+    "lng": -80.41018,
+    "address": "Doon Valley Drive, Kitchener, Ontario, Canada",
+    "ts": 1543891548420,
+    "day": "03-12-2018",
+    "weight": 1
+  },
+  {
+    "id": 84,
+    "lat": 43.390212,
+    "lng": -80.41032,
+    "address": "Doon Valley Drive, Kitchener, Ontario, Canada",
+    "ts": 1543891488420,
+    "day": "03-12-2018",
+    "weight": 1
+  },
+  {
+    "id": 85,
+    "lat": 43.389912,
+    "lng": -80.410454,
+    "address": "Doon Valley Drive, Kitchener, Ontario, Canada",
+    "ts": 1543891428420,
+    "day": "03-12-2018",
+    "weight": 1
+  },
+  {
+    "id": 86,
+    "lat": 43.389581,
+    "lng": -80.410593,
+    "address": "Doon Valley Drive, Kitchener, Ontario, Canada",
+    "ts": 1543891368420,
+    "day": "03-12-2018",
+    "weight": 1
+  },
+  {
+    "id": 87,
+    "lat": 43.389222,
+    "lng": -80.410738,
+    "address": "Doon Valley Drive, Kitchener, Ontario, Canada",
+    "ts": 1543891308420,
+    "day": "03-12-2018",
+    "weight": 1
+  },
+  {
+    "id": 88,
+    "lat": 43.388949,
+    "lng": -80.410894,
+    "address": "Doon Valley Drive, Kitchener, Ontario, Canada",
+    "ts": 1543891248420,
+    "day": "03-12-2018",
+    "weight": 1
+  },
+  {
+    "id": 89,
+    "lat": 43.38868,
+    "lng": -80.411012,
+    "address": "Doon Valley Drive, Kitchener, Ontario, Canada",
+    "ts": 1543891188420,
+    "day": "03-12-2018",
+    "weight": 1
+  },
+  {
+    "id": 90,
+    "lat": 43.388408,
+    "lng": -80.411173,
+    "address": "Doon Valley Drive, Kitchener, Ontario, Canada",
+    "ts": 1543891128420,
+    "day": "03-12-2018",
+    "weight": 1
+  },
+  {
+    "id": 91,
+    "lat": 43.388162,
+    "lng": -80.41128,
+    "address": "Doon Valley Drive, Kitchener, Ontario, Canada",
+    "ts": 1543891068420,
+    "day": "03-12-2018",
+    "weight": 1
+  },
+  {
+    "id": 92,
+    "lat": 43.387936,
+    "lng": -80.411403,
+    "address": "Doon Valley Drive, Kitchener, Ontario, Canada",
+    "ts": 1543891008420,
+    "day": "03-12-2018",
+    "weight": 1
+  },
+  {
+    "id": 93,
+    "lat": 43.38769,
+    "lng": -80.411521,
+    "address": "Doon Valley Drive, Kitchener, Ontario, Canada",
+    "ts": 1543890948420,
+    "day": "03-12-2018",
+    "weight": 1
+  },
+  {
+    "id": 94,
+    "lat": 43.38748,
+    "lng": -80.411645,
+    "address": "Doon Valley Drive, Kitchener, Ontario, Canada",
+    "ts": 1543890888420,
+    "day": "03-12-2018",
+    "weight": 1
+  },
+  {
+    "id": 95,
+    "lat": 43.387273,
+    "lng": -80.411736,
+    "address": "Doon Valley Drive, Kitchener, Ontario, Canada",
+    "ts": 1543890828420,
+    "day": "03-12-2018",
+    "weight": 1
+  },
+  {
+    "id": 96,
+    "lat": 43.387059,
+    "lng": -80.411822,
+    "address": "Doon Valley Drive, Kitchener, Ontario, Canada",
+    "ts": 1543890768420,
+    "day": "03-12-2018",
+    "weight": 1
+  },
+  {
+    "id": 97,
+    "lat": 43.386844,
+    "lng": -80.411929,
+    "address": "Conestoga College Boulevard, Kitchener, Ontario, Canada",
+    "ts": 1543890708420,
+    "day": "03-12-2018",
+    "weight": 1
+  },
+  {
+    "id": 98,
+    "lat": 43.386634,
+    "lng": -80.412036,
+    "address": "Conestoga College Boulevard, Kitchener, Ontario, Canada",
+    "ts": 1543890648420,
+    "day": "03-12-2018",
+    "weight": 1
+  },
+  {
+    "id": 99,
+    "lat": 43.385612,
+    "lng": -80.412605,
+    "address": "100 Conestoga College Boulevard, Kitchener, Ontario, Canada",
+    "ts": 1543890588420,
+    "day": "03-12-2018",
+    "weight": 1
+  },
+  {
+    "id": 100,
+    "lat": 43.385382,
+    "lng": -80.412728,
+    "address": "102 Conestoga College Boulevard, Kitchener, Ontario, Canada",
+    "ts": 1543890528420,
+    "day": "03-12-2018",
+    "weight": 1
+  },
+  {
+    "id": 101,
+    "lat": 43.385191,
+    "lng": -80.41276,
+    "address": "104 Conestoga College Boulevard, Kitchener, Ontario, Canada",
+    "ts": 1543890468420,
+    "day": "03-12-2018",
+    "weight": 1
+  },
+  {
+    "id": 102,
+    "lat": 43.385031,
+    "lng": -80.412744,
+    "address": "106 Conestoga College Boulevard, Kitchener, Ontario, Canada",
+    "ts": 1543890408420,
+    "day": "03-12-2018",
+    "weight": 1
+  },
+  {
+    "id": 103,
+    "lat": 43.38486,
+    "lng": -80.412691,
+    "address": "108 Conestoga College Boulevard, Kitchener, Ontario, Canada",
+    "ts": 1543890348420,
+    "day": "03-12-2018",
+    "weight": 1
+  },
+  {
+    "id": 104,
+    "lat": 43.384688,
+    "lng": -80.412562,
+    "address": "110 Conestoga College Boulevard, Kitchener, Ontario, Canada",
+    "ts": 1543890288420,
+    "day": "03-12-2018",
+    "weight": 1
+  },
+  {
+    "id": 105,
+    "lat": 43.384552,
+    "lng": -80.412396,
+    "address": "112 Conestoga College Boulevard, Kitchener, Ontario, Canada",
+    "ts": 1543890228420,
+    "day": "03-12-2018",
+    "weight": 1
+  },
+  {
+    "id": 106,
+    "lat": 43.38447,
+    "lng": -80.412208,
+    "address": "114 Conestoga College Boulevard, Kitchener, Ontario, Canada",
+    "ts": 1543890168420,
+    "day": "03-12-2018",
+    "weight": 1
+  },
+  {
+    "id": 107,
+    "lat": 43.3844,
+    "lng": -80.411983,
+    "address": "116 Conestoga College Boulevard, Kitchener, Ontario, Canada",
+    "ts": 1543890108420,
+    "day": "03-12-2018",
+    "weight": 1
+  },
+  {
+    "id": 108,
+    "lat": 43.384373,
+    "lng": -80.411848,
+    "address": "118 Conestoga College Boulevard, Kitchener, Ontario, Canada",
+    "ts": 1543890048420,
+    "day": "03-12-2018",
+    "weight": 1
+  },
+  {
+    "id": 109,
+    "lat": 43.384361,
+    "lng": -80.411682,
+    "address": "120 Conestoga College Boulevard, Kitchener, Ontario, Canada",
+    "ts": 1543889988420,
+    "day": "03-12-2018",
+    "weight": 1
+  },
+  {
+    "id": 110,
+    "lat": 43.384376,
+    "lng": -80.411596,
+    "address": "120 Conestoga College Boulevard, Kitchener, Ontario, Canada",
+    "ts": 1543889928420,
+    "day": "03-12-2018",
+    "weight": 1
+  },
+  {
+    "id": 111,
+    "lat": 43.384427,
+    "lng": -80.411543,
+    "address": "120 Conestoga College Boulevard, Kitchener, Ontario, Canada",
+    "ts": 1543889868420,
+    "day": "03-12-2018",
+    "weight": 1
+  },
+  {
+    "id": 112,
+    "lat": 43.384513,
+    "lng": -80.4115,
+    "address": "99 Conestoga College Boulevard, Kitchener, Ontario, Canada",
+    "ts": 1543889808420,
+    "day": "03-12-2018",
+    "weight": 1
+  },
+  {
+    "id": 113,
+    "lat": 43.384564,
+    "lng": -80.411419,
+    "address": "99 Conestoga College Boulevard, Kitchener, Ontario, Canada",
+    "ts": 1543889748420,
+    "day": "03-12-2018",
+    "weight": 1
+  },
+  {
+    "id": 114,
+    "lat": 43.384571,
+    "lng": -80.411323,
+    "address": "99 Conestoga College Boulevard, Kitchener, Ontario, Canada",
+    "ts": 1543889688420,
+    "day": "03-12-2018",
+    "weight": 1
+  },
+  {
+    "id": 115,
+    "lat": 43.384579,
+    "lng": -80.411226,
+    "address": "99 Conestoga College Boulevard, Kitchener, Ontario, Canada",
+    "ts": 1543889628420,
+    "day": "03-12-2018",
+    "weight": 1
+  },
+  {
+    "id": 116,
+    "lat": 43.384579,
+    "lng": -80.411124,
+    "address": "99 Conestoga College Boulevard, Kitchener, Ontario, Canada",
+    "ts": 1543889568420,
+    "day": "03-12-2018",
+    "weight": 1
+  },
+  {
+    "id": 117,
+    "lat": 43.384591,
+    "lng": -80.411033,
+    "address": "99 Conestoga College Boulevard, Kitchener, Ontario, Canada",
+    "ts": 1543889508420,
+    "day": "03-12-2018",
+    "weight": 1
+  },
+  {
+    "id": 118,
+    "lat": 43.384657,
+    "lng": -80.41099,
+    "address": "99 Conestoga College Boulevard, Kitchener, Ontario, Canada",
+    "ts": 1543889448420,
+    "day": "03-12-2018",
+    "weight": 1
+  },
+  {
+    "id": 119,
+    "lat": 43.384743,
+    "lng": -80.410963,
+    "address": "99 Conestoga College Boulevard, Kitchener, Ontario, Canada",
+    "ts": 1543889388420,
+    "day": "03-12-2018",
+    "weight": 1
+  },
+  {
+    "id": 120,
+    "lat": 43.384825,
+    "lng": -80.410963,
+    "address": "99 Conestoga College Boulevard, Kitchener, Ontario, Canada",
+    "ts": 1543889328420,
+    "day": "03-12-2018",
+    "weight": 1
+  },
+  {
+    "id": 121,
+    "lat": 43.384914,
+    "lng": -80.410953,
+    "address": "99 Conestoga College Boulevard, Kitchener, Ontario, Canada",
+    "ts": 1543889268420,
+    "day": "03-12-2018",
+    "weight": 1
+  },
+  {
+    "id": 122,
+    "lat": 43.384996,
+    "lng": -80.410953,
+    "address": "99 Conestoga College Boulevard, Kitchener, Ontario, Canada",
+    "ts": 1543889208420,
+    "day": "03-12-2018",
+    "weight": 1
+  },
+  {
+    "id": 123,
+    "lat": 43.385074,
+    "lng": -80.410947,
+    "address": "99 Conestoga College Boulevard, Kitchener, Ontario, Canada",
+    "ts": 1543889148420,
+    "day": "03-12-2018",
+    "weight": 1
+  },
+  {
+    "id": 124,
+    "lat": 43.385047,
+    "lng": -80.41099,
+    "address": "99 Conestoga College Boulevard, Kitchener, Ontario, Canada",
+    "ts": 1543889088420,
+    "day": "03-12-2018",
+    "weight": 1
+  },
+  {
+    "id": 125,
+    "lat": 43.385063,
+    "lng": -80.411081,
+    "address": "99 Conestoga College Boulevard, Kitchener, Ontario, Canada",
+    "ts": 1543889028420,
+    "day": "03-12-2018",
+    "weight": 1
+  },
+  {
+    "id": 126,
+    "lat": 43.385067,
+    "lng": -80.41106,
+    "address": "99 Conestoga College Boulevard, Kitchener, Ontario, Canada",
+    "ts": 1543888968420,
+    "day": "03-12-2018",
+    "weight": 1
+  },
+  {
+    "id": 127,
+    "lat": 43.385039,
+    "lng": -80.411071,
+    "address": "99 Conestoga College Boulevard, Kitchener, Ontario, Canada",
+    "ts": 1543888908420,
+    "day": "03-12-2018",
+    "weight": 1
+  },
+  {
+    "id": 128,
+    "lat": 43.385059,
+    "lng": -80.411108,
+    "address": "99 Conestoga College Boulevard, Kitchener, Ontario, Canada",
+    "ts": 1543888848420,
+    "day": "03-12-2018",
+    "weight": 1
+  },
+  {
+    "id": 129,
+    "lat": 43.385137,
+    "lng": -80.411108,
+    "address": "99 Conestoga College Boulevard, Kitchener, Ontario, Canada",
+    "ts": 1543888788420,
+    "day": "03-12-2018",
+    "weight": 1
+  },
+  {
+    "id": 130,
+    "lat": 43.385226,
+    "lng": -80.411114,
+    "address": "99 Conestoga College Boulevard, Kitchener, Ontario, Canada",
+    "ts": 1543888728420,
+    "day": "03-12-2018",
+    "weight": 1
+  },
+  {
+    "id": 131,
+    "lat": 43.385293,
+    "lng": -80.411226,
+    "address": "99 Conestoga College Boulevard, Kitchener, Ontario, Canada",
+    "ts": 1543888668420,
+    "day": "03-12-2018",
+    "weight": 1
+  },
+  {
+    "id": 132,
+    "lat": 43.385312,
+    "lng": -80.411371,
+    "address": "99 Conestoga College Boulevard, Kitchener, Ontario, Canada",
+    "ts": 1543888608420,
+    "day": "03-12-2018",
+    "weight": 1
+  },
+  {
+    "id": 133,
+    "lat": 43.385304,
+    "lng": -80.411521,
+    "address": "99 Conestoga College Boulevard, Kitchener, Ontario, Canada",
+    "ts": 1543888548420,
+    "day": "03-12-2018",
+    "weight": 1
+  },
+  {
+    "id": 134,
+    "lat": 43.385304,
+    "lng": -80.411666,
+    "address": "99 Conestoga College Boulevard, Kitchener, Ontario, Canada",
+    "ts": 1543888488420,
+    "day": "03-12-2018",
+    "weight": 1
+  },
+  {
+    "id": 135,
+    "lat": 43.385246,
+    "lng": -80.411736,
+    "address": "99 Conestoga College Boulevard, Kitchener, Ontario, Canada",
+    "ts": 1543888428420,
+    "day": "03-12-2018",
+    "weight": 1
+  },
+  {
+    "id": 136,
+    "lat": 43.385148,
+    "lng": -80.411714,
+    "address": "99 Conestoga College Boulevard, Kitchener, Ontario, Canada",
+    "ts": 1543888368420,
+    "day": "03-12-2018",
+    "weight": 1
+  },
+  {
+    "id": 137,
+    "lat": 43.385152,
+    "lng": -80.411575,
+    "address": "99 Conestoga College Boulevard, Kitchener, Ontario, Canada",
+    "ts": 1543888308420,
+    "day": "03-12-2018",
+    "weight": 1
+  },
+  {
+    "id": 138,
+    "lat": 43.385152,
+    "lng": -80.411457,
+    "address": "99 Conestoga College Boulevard, Kitchener, Ontario, Canada",
+    "ts": 1543888248420,
+    "day": "03-12-2018",
+    "weight": 1
+  },
+  {
+    "id": 139,
+    "lat": 43.38516,
+    "lng": -80.411323,
+    "address": "99 Conestoga College Boulevard, Kitchener, Ontario, Canada",
+    "ts": 1543888188420,
+    "day": "03-12-2018",
+    "weight": 1
+  },
+  {
+    "id": 140,
+    "lat": 43.385113,
+    "lng": -80.411264,
+    "address": "99 Conestoga College Boulevard, Kitchener, Ontario, Canada",
+    "ts": 1543888128420,
+    "day": "03-12-2018",
+    "weight": 1
+  },
+  {
+    "id": 141,
+    "lat": 43.385024,
+    "lng": -80.411253,
+    "address": "99 Conestoga College Boulevard, Kitchener, Ontario, Canada",
+    "ts": 1543888068420,
+    "day": "03-12-2018",
+    "weight": 1
+  },
+  {
+    "id": 142,
+    "lat": 43.384911,
+    "lng": -80.411242,
+    "address": "99 Conestoga College Boulevard, Kitchener, Ontario, Canada",
+    "ts": 1543888008420,
+    "day": "03-12-2018",
+    "weight": 1
+  },
+  {
+    "id": 143,
+    "lat": 43.384848,
+    "lng": -80.411189,
+    "address": "99 Conestoga College Boulevard, Kitchener, Ontario, Canada",
+    "ts": 1543887948420,
+    "day": "03-12-2018",
+    "weight": 1
+  }
+]
