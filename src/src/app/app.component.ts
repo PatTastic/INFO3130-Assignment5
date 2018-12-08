@@ -1,6 +1,6 @@
 ﻿import { Component } from '@angular/core';
 
-import { DatabaseService } from './_data/database.service';
+import { ApiService } from './_services/api.service';
 import { UtilitiesService } from './_helpers/utilities.service';
 
 @Component({
@@ -11,7 +11,7 @@ import { UtilitiesService } from './_helpers/utilities.service';
 export class AppComponent {
   title = 'app';
 
-  constructor(private _db: DatabaseService) {
+  constructor(private _api: ApiService) {
     
   }
 
@@ -31,7 +31,7 @@ export class AppComponent {
       }
 
       for (let i = 0; notToday.length; i++) {
-        this._db.saveGeoPoint(notToday[i]);
+        this._api.saveGeoPoint(notToday[i]);
       }
 
       localStorage.setItem('new-points', JSON.stringify(geo));

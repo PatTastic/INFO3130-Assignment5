@@ -4,7 +4,7 @@ import * as moment from 'moment';
 declare var HeatmapOverlay;
 
 import { ConfigService } from '../../_helpers/config.service';
-import { DatabaseService } from '../../_data/database.service';
+import { ApiService } from '../../_services/api.service';
 import { UtilitiesService } from '../../_helpers/utilities.service';
 
 @Component({
@@ -34,7 +34,7 @@ export class TimelineComponent implements OnInit, OnDestroy {
     valueField: 'count'
   });
 
-  constructor(private _db: DatabaseService) {
+  constructor(private _api: ApiService) {
     this.liveTrackingLatest = null;
     this.liveTrackingInterval = -1;
     this.showCalendar = false;
@@ -46,13 +46,13 @@ export class TimelineComponent implements OnInit, OnDestroy {
     this.dateBackup = {};
 
     this.selectedDay = {
-      date: moment(new Date()).format('MMMM Do, YYYY'),
+      date: moment(new Date()).format(ConfigService.displayDateFormat),
       dateMsg: ''
     };
   }
 
   ngOnInit() {
-    this._db.getActiveDays().then((res) => {
+    this._api.getActiveDays().then((res) => {
       this.activeDays = UtilitiesService.deepCopy(res);
     })
   }
@@ -76,7 +76,7 @@ export class TimelineComponent implements OnInit, OnDestroy {
     }
 
     if (isActiveDay) {
-      this.selectedDay.date = moment(new Date(date)).format('MMMM Do, YYYY');
+      this.selectedDay.date = moment(new Date(date)).format(ConfigService.displayDateFormat);
       this.selectedDay.dateMsg = '';
       this.toggleCalendar({ target: { nodeName: 'svg' } });
       this.loadDay(formattedDate);
@@ -115,7 +115,7 @@ export class TimelineComponent implements OnInit, OnDestroy {
   }
 
   loadDay(day: string) {
-    this._db.getDay(day).then((res) => {
+    this._api.getDay(day).then((res) => {
       this.dataPoints = UtilitiesService.deepCopy(res);
       let onlyHeatMapData = [];
 

@@ -39,7 +39,7 @@ export class DatabaseService {
     });
   }
 
-  private getTestData() {
+  getTestData() {
     return this._http.get('assets/data/points.json').toPromise();
   }
 
@@ -48,17 +48,6 @@ export class DatabaseService {
       try {
         this.db.transaction((sqlTransactionSync) => {
           let res: any = sqlTransactionSync.executeSql('SELECT DISTINCT day FROM geoPoint', []);
-
-          if (!UtilitiesService.doesExist(res)) {
-            res = [];
-          }
-
-          for (let i = 0; i < res.length; i++) {
-            res[i] = UtilitiesService.convertDateToUniformDate(res[i]);
-          }
-          res.push('03-12-2018');
-          res.push(UtilitiesService.convertDateToUniformDate(new Date().toString()));
-
           resolve(res);
         }, (msg) => {
           console.log('SQL: getActiveDays', msg);
@@ -73,23 +62,10 @@ export class DatabaseService {
   getDay(date: string) {
     return new Promise((resolve, reject) => {
       try {
-        let res: any = [];
-
-        if (date == '03-12-2018') {
-          res = this.getTestData();
+        this.db.transaction((sqlTransactionSync) => {
+          let res: any = sqlTransactionSync.executeSql('SELECT * FROM geoPoint WHERE day = ?', [date]);
           resolve(res);
-        }
-        else {
-          this.db.transaction((sqlTransactionSync) => {
-            res = sqlTransactionSync.executeSql('SELECT * FROM geoPoint WHERE day = ?', [date]);
-
-            if (!UtilitiesService.doesExist(res)) {
-              res = [];
-            }
-
-            resolve(res);
-          })
-        }
+        })
       }
       catch (err) {
         reject(false);

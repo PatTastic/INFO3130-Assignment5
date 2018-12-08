@@ -1,6 +1,8 @@
 ﻿import { Injectable } from '@angular/core';
 import * as moment from 'moment';
 
+import { ConfigService } from './config.service';
+
 @Injectable()
 export class UtilitiesService {
   static deepCopy(elem: any) {
@@ -12,6 +14,6 @@ export class UtilitiesService {
   }
 
   static convertDateToUniformDate(date: string) {
-    return moment(new Date(date)).format('DD-MM-YYYY');
+    return moment(new Date(date)).format(ConfigService.internalDateFormat);
   }
 }
