@@ -52,8 +52,14 @@ export class DatabaseService {
     return new Promise((resolve, reject) => {
       try {
         this.db.transaction((sqlTransactionSync) => {
-          let res: any = sqlTransactionSync.executeSql('SELECT DISTINCT day FROM geoPoint', []);
-          resolve(res);
+          let res: any = sqlTransactionSync.executeSql('SELECT DISTINCT day FROM geoPoint', [], (sync, res) => {
+            if (UtilitiesService.doesExist(res)) {
+              resolve(res);
+            }
+            else {
+              reject(false);
+            }
+          });
         }, (msg) => {
           console.log('SQL: getActiveDays', msg);
         });
@@ -68,8 +74,14 @@ export class DatabaseService {
     return new Promise((resolve, reject) => {
       try {
         this.db.transaction((sqlTransactionSync) => {
-          let res: any = sqlTransactionSync.executeSql('SELECT * FROM geoPoint WHERE day = ?', [date]);
-          resolve(res);
+          let res: any = sqlTransactionSync.executeSql('SELECT * FROM geoPoint WHERE day = ?', [date], (sync, res) => {
+            if (UtilitiesService.doesExist(res)) {
+              resolve(res);
+            }
+            else {
+              reject(false);
+            }
+          });
         }, (msg) => {
           console.log('SQL: getDay', msg);
         })
@@ -86,10 +98,16 @@ export class DatabaseService {
         this.db.transaction((sqlTransactionSync) => {
           let res: any = sqlTransactionSync.executeSql(
             'SELECT * FROM geoPoint WHERE ts >= ? AND ts <= ?',
-            [from, to]
+            [from, to],
+            (sync, res) => {
+              if (UtilitiesService.doesExist(res)) {
+                resolve(res);
+              }
+              else {
+                reject(false);
+              }
+            }
           );
-
-          resolve(res);
         }, (msg) => {
           console.log('SQL: getDaysInRange', msg);
         })
@@ -166,8 +184,14 @@ export class DatabaseService {
     return new Promise((resolve, reject) => {
       try {
         this.db.transaction((sqlTransactionSync) => {
-          let res: any = sqlTransactionSync.executeSql('SELECT * FROM analytics WHERE type = ?', [type]);
-          resolve(res);
+          let res: any = sqlTransactionSync.executeSql('SELECT * FROM analytics WHERE type = ?', [type], (sync, res) => {
+            if (UtilitiesService.doesExist(res)) {
+              resolve(res);
+            }
+            else {
+              reject(false);
+            }
+          });
         }, (msg) => {
           console.log('SQL: getAnalyticType', msg);
         })

@@ -19,9 +19,7 @@ export class ApiService {
   getActiveDays() {
     return new Promise((resolve, reject) => {
       this._database.getActiveDays().then((res: any) => {
-        if (!UtilitiesService.doesExist(res)) {
-          res = [];
-        }
+        res = this.formatSelectArray(res);
 
         for (let i = 0; i < res.length; i++) {
           res[i] = UtilitiesService.convertDateToUniformDate(res[i]);
@@ -40,6 +38,7 @@ export class ApiService {
     return new Promise((resolve, reject) => {
       if (date == '03-12-2018') {
         this._database.getTestData().then((res: any) => {
+          res = this.formatSelectArray(res);
           resolve(res);
         }).catch((err) => {
           reject(err);
@@ -47,10 +46,7 @@ export class ApiService {
       }
       else {
         this._database.getDay(date).then((res: any) => {
-          if (!UtilitiesService.doesExist(res)) {
-            res = [];
-          }
-
+          res = this.formatSelectArray(res);
           resolve(res);
         }).catch((err) => {
           reject(err);
@@ -64,7 +60,8 @@ export class ApiService {
       let fromTs = Date.parse(new Date(from).toDateString());
       let toTs = Date.parse(new Date(to).toDateString());
 
-      this._database.getDaysInRange(from, to).then((res) => {
+      this._database.getDaysInRange(from, to).then((res: any) => {
+        res = this.formatSelectArray(res);
         resolve(res);
       }).catch((err) => {
         reject(err);
@@ -105,8 +102,10 @@ export class ApiService {
   addToAnalytics(analytics: any) {
     return new Promise((resolve, reject) => {
       this._database.getAnalyticType(analytics.type).then((res: any) => {
-        if (UtilitiesService.doesExist(res) && res.length > 0) {
-          analytics = res[0].count + 1;
+        res = this.formatSelectArray(res);
+
+        if (res.length > 0) {
+          analytics.count = res[0].count + 1;
           this._database.updateAnalyticType(analytics).then((res) => {
             resolve(res);
           }).catch((err) => {
@@ -130,8 +129,8 @@ export class ApiService {
 
   getNearbyAreas(place: any) {
     return new Promise((resolve, reject) => {
-      this._data.getNearbyAreas(place).then((res) => {
-        console.log(res);
+      this._data.getNearbyAreas(place).then((res: any) => {
+        res = this.formatSelectArray(res);
         resolve(res);
       }).catch((err) => {
         console.error(err);
@@ -142,12 +141,32 @@ export class ApiService {
 
   getGeocodingFromCoords(point: any) {
     return new Promise((resolve, reject) => {
-      this._data.getGeocoding(point.lat, point.lng).then((res) => {
-        console.log(res);
+      this._data.getGeocoding(point.lat, point.lng).then((res: any) => {
+        res = this.formatSelectArray(res);
         resolve(res);
       }).catch((err) => {
         reject(err);
       })
     })
+  }
+
+  private formatSelectArray(res: any) {
+    if (res === false) {
+      res = [];
+    }
+    else if (UtilitiesService.doesExist(res.rows)) {
+      if (res.rows.length == 0) {
+        res = [];
+      }
+      else {
+        res = res.rows;
+        let resRef = UtilitiesService.deepCopy(res);
+        res = Object.keys(resRef).map((key) => {
+          return resRef[key];
+        });
+      }
+    }
+
+    return res;
   }
 }
