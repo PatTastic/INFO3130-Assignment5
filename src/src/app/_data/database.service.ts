@@ -31,7 +31,10 @@ export class DatabaseService {
         'id INTEGER PRIMARY KEY UNIQUE, ' +
         'type TEXT NOT NULL, ' +
         'averageCost REAL, ' +
-        'averageRating REAL)',
+        'averageRating REAL, ' +
+        'numberOfCosts INTEGER, ' +
+        'numberOfRatings INTEGER, ' +
+        'count INTEGER)',
         []
       );
     }, (msg) => {
@@ -42,6 +45,8 @@ export class DatabaseService {
   getTestData() {
     return this._http.get('assets/data/points.json').toPromise();
   }
+
+  ////////// geoPoint //////////
 
   getActiveDays() {
     return new Promise((resolve, reject) => {
@@ -65,10 +70,32 @@ export class DatabaseService {
         this.db.transaction((sqlTransactionSync) => {
           let res: any = sqlTransactionSync.executeSql('SELECT * FROM geoPoint WHERE day = ?', [date]);
           resolve(res);
+        }, (msg) => {
+          console.log('SQL: getDay', msg);
         })
       }
       catch (err) {
         reject(false);
+      }
+    })
+  }
+
+  getDaysInRange(from: string, to: string) {
+    return new Promise((resolve, reject) => {
+      try {
+        this.db.transaction((sqlTransactionSync) => {
+          let res: any = sqlTransactionSync.executeSql(
+            'SELECT * FROM geoPoint WHERE ts >= ? AND ts <= ?',
+            [from, to]
+          );
+
+          resolve(res);
+        }, (msg) => {
+          console.log('SQL: getDaysInRange', msg);
+        })
+      }
+      catch (err) {
+        reject(err);
       }
     })
   }
@@ -83,6 +110,8 @@ export class DatabaseService {
           );
 
           resolve(true);
+        }, (msg) => {
+          console.log('SQL: saveGeoPoint', msg);
         })
       }
       catch (err) {
@@ -101,6 +130,8 @@ export class DatabaseService {
           );
 
           resolve(true);
+        }, (msg) => {
+          console.log('SQL: updateGeoPointWeight', msg);
         })
       }
       catch (err) {
@@ -117,12 +148,76 @@ export class DatabaseService {
             'UPDATE geoPoint SET address = ? WHERE id = ?',
             [point.address, point.id]
           );
+        }, (msg) => {
+          console.log('SQL: updateGeoPointAddress', msg);
         })
 
         resolve(true);
       }
       catch (err) {
         reject(false);
+      }
+    })
+  }
+
+  ////////// analytics //////////
+
+  getAnalyticType(type: string) {
+    return new Promise((resolve, reject) => {
+      try {
+        this.db.transaction((sqlTransactionSync) => {
+          let res: any = sqlTransactionSync.executeSql('SELECT * FROM analytics WHERE type = ?', [type]);
+          resolve(res);
+        }, (msg) => {
+          console.log('SQL: getAnalyticType', msg);
+        })
+      }
+      catch (err) {
+        reject(err);
+      }
+    })
+  }
+
+  insertAnalytics(analytics: any) {
+    return new Promise((resolve, reject) => {
+      try {
+        this.db.transaction((sqlTransactionSync) => {
+          sqlTransactionSync.executeSql(
+            'INSERT INTO analytics(type, averageCost, averageRating, numberOfCosts, numberOfRatings, count) VALUES' +
+            '(?, ?, ?, ?, ?, ?)',
+            [analytics.type, analytics.averageCost, analytics.averageRating,
+            analytics.numberOfCosts, analytics.numberOfRatings, 1]
+          );
+
+          resolve(true);
+        }, (msg) => {
+          console.log('SQL: insertAnalytics', msg);
+        })
+      }
+      catch (err) {
+        reject(err);
+      }
+    })
+  }
+
+  updateAnalyticType(analytics: any) {
+    return new Promise((resolve, reject) => {
+      try {
+        this.db.transaction((sqlTransactionSync) => {
+          sqlTransactionSync.executeSql(
+            'UPDATE analytics SET averageCost = ?, averageRating = ?, numberOfCosts = ?, ' +
+            'numberOfRatings = ?, count = ? WHERE type = ?',
+            [analytics.averageCost, analytics.averageRating, analytics.numberOfCosts,
+            analytics.numberOfRatings, analytics.count, analytics.type]
+          );
+
+          resolve(true);
+        }, (msg) => {
+          console.log('SQL: updateAnalyticType', msg);
+        })
+      }
+      catch (err) {
+        reject(err);
       }
     })
   }
