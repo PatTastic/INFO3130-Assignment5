@@ -1,3 +1,16 @@
-<p>
-  suggestions works!
-</p>
+﻿<section id="app-suggestions">
+  <h1>Places Of Interest</h1>
+  <div class="line-break">
+    <h2>Based off your frequesnt locations </h2>
+    <h2>from {{suggestionTimeframe.from}} to {{suggestionTimeframe.to}}.</h2>
+  </div>
+  <div *ngFor="let s of suggestions">
+    <div class="suggestion">
+      <img src="{{img}}" />
+      <p class="suggestion-name">Name</p>
+      <p class="suggestion-price">Price Level: {{priceLevel}}</p>
+      <p class="suggestion-rating">Rating: {{rating}}</p>
+      <p class="suggestion-types">Types: {{types}}</p>
+    </div>
+  </div>
+</section>
