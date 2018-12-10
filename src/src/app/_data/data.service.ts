@@ -11,8 +11,15 @@ export class DataService {
   getNearbyAreas(place: any) {
     return this._http.get('https://maps.googleapis.com/maps/api/place/nearbysearch/json'
       + '?location=' + place.lat.toString() + ',' + place.lng.toString()
-      + '&rankby=rating'
+      + '&rankby=prominence'
       + '&type=' + place.type
+      + '&key=' + ConfigService.googleMapsKey
+    ).toPromise();
+  }
+
+  getGeocoding(lat: number, lng: number) {
+    return this._http.get('https://maps.googleapis.com/maps/api/geocode/json'
+      + '?latlng=' + lat.toString() + ',' + lng.toString()
       + '&key=' + ConfigService.googleMapsKey
     ).toPromise();
   }

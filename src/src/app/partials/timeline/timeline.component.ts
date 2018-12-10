@@ -17,12 +17,14 @@ export class TimelineComponent implements OnInit, OnDestroy {
   private dateBackup: any;
   private liveTrackingInterval: any;
   private liveTrackingLatest: any;
+  private lastUpdateTimeout: any;
 
-  options: any;
+  map: any;
   selectedDay: any;
   showCalendar: boolean;
   dataPoints: any[];
   isLiveTracking: boolean;
+  lastUpdate: any;
 
   heatmapLayer = new HeatmapOverlay({
     radius: 20,
@@ -35,20 +37,36 @@ export class TimelineComponent implements OnInit, OnDestroy {
   });
 
   constructor(private _api: ApiService) {
+    this.lastUpdateTimeout = -1;
     this.liveTrackingLatest = null;
     this.liveTrackingInterval = -1;
     this.showCalendar = false;
-    this.options = ConfigService.getDefaultMapOptions();
-    this.options.layers.push(this.heatmapLayer);
-    this.options.loaded = true;
     this.dataPoints = [];
     this.isLiveTracking = false;
     this.dateBackup = {};
 
+    this.map = {
+      options: ConfigService.getDefaultMapOptions(),
+      center: ConfigService.getDefaultMapCenter(),
+      fitBounds: null,
+      zoom: ConfigService.getDefaultMapZoom()
+    };
+    this.map.options.layers.push(this.heatmapLayer);
+    this.map.options.loaded = true;
+
     this.selectedDay = {
-      date: moment(new Date()).format(ConfigService.displayDateFormat),
+      date: moment(new Date()).subtract(1, 'days').format(ConfigService.displayDateFormat),
       dateMsg: ''
     };
+    this.lastUpdate = {
+      opacity: 0,
+      numberOfPoints: 0,
+      plural: ''
+    };
+
+    ConfigService.getUserLatLng().then((res: any) => {
+      this.map.center = res;
+    });
   }
 
   ngOnInit() {
@@ -61,6 +79,10 @@ export class TimelineComponent implements OnInit, OnDestroy {
     if (this.liveTrackingInterval != -1) {
       clearInterval(this.liveTrackingInterval);
       this.liveTrackingInterval = -1;
+    }
+    if (this.lastUpdateTimeout != -1) {
+      clearTimeout(this.lastUpdateTimeout);
+      this.lastUpdateTimeout = -1;
     }
   }
   
@@ -115,24 +137,33 @@ export class TimelineComponent implements OnInit, OnDestroy {
   }
 
   loadDay(day: string) {
-    this._api.getDay(day).then((res) => {
-      this.dataPoints = UtilitiesService.deepCopy(res);
-      let onlyHeatMapData = [];
+    this.map.fitBounds = null;
+    let today = moment(new Date()).format(ConfigService.internalDateFormat);
 
-      for (let i = 0; i < this.dataPoints.length; i++) {
-        onlyHeatMapData.push({
-          lat: this.dataPoints[i].lat,
-          lng: this.dataPoints[i].lng,
-          count: 0.1
-        });
-      }
+    if (day == today) {
+      this.enterLiveTracking();
+    }
+    else {
+      this._api.getDay(day).then((res) => {
+        this.dataPoints = UtilitiesService.deepCopy(res);
+        let onlyHeatMapData = [];
 
-      this.heatmapLayer.setData({ data: onlyHeatMapData });
-      console.log(this.dataPoints);
-    })
+        for (let i = 0; i < this.dataPoints.length; i++) {
+          onlyHeatMapData.push({
+            lat: this.dataPoints[i].lat,
+            lng: this.dataPoints[i].lng,
+            count: 0.1
+          });
+        }
+
+        this.map.fitBounds = onlyHeatMapData;
+        this.heatmapLayer.setData({ data: onlyHeatMapData });
+      })
+    }
   }
 
   enterLiveTracking() {
+    this.map.fitBounds = null;
     this.isLiveTracking = true;
 
     let todaysData: any = localStorage.getItem('new-points');
@@ -152,17 +183,35 @@ export class TimelineComponent implements OnInit, OnDestroy {
       dataPoints: UtilitiesService.deepCopy(this.dataPoints)
     };
 
-    this.liveTrackingInterval = setInterval(() => { this.checkLiveTracking() }, 5000);
+    ConfigService.getUserLatLng().then((res: any) => {
+      this.map.zoom = 18;
+      this.map.center = res;
+    });
+
+    this.liveTrackingInterval = setInterval(() => { this.checkLiveTracking() }, 20000);
   }
 
   exitLiveTracking() {
+    this.map.zoom = ConfigService.getDefaultMapZoom();
+    this.map.fitBounds = null;
     this.isLiveTracking = false;
 
     this.selectedDay = UtilitiesService.deepCopy(this.dateBackup.selectedDay);
     this.dataPoints = UtilitiesService.deepCopy(this.dateBackup.dataPoints);
 
     if (this.dataPoints.length > 0) {
+      this.map.fitBounds = this.dataPoints;
       this.heatmapLayer.setData({ data: this.dataPoints });
+    }
+
+    if (this.lastUpdateTimeout != -1) {
+      clearTimeout(this.lastUpdateTimeout);
+      this.lastUpdateTimeout = -1;
+      this.lastUpdate = {
+        opacity: 0,
+        numberOfPoints: 0,
+        plural: ''
+      };
     }
 
     this.dateBackup = {};
@@ -171,30 +220,46 @@ export class TimelineComponent implements OnInit, OnDestroy {
   }
 
   checkLiveTracking() {
-    let todaysData: any = localStorage.getItem('new-points');
-    let newData = [];
+    if (this.liveTrackingInterval != -1) {
+      let todaysData: any = localStorage.getItem('new-points');
+      let newData = [];
 
-    if (UtilitiesService.doesExist(todaysData)) {
-      todaysData = JSON.parse(todaysData);
+      if (UtilitiesService.doesExist(todaysData)) {
+        todaysData = JSON.parse(todaysData);
 
-      if (todaysData !== null) {
-        for (let i = 0; i < todaysData.length; i++) {
-          if (todaysData[i].ts == this.liveTrackingLatest.ts) {
-            if (i != (todaysData.length - 1)) {
-              newData = todaysData.splice(0, i);
-              break;
+        if (todaysData !== null && todaysData.length > 0) {
+          for (let i = 0; i < todaysData.length; i++) {
+            if (todaysData[i].ts == this.liveTrackingLatest.ts) {
+              if (i != (todaysData.length - 1)) {
+                newData = todaysData.splice(0, i);
+                break;
+              }
             }
           }
+
+          this.liveTrackingLatest = UtilitiesService.deepCopy(todaysData[todaysData.length - 1]);
+
+          if (newData.length > 0) {
+            this.heatmapLayer.addData({ data: newData });
+            this.map.center = {
+              lat: newData[newData.length - 1].lat,
+              lng: newData[newData.length - 1].lng
+            };
+
+            this.lastUpdate = {
+              opacity: 1,
+              numberOfPoints: newData.length,
+              plural: (newData.length == 1 ? '' : 's')
+            };
+            setTimeout(() => {
+              this.lastUpdate = {
+                opacity: 0,
+                numberOfPoints: 0,
+                plural: ''
+              };
+            }, 2000);
+          }
         }
-      }
-      else {
-        newData = UtilitiesService.deepCopy(todaysData);
-      }
-
-      this.liveTrackingLatest = UtilitiesService.deepCopy(todaysData[todaysData.length - 1]);
-
-      if (newData.length > 0) {
-        this.heatmapLayer.addData({ data: newData });
       }
     }
   }
