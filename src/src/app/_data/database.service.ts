@@ -43,6 +43,11 @@ export class DatabaseService {
   }
 
   getTestData() {
+    // generate: https://address.patwilken.me/
+    // format: https://jsfiddle.net/PatTastic/75w81ax2/embedded/result
+    // change date: https://text.patwilken.me/
+    // beautify: https://codebeautify.org/jsonviewer
+
     return this._http.get('assets/data/points.json').toPromise();
   }
 

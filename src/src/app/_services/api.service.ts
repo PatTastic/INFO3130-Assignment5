@@ -16,15 +16,25 @@ export class ApiService {
 
   ////////// Local Database //////////
 
+  getTestData() {
+    return new Promise((resolve, reject) => {
+      this._database.getTestData().then((res: any) => {
+        res = this.formatSelectArray(res);
+        resolve(res);
+      }).catch((err) => {
+        reject(err);
+      })
+    })
+  }
+
   getActiveDays() {
     return new Promise((resolve, reject) => {
       this._database.getActiveDays().then((res: any) => {
         res = this.formatSelectArray(res);
 
         for (let i = 0; i < res.length; i++) {
-          res[i] = UtilitiesService.convertDateToUniformDate(res[i]);
+          res[i] = res[i].day;
         }
-        res.push('03-12-2018');
         res.push(UtilitiesService.convertDateToUniformDate(new Date().toString()));
 
         resolve(res);
@@ -36,22 +46,12 @@ export class ApiService {
 
   getDay(date: string) {
     return new Promise((resolve, reject) => {
-      if (date == '03-12-2018') {
-        this._database.getTestData().then((res: any) => {
-          res = this.formatSelectArray(res);
-          resolve(res);
-        }).catch((err) => {
-          reject(err);
-        })
-      }
-      else {
-        this._database.getDay(date).then((res: any) => {
-          res = this.formatSelectArray(res);
-          resolve(res);
-        }).catch((err) => {
-          reject(err);
-        })
-      }
+      this._database.getDay(date).then((res: any) => {
+        res = this.formatSelectArray(res);
+        resolve(res);
+      }).catch((err) => {
+        reject(err);
+      })
     })
   }
 

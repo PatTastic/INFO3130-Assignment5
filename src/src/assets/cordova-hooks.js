@@ -8,3 +8,7 @@ function onDeviceResume() {
 
 document.addEventListener('deviceready', onDeviceReady, false);
 document.addEventListener('resume', onDeviceResume, false);
+
+function demoData() {
+  document.getElementById('demo-data').click();
+}

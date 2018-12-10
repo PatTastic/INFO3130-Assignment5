@@ -88,4 +88,35 @@ export class AppComponent {
       localStorage.setItem('new-points', JSON.stringify(geo));
     }
   }
+
+  demoData() {
+    let haveTestData: any = localStorage.getItem('got-test-data');
+
+    if (UtilitiesService.doesExist(haveTestData)) {
+      console.log('Looks like you\'ve already loaded in the demo data!');
+      console.log('Demo data ranges from December 3rd to December 7th, 2018.');
+    }
+    else {
+      console.log('Loading demo data...');
+
+      this._api.getTestData().then((res: any) => {
+        if (res !== false) {
+          localStorage.setItem('new-points', JSON.stringify(res));
+          localStorage.setItem('got-test-data', 'true');
+          this.loadNewGeo();
+
+          console.log('Demo data loaded.');
+          console.log('Only data points have been loaded, all suggestions/stats/analytics are generated dynamically.');
+          console.log('Demo data ranges from December 3rd to December 7th, 2018.');
+        }
+        else {
+          console.log('Demo data could not be loaded');
+          console.log('Error: ', res);
+        }
+      }).catch((err) => {
+        console.log('Demo data could not be loaded');
+        console.log('Error: ', err);
+      })
+    }
+  }
 }
