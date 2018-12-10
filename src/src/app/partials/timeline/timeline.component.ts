@@ -19,7 +19,7 @@ export class TimelineComponent implements OnInit, OnDestroy {
   private liveTrackingLatest: any;
   private lastUpdateTimeout: any;
 
-  options: any;
+  map: any;
   selectedDay: any;
   showCalendar: boolean;
   dataPoints: any[];
@@ -41,13 +41,19 @@ export class TimelineComponent implements OnInit, OnDestroy {
     this.liveTrackingLatest = null;
     this.liveTrackingInterval = -1;
     this.showCalendar = false;
-    this.options = ConfigService.getDefaultMapOptions();
-    this.options.layers.push(this.heatmapLayer);
-    this.options.loaded = true;
     this.dataPoints = [];
     this.isLiveTracking = false;
     this.dateBackup = {};
-    
+
+    this.map = {
+      options: ConfigService.getDefaultMapOptions(),
+      center: ConfigService.getDefaultMapCenter(),
+      fitBounds: null,
+      zoom: ConfigService.getDefaultMapZoom()
+    };
+    this.map.options.layers.push(this.heatmapLayer);
+    this.map.options.loaded = true;
+
     this.selectedDay = {
       date: moment(new Date()).subtract(1, 'days').format(ConfigService.displayDateFormat),
       dateMsg: ''
@@ -57,6 +63,10 @@ export class TimelineComponent implements OnInit, OnDestroy {
       numberOfPoints: 0,
       plural: ''
     };
+
+    ConfigService.getUserLatLng().then((res: any) => {
+      this.map.center = res;
+    });
   }
 
   ngOnInit() {
@@ -127,8 +137,8 @@ export class TimelineComponent implements OnInit, OnDestroy {
   }
 
   loadDay(day: string) {
+    this.map.fitBounds = null;
     let today = moment(new Date()).format(ConfigService.internalDateFormat);
-    console.log(day);
 
     if (day == today) {
       this.enterLiveTracking();
@@ -146,13 +156,14 @@ export class TimelineComponent implements OnInit, OnDestroy {
           });
         }
 
+        this.map.fitBounds = onlyHeatMapData;
         this.heatmapLayer.setData({ data: onlyHeatMapData });
-        console.log(this.dataPoints);
       })
     }
   }
 
   enterLiveTracking() {
+    this.map.fitBounds = null;
     this.isLiveTracking = true;
 
     let todaysData: any = localStorage.getItem('new-points');
@@ -172,16 +183,24 @@ export class TimelineComponent implements OnInit, OnDestroy {
       dataPoints: UtilitiesService.deepCopy(this.dataPoints)
     };
 
+    ConfigService.getUserLatLng().then((res: any) => {
+      this.map.zoom = 18;
+      this.map.center = res;
+    });
+
     this.liveTrackingInterval = setInterval(() => { this.checkLiveTracking() }, 20000);
   }
 
   exitLiveTracking() {
+    this.map.zoom = ConfigService.getDefaultMapZoom();
+    this.map.fitBounds = null;
     this.isLiveTracking = false;
 
     this.selectedDay = UtilitiesService.deepCopy(this.dateBackup.selectedDay);
     this.dataPoints = UtilitiesService.deepCopy(this.dateBackup.dataPoints);
 
     if (this.dataPoints.length > 0) {
+      this.map.fitBounds = this.dataPoints;
       this.heatmapLayer.setData({ data: this.dataPoints });
     }
 
@@ -222,6 +241,10 @@ export class TimelineComponent implements OnInit, OnDestroy {
 
           if (newData.length > 0) {
             this.heatmapLayer.addData({ data: newData });
+            this.map.center = {
+              lat: newData[newData.length - 1].lat,
+              lng: newData[newData.length - 1].lng
+            };
 
             this.lastUpdate = {
               opacity: 1,

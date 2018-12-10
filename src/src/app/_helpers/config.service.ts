@@ -8,15 +8,47 @@ export class ConfigService {
 
   static googleMapsKey: string = 'AIzaSyCBL6M0aBHumoG2ZDWAvkXN9iJFMJMrxaA';
 
+  static getDefaultMapCenter() {
+    return L.latLng(43.390757, -80.403047);
+  }
+
+  static getDefaultMapZoom() {
+    return 16;
+  }
+
   static getDefaultMapOptions() {
     return {
       loaded: false,
       layers: [
         L.tileLayer('http://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png', { maxZoom: 18 })
       ],
-      zoom: 16,
-      center: L.latLng(43.390757, -80.403047)
+      zoom: this.getDefaultMapZoom(),
+      center: this.getDefaultMapCenter()
     };
+  }
+
+  static getUserLatLng() {
+    return new Promise((resolve, reject) => {
+      let onSuccess = ((position) => {
+        let loc = L.latLng(
+          position.coords.latitude,
+          position.coords.longitude
+        );
+
+        resolve(loc);
+      });
+      
+      let onError = ((error) => {
+        let loc = {
+          lat: 43.390757,
+          lng: -80.403047
+        };
+
+        reject(this.getDefaultMapCenter());
+      });
+
+      navigator.geolocation.getCurrentPosition(onSuccess, onError);
+    })
   }
 
   static getWhitelistedPlaceTypes() {

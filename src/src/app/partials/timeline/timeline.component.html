@@ -11,9 +11,12 @@
     <fa-icon [icon]="['fas', 'chevron-left']" (click)="exitLiveTracking()" class="back-icon"></fa-icon>
     <h2>Live Tracking</h2>
   </div>
-  <div *ngIf="options.loaded"
+  <div *ngIf="map.options.loaded"
        leaflet
-       [leafletOptions]="options"
+       [leafletOptions]="map.options"
+       [leafletFitBounds]="map.fitBounds"
+       [(leafletZoom)]="map.zoom"
+       [(leafletCenter)]="map.center"
        (leafletMapReady)="onMapReady($event)">
   </div>
   <p id="last-update" [ngStyle]="{'opacity': lastUpdate.opacity}">Updated with {{lastUpdate.numberOfPoints}} new point{{lastUpdate.plural}}.</p>
