@@ -1,16 +1,20 @@
 ﻿<section id="app-suggestions">
   <h1>Places Of Interest</h1>
-  <div class="line-break">
-    <h2>Based off your frequesnt locations </h2>
-    <h2>from {{suggestionTimeframe.from}} to {{suggestionTimeframe.to}}.</h2>
+  <h2>Based on your frequesnt locations.</h2>
+  <div id="no-data" *ngIf="noData">
+    <h3>No Suggestions Yet!</h3>
+    <p>Suggestions will appear once there is enough data to analyize.</p>
+    <p>For now, keep doing what you're doing! The cool stuff will come later.</p>
   </div>
   <div *ngFor="let s of suggestions">
     <div class="suggestion">
-      <img src="{{img}}" />
-      <p class="suggestion-name">Name</p>
-      <p class="suggestion-price">Price Level: {{priceLevel}}</p>
-      <p class="suggestion-rating">Rating: {{rating}}</p>
-      <p class="suggestion-types">Types: {{types}}</p>
+      <div class="suggestion-image" [ngStyle]="{'background-image': 'url(' + s.photo + ')'}"></div>
+      <div class="suggestion-info">
+        <p class="suggestion-name">{{s.name}}</p>
+        <p class="suggestion-distance">Distance: {{(s.distance / 1000).toFixed(2)}}km</p>
+        <p class="suggestion-rating">Rating: {{s.rating}}/5</p>
+        <p class="suggestion-types">Types: {{s.typesString}}</p>
+      </div>
     </div>
   </div>
 </section>

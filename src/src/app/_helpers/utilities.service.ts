@@ -97,4 +97,43 @@ export class UtilitiesService {
 
     return type;
   }
+
+  static filterOnlyWhitelistedPlaceTypes(types: any[]) {
+    let whitelist = ConfigService.getWhitelistedPlaceTypes();
+
+    for (let i = (types.length - 1); i >= 0; i--) {
+      let found = false;
+      for (let j = 0; j < whitelist.length; j++) {
+        if (types[i] == whitelist[j]) {
+          found = true;
+        }
+      }
+
+      if (!found) {
+        types.splice(i, 1);
+      }
+    }
+
+    return types;
+  }
+
+  static buildGooglePhotoUrl(photoRef: string, maxWidth: number = 300) {
+    let url = 'https://maps.googleapis.com/maps/api/place/photo'
+      + '?maxwidth=' + maxWidth.toString()
+      + '&photoreference=' + photoRef
+      + '&sensor=false'
+      + '&key=' + ConfigService.googleMapsKey;
+
+    return url;
+  }
+
+  static toTitleCase(word: string) {
+    word = word.replace(/_/g, ' ');
+    return word.replace(
+      /\w\S*/g,
+      function (txt) {
+        return txt.charAt(0).toUpperCase() + txt.substr(1).toLowerCase();
+      }
+    );
+  }
 }

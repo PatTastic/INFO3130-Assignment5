@@ -57,10 +57,10 @@ export class ApiService {
 
   getDaysInRange(from: string, to: string) {
     return new Promise((resolve, reject) => {
-      let fromTs = Date.parse(new Date(from).toDateString());
-      let toTs = Date.parse(new Date(to).toDateString());
+      let fromTs = (Date.parse(new Date(from).toDateString())).toString();
+      let toTs = (Date.parse(new Date(to).toDateString())).toString();
 
-      this._database.getDaysInRange(from, to).then((res: any) => {
+      this._database.getDaysInRange(fromTs, toTs).then((res: any) => {
         res = this.formatSelectArray(res);
         resolve(res);
       }).catch((err) => {
@@ -92,6 +92,28 @@ export class ApiService {
   updateGeoPointAddress(point: any) {
     return new Promise((resolve, reject) => {
       this._database.updateGeoPointAddress(point).then((res) => {
+        resolve(res);
+      }).catch((err) => {
+        reject(err);
+      })
+    })
+  }
+
+  getAllAnalytics() {
+    return new Promise((resolve, reject) => {
+      this._database.getAllAnalytics().then((res: any) => {
+        res = this.formatSelectArray(res);
+        resolve(res);
+      }).catch((err) => {
+        reject(err);
+      })
+    })
+  }
+
+  getAnalyticType(type: string) {
+    return new Promise((resolve, reject) => {
+      this._database.getAnalyticType(type).then((res: any) => {
+        res = this.formatSelectArray(res);
         resolve(res);
       }).catch((err) => {
         reject(err);
@@ -131,6 +153,7 @@ export class ApiService {
     return new Promise((resolve, reject) => {
       this._data.getNearbyAreas(place).then((res: any) => {
         res = this.formatSelectArray(res);
+        res = res.results;
         resolve(res);
       }).catch((err) => {
         console.error(err);
@@ -149,6 +172,8 @@ export class ApiService {
       })
     })
   }
+
+  ////////// Helper Functions //////////
 
   private formatSelectArray(res: any) {
     if (res === false) {
