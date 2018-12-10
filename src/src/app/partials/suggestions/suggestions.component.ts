@@ -1,7 +1,9 @@
 ﻿import { Component, OnInit } from '@angular/core';
 import * as moment from 'moment';
+import * as haversine from 'haversine-distance';
 
 import { ConfigService } from '../../_helpers/config.service';
+import { UtilitiesService } from '../../_helpers/utilities.service';
 import { ApiService } from '../../_services/api.service';
 
 @Component({
@@ -10,19 +12,117 @@ import { ApiService } from '../../_services/api.service';
   styleUrls: ['./suggestions.component.css']
 })
 export class SuggestionsComponent implements OnInit {
+  private userLoc: any;
+
   suggestionTimeframe: any;
   suggestions: any[];
+  noData: boolean;
 
   constructor(private _api: ApiService) {
+    this.suggestions = [];
+    this.noData = false;
+    this.userLoc = {};
+
+    let from = moment(new Date()).subtract(30, 'days');
     this.suggestionTimeframe = {
-      from: moment(new Date()).subtract(30, 'days').format('MMMM Do'),
-      to: moment(new Date()).format('MMMM Do')
+      from: from.format('MMMM Do'),
+      fromTs: from,
+      to: moment(new Date()).format('MMMM Do'),
+      toTs: new Date()
     };
   }
 
   ngOnInit() {
-    this._api.getDaysInRange(this.suggestionTimeframe.from, this.suggestionTimeframe.to).then((res) => {
-      console.log(res);
+    ConfigService.getUserLatLng().then((userLoc: any) => {
+      this.userLoc = userLoc;
+      let lastNearby: any = localStorage.getItem('last-nearby-fetch');
+      let canContinue = false;
+
+      if (UtilitiesService.doesExist(lastNearby)) {
+        lastNearby = JSON.parse(lastNearby);
+
+        let timeDiff = (Date.now() - lastNearby.ts);
+        let locDiff = (haversine(lastNearby.loc, this.userLoc));
+
+        if (timeDiff >= 3600000 || locDiff >= 10000 || lastNearby.places == 0) {
+          canContinue = true;
+        }
+      }
+      else {
+        canContinue = true;
+      }
+
+      if (canContinue) {
+        this._api.getAllAnalytics().then((analytics: any) => {
+          if (analytics !== false && analytics.length > 0) {
+            for (let i = 0; i < analytics.length; i++) {
+              let search = {
+                lat: userLoc.lat,
+                lng: userLoc.lng,
+                type: analytics[i].type
+              };
+
+              this._api.getNearbyAreas(search).then((places: any) => {
+                let count = (places.length <= 3 ? places.length : 3);
+                for (let j = 0; j < count; j++) {
+                  let photo = './assets/placeholder.png';
+                  if (UtilitiesService.doesExist(places[j].photos)){
+                    photo = UtilitiesService.buildGooglePhotoUrl(places[j].photos[0].photo_reference);
+                  }
+
+                  places[j].types = UtilitiesService.filterOnlyWhitelistedPlaceTypes(places[j].types);
+                  for (let k = 0; k < places[j].types.length; k++) {
+                    places[j].types[k] = UtilitiesService.toTitleCase(places[j].types[k]);
+                  }
+
+                  let typeSpliceAt = (places[j].types.length <= 3 ? places[j].types.length : 3);
+                  let types = places[j].types.splice(0, typeSpliceAt);
+                  let typeString = types.join(', ');
+
+                  this.suggestions.push({
+                    location: places[j].geometry.location,
+                    id: places[j].id,
+                    name: places[j].name,
+                    rating: places[i].rating,
+                    distance: (haversine(this.userLoc, places[j].geometry.location)),
+                    photo: photo,
+                    types: places[j].types,
+                    typesString: typeString
+                  });
+                }
+
+                let lastNearbyFetch = {
+                  ts: Date.now(),
+                  loc: UtilitiesService.deepCopy(this.userLoc),
+                  places: this.suggestions.length
+                };
+                localStorage.setItem('last-nearby-fetch', JSON.stringify(lastNearbyFetch));
+                localStorage.setItem('nearby-places', JSON.stringify(this.suggestions));
+
+                console.log(places);
+              }).catch((err) => {
+                console.error(err);
+              })
+            }
+          }
+          else {
+            this.noData = true;
+          }
+        }).catch((err) => {
+          console.error(err);
+        })
+      }
+      else {
+        let lastPlaces: any = localStorage.getItem('nearby-places');
+
+        if (UtilitiesService.doesExist(lastPlaces)) {
+          lastPlaces = JSON.parse(lastPlaces);
+          this.suggestions = lastPlaces;
+        }
+        else {
+          this.noData = true;
+        }
+      }
     }).catch((err) => {
       console.error(err);
     })
