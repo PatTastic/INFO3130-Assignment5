@@ -60,3 +60,17 @@
   width: 100px;
   text-align: left;
 }
+
+#last-update {
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  z-index: 9999;
+  margin: 0;
+  padding: 1px 10px;
+  width: 100%;
+  background-color: white;
+  border-top: 1px solid grey;
+  opacity: 0;
+  transition: opacity 0.5s;
+}

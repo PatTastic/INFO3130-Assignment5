@@ -82,12 +82,10 @@ export class AppComponent {
           }
         }
         
-        //this._api.saveGeoPoint(notToday[i]);
+        this._api.saveGeoPoint(notToday[i]);
       }
 
-      //localStorage.setItem('new-points', JSON.stringify(geo));
+      localStorage.setItem('new-points', JSON.stringify(geo));
     }
-
-    console.log('geo', geo);
   }
 }

@@ -16,5 +16,6 @@
        [leafletOptions]="options"
        (leafletMapReady)="onMapReady($event)">
   </div>
+  <p id="last-update" [ngStyle]="{'opacity': lastUpdate.opacity}">Updated with {{lastUpdate.numberOfPoints}} new point{{lastUpdate.plural}}.</p>
   <fa-icon [icon]="['fas', 'car']" *ngIf="!isLiveTracking" (click)="enterLiveTracking()" class="live-tracking-icon"></fa-icon>
 </section>
