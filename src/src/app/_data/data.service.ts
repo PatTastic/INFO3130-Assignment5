@@ -25,6 +25,18 @@ export class DataService {
     ).toPromise();
   }
 
+  getStaticMap(lat: number, lng: number, markers: string) {
+    return this._http.get('https://maps.googleapis.com/maps/api/staticmap'
+      + '?center=' + lat.toString() + ',' + lng.toString()
+      + '&zoom=16'
+      + '&size=1000x1000'
+      + '&scale=1'
+      + markers
+      + '&key=' + ConfigService.googleMapsKey,
+      { responseType: 'blob' }
+    ).toPromise();
+  }
+
   private hackCors() {
     let url = 'https://maps.googleapis.com/maps/api/';
     if (window.location.hostname == 'localhost') {

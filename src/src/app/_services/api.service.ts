@@ -173,6 +173,35 @@ export class ApiService {
     })
   }
 
+  getStaticMap(lat: number, lng: number, markers?: any) {
+    return new Promise((resolve, reject) => {
+      let markerText = '';
+      if (UtilitiesService.doesExist(markers)) {
+        for (let i = 0; i < markers.length; i++) {
+          markerText += '&markers=color:blue%7Clabel:' + (i + 1).toString()
+            + '%7C' + lat.toString() + ',' + lng.toString();
+        }
+      }
+
+      this._data.getStaticMap(lat, lng, markerText).then((res: any) => {
+        if (UtilitiesService.doesExist(res) && res !== false) {
+          let image: any;
+          let reader = new FileReader();
+          reader.addEventListener('load', () => {
+            image = reader.result;
+            resolve(image);
+          })
+          reader.readAsDataURL(res);
+        }
+        else {
+          reject(false);
+        }
+      }).catch((err) => {
+        reject(err);
+      })
+    })
+  }
+
   ////////// Helper Functions //////////
 
   private formatSelectArray(res: any) {

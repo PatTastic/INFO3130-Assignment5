@@ -7,7 +7,7 @@
     <p>For now, keep doing what you're doing! The cool stuff will come later.</p>
   </div>
   <div *ngFor="let s of suggestions">
-    <div class="suggestion">
+    <div class="suggestion" (click)="selectSuggestion(s)">
       <div class="suggestion-image" [ngStyle]="{'background-image': 'url(' + s.photo + ')'}"></div>
       <div class="suggestion-info">
         <p class="suggestion-name">{{s.name}}</p>
@@ -18,3 +18,6 @@
     </div>
   </div>
 </section>
+
+<fa-icon [icon]="['fas', 'times']" (click)="resetViewSuggestion()" class="close-icon" *ngIf="viewSuggestion"></fa-icon>
+<app-view-suggestion [suggestion]="selectedSuggestion" *ngIf="viewSuggestion"></app-view-suggestion>

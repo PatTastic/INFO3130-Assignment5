@@ -18,7 +18,12 @@ export class UtilitiesService {
   }
 
   static distance(coords1: any, coords2: any, inKilometers: boolean = false) {
-    const d = haversine(coords1, coords2);
+    let d = haversine(coords1, coords2);
+
+    if (inKilometers) {
+      d = (d / 1000);
+    }
+
     return d;
   }
 
@@ -37,20 +42,22 @@ export class UtilitiesService {
     let types = [];
 
     if (this.doesExist(place.results)) {
-      if (this.doesExist(place.results[0].types)) {
-        for (let i = 0; i < place.results.length; i++) {
-          for (let j = 0; j < place.results[i].types.length; j++) {
-            let found = false;
+      if (this.doesExist(place.results[0])) {
+        if (this.doesExist(place.results[0].types)) {
+          for (let i = 0; i < place.results.length; i++) {
+            for (let j = 0; j < place.results[i].types.length; j++) {
+              let found = false;
 
-            for (let k = 0; k < types.length; k++) {
-              if (place.results[i].types[j] == types[k]) {
-                found = true;
-                break;
+              for (let k = 0; k < types.length; k++) {
+                if (place.results[i].types[j] == types[k]) {
+                  found = true;
+                  break;
+                }
               }
-            }
 
-            if (!found) {
-              types.push(place.results[i].types[j]);
+              if (!found) {
+                types.push(place.results[i].types[j]);
+              }
             }
           }
         }

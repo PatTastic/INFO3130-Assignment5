@@ -6,7 +6,7 @@ export class ConfigService {
   static internalDateFormat: string = 'DD-MM-YYYY';
   static displayDateFormat: string = 'MMMM Do, YYYY';
 
-  static googleMapsKey: string = 'AIzaSyCBL6M0aBHumoG2ZDWAvkXN9iJFMJMrxaA';
+  static googleMapsKey: string = 'AIzaSyBqmy5AGFZnvnu6VtgBkEJo-pIDFuLRsLY';
 
   static getDefaultMapCenter() {
     return L.latLng(43.390757, -80.403047);

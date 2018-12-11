@@ -104,10 +104,17 @@ export class AppComponent {
           localStorage.setItem('new-points', JSON.stringify(res));
           localStorage.setItem('got-test-data', 'true');
           this.loadNewGeo();
-
-          console.log('Demo data loaded.');
-          console.log('Only data points have been loaded, all suggestions/stats/analytics are generated dynamically.');
+          
+          console.log('Only data points will be loaded, all suggestions/stats/analytics are generated dynamically.');
           console.log('Demo data ranges from December 3rd to December 7th, 2018.');
+          console.log('');
+          console.log('The website will reload in 1 minute. Please wait');
+          
+          setTimeout(() => {
+            console.log('');
+            console.log('Reloading page...');
+            window.location.reload();
+          }, 60000);
         }
         else {
           console.log('Demo data could not be loaded');

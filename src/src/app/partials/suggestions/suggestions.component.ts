@@ -1,6 +1,5 @@
 ﻿import { Component, OnInit } from '@angular/core';
 import * as moment from 'moment';
-import * as haversine from 'haversine-distance';
 
 import { ConfigService } from '../../_helpers/config.service';
 import { UtilitiesService } from '../../_helpers/utilities.service';
@@ -14,14 +13,18 @@ import { ApiService } from '../../_services/api.service';
 export class SuggestionsComponent implements OnInit {
   private userLoc: any;
 
+  selectedSuggestion: any;
   suggestionTimeframe: any;
   suggestions: any[];
   noData: boolean;
+  viewSuggestion: boolean;
 
   constructor(private _api: ApiService) {
     this.suggestions = [];
     this.noData = false;
     this.userLoc = {};
+    this.selectedSuggestion = {};
+    this.viewSuggestion = false;
 
     let from = moment(new Date()).subtract(30, 'days');
     this.suggestionTimeframe = {
@@ -42,7 +45,7 @@ export class SuggestionsComponent implements OnInit {
         lastNearby = JSON.parse(lastNearby);
 
         let timeDiff = (Date.now() - lastNearby.ts);
-        let locDiff = (haversine(lastNearby.loc, this.userLoc));
+        let locDiff = UtilitiesService.distance(lastNearby.loc, this.userLoc);
 
         if (timeDiff >= 3600000 || locDiff >= 10000 || lastNearby.places == 0) {
           canContinue = true;
@@ -70,6 +73,7 @@ export class SuggestionsComponent implements OnInit {
                     photo = UtilitiesService.buildGooglePhotoUrl(places[j].photos[0].photo_reference);
                   }
 
+                  let allTypes = UtilitiesService.deepCopy(places[j].types);
                   places[j].types = UtilitiesService.filterOnlyWhitelistedPlaceTypes(places[j].types);
                   for (let k = 0; k < places[j].types.length; k++) {
                     places[j].types[k] = UtilitiesService.toTitleCase(places[j].types[k]);
@@ -84,8 +88,9 @@ export class SuggestionsComponent implements OnInit {
                     id: places[j].id,
                     name: places[j].name,
                     rating: places[i].rating,
-                    distance: (haversine(this.userLoc, places[j].geometry.location)),
+                    distance: UtilitiesService.distance(this.userLoc, places[j].geometry.location),
                     photo: photo,
+                    allTypes: allTypes,
                     types: places[j].types,
                     typesString: typeString
                   });
@@ -126,5 +131,15 @@ export class SuggestionsComponent implements OnInit {
     }).catch((err) => {
       console.error(err);
     })
+  }
+
+  selectSuggestion(suggestion: any) {
+    this.selectedSuggestion = suggestion;
+    this.viewSuggestion = true;
+  }
+
+  resetViewSuggestion() {
+    this.viewSuggestion = false;
+    this.selectedSuggestion = {};
   }
 }
