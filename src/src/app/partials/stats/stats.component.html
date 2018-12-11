@@ -1,3 +1,11 @@
-<p>
-  stats works!
-</p>
+<h1 class="centered-text">Statistics</h1>
+
+<div *ngIf="distanceChart">
+  <canvas id="distanceCanvas">{{ chart }}</canvas>
+</div>
+<div *ngIf="locationChart">
+  <canvas id="locationCanvas">{{ chart }}</canvas>
+</div>
+
+<h3 *ngIf="!distanceChartDisplay" class="centered-text">Don't have enough data to provide <br> an distance chart.</h3>
+<h3 *ngIf="!locationChartDisplay" class="centered-text">Don't have enough data to provide <br> an location chart.</h3>

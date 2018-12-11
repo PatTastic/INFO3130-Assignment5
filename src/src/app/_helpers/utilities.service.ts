@@ -1,6 +1,6 @@
 ﻿import { Injectable } from '@angular/core';
 import * as moment from 'moment';
-
+import * as haversine from 'haversine-distance';
 import { ConfigService } from './config.service';
 
 @Injectable()
@@ -18,25 +18,7 @@ export class UtilitiesService {
   }
 
   static distance(coords1: any, coords2: any, inKilometers: boolean = false) {
-    function toRad(x) {
-      return x * Math.PI / 180;
-    }
-
-    let x1 = coords2.lat - coords1.lat;
-    let dLat = toRad(x1);
-
-    let x2 = coords2.lng - coords1.lng;
-    let dLng = toRad(x2);
-
-    let a = Math.sin(dLat / 2) * Math.sin(dLat / 2) +
-      Math.cos(toRad(coords1.lat)) * Math.cos(toRad(coords2.lat)) * Math.sin(dLng / 2) * Math.sin(dLng / 2);
-    let c = 2 * Math.atan2(Math.sqrt(a), Math.sqrt(1 - a));
-
-    let d = c;
-    if (inKilometers) {
-      d = 6371 * c;
-    }
-
+    const d = haversine(coords1, coords2);
     return d;
   }
 

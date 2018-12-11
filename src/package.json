@@ -28,6 +28,7 @@
     "@fortawesome/fontawesome-svg-core": "^1.2.8",
     "@fortawesome/free-regular-svg-icons": "^5.5.0",
     "@fortawesome/free-solid-svg-icons": "^5.5.0",
+    "chart.js": "^2.7.3",
     "core-js": "^2.4.1",
     "haversine-distance": "^1.1.4",
     "heatmap.js": "^2.0.5",
