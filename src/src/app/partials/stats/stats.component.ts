@@ -2,7 +2,7 @@ import { Component, OnInit } from '@angular/core';
 import { Chart } from 'chart.js';
 import { UtilitiesService } from './../../_helpers/utilities.service';
 import { ApiService } from './../../_services/api.service';
-import * as haversine from 'haversine-distance';
+
 @Component({
   selector: 'app-stats',
   templateUrl: './stats.component.html',
@@ -48,7 +48,7 @@ export class StatsComponent implements OnInit {
             if (distanceData[i].day === distanceData[i + 1].day) {
               var start = { latitude: distanceData[i].lat, longitude: distanceData[i].lng };
               var end = { latitude: distanceData[i + 1].lat, longitude: distanceData[i + 1].lng };
-              dist += haversine(start, end);
+              dist += UtilitiesService.distance(start, end);
 
             } else {
               this.distanceInfo.push(dist * 0.001);
