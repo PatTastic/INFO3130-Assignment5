@@ -1,3 +1,6 @@
-.centered-text {
-    text-align: center;
+﻿.chart-container{
+  margin-bottom: 30px;
+}
+.chart-container h3{
+  text-align: center;
 }

@@ -1,11 +1,12 @@
-<h1 class="centered-text">Statistics</h1>
-
-<div *ngIf="distanceChart">
-  <canvas id="distanceCanvas">{{ chart }}</canvas>
-</div>
-<div *ngIf="locationChart">
-  <canvas id="locationCanvas">{{ chart }}</canvas>
-</div>
-
-<h3 *ngIf="!distanceChartDisplay" class="centered-text">Don't have enough data to provide <br> an distance chart.</h3>
-<h3 *ngIf="!locationChartDisplay" class="centered-text">Don't have enough data to provide <br> an location chart.</h3>
+﻿<section id="app-stats">
+  <div *ngIf="distanceChart" class="chart-container">
+    <h3>Distance Travelled</h3>
+    <canvas id="distanceCanvas">{{chart}}</canvas>
+  </div>
+  <div *ngIf="locationChart" class="chart-container">
+    <h3>Locations Visited</h3>
+    <canvas id="locationCanvas">{{chart}}</canvas>
+  </div>
+  <h3 *ngIf="!distanceChartDisplay" class="text-center">Don't have enough data to provide<wbr> a distance chart.</h3>
+  <h3 *ngIf="!locationChartDisplay" class="text-center">Don't have enough data to provide<wbr> a location chart.</h3>
+</section>
