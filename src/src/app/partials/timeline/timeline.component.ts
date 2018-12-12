@@ -18,6 +18,7 @@ export class TimelineComponent implements OnInit, OnDestroy {
   private liveTrackingInterval: any;
   private liveTrackingLatest: any;
   private lastUpdateTimeout: any;
+  private placeMarkerInterval: any;
 
   map: any;
   selectedDay: any;
@@ -37,6 +38,7 @@ export class TimelineComponent implements OnInit, OnDestroy {
   });
 
   constructor(private _api: ApiService) {
+    this.placeMarkerInterval = -1;
     this.lastUpdateTimeout = -1;
     this.liveTrackingLatest = null;
     this.liveTrackingInterval = -1;
@@ -83,6 +85,10 @@ export class TimelineComponent implements OnInit, OnDestroy {
     if (this.lastUpdateTimeout != -1) {
       clearTimeout(this.lastUpdateTimeout);
       this.lastUpdateTimeout = -1;
+    }
+    if (this.placeMarkerInterval != -1) {
+      clearInterval(this.placeMarkerInterval);
+      this.placeMarkerInterval = -1;
     }
   }
   
@@ -140,24 +146,41 @@ export class TimelineComponent implements OnInit, OnDestroy {
     this.map.fitBounds = null;
     let today = moment(new Date()).format(ConfigService.internalDateFormat);
 
+    if (this.placeMarkerInterval != -1) {
+      clearInterval(this.placeMarkerInterval);
+      this.placeMarkerInterval = -1;
+    }
+
     if (day == today) {
       this.enterLiveTracking();
     }
     else {
       this._api.getDay(day).then((res) => {
-        this.dataPoints = UtilitiesService.deepCopy(res);
-        let onlyHeatMapData = [];
+        setTimeout(() => {
+          this.dataPoints = UtilitiesService.deepCopy(res);
+          let onlyHeatMapData = [];
+          let currentIndex = 0;
 
-        for (let i = 0; i < this.dataPoints.length; i++) {
-          onlyHeatMapData.push({
-            lat: this.dataPoints[i].lat,
-            lng: this.dataPoints[i].lng,
-            count: 0.1
-          });
-        }
+          for (let i = 0; i < this.dataPoints.length; i++) {
+            onlyHeatMapData.push({
+              lat: this.dataPoints[i].lat,
+              lng: this.dataPoints[i].lng,
+              count: 0.1
+            });
+          }
 
-        this.map.fitBounds = onlyHeatMapData;
-        this.heatmapLayer.setData({ data: onlyHeatMapData });
+          this.map.fitBounds = onlyHeatMapData;
+
+          this.placeMarkerInterval = setInterval(() => {
+            this.heatmapLayer.addData(onlyHeatMapData[currentIndex]);
+            currentIndex++;
+
+            if (currentIndex == onlyHeatMapData.length) {
+              clearInterval(this.placeMarkerInterval);
+              this.placeMarkerInterval = -1;
+            }
+          }, 100);
+        }, 500);
       })
     }
   }
@@ -165,6 +188,11 @@ export class TimelineComponent implements OnInit, OnDestroy {
   enterLiveTracking() {
     this.map.fitBounds = null;
     this.isLiveTracking = true;
+
+    if (this.placeMarkerInterval != -1) {
+      clearInterval(this.placeMarkerInterval);
+      this.placeMarkerInterval = -1;
+    }
 
     let todaysData: any = localStorage.getItem('new-points');
     if (UtilitiesService.doesExist(todaysData)) {

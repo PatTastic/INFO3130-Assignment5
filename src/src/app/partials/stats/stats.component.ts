@@ -20,20 +20,29 @@ export class StatsComponent implements OnInit {
   distanceLabels = [];
   locationChartDisplay = true;
   distanceChartDisplay = true;
+  twitterShare = { distance: '', locations: '' };
 
   ngOnInit() {
     this._api.getAllAnalytics().then((locationData) => {
       // type, count
       const objectLength = Object.keys(locationData).length;
-      if(objectLength > 0) {
+      if (objectLength > 0) {
+        let totalVists = 0;
         for (let i = 0; i < objectLength; i++) {
           locationData[i].type = (UtilitiesService.toTitleCase(locationData[i].type));
+          totalVists += locationData[i].count;
           this.locationInfo.push(locationData[i].count);
           this.locationLabels.push(locationData[i].type);    
           if(objectLength == this.locationInfo.length) {
             this.generateLocationChart();
           }          
         }
+
+        let s = (this.locationLabels.length == 1 ? '' : 's');
+        this.twitterShare.locations = encodeURI('https://twitter.com/intent/tweet?text='
+          + 'I visited ' + this.locationLabels.length.toString() + ' type' + s
+          + ' of location' + s + ' a total of ' + totalVists.toString() + ' time' + s
+          + '! See your own stats here: https://goo.gl/MphjgD ') + '%23heatmaptrackingapp';
       }
       else {
         this.locationChartDisplay = false;
@@ -48,10 +57,17 @@ export class StatsComponent implements OnInit {
 
           this._api.getDay(res[i]).then((days: any) => {
             if (days.length > 1) {
+              let totalDistance = 0;
               for (let j = 0; j < (days.length - 1); j++) {
                 let distance = UtilitiesService.distance(days[j], days[j + 1]);
                 this.distanceInfo.push(distance);
+                totalDistance += distance;
               }
+
+              this.twitterShare.distance = encodeURI('https://twitter.com/intent/tweet?text='
+                + 'I covered ' + totalDistance.toFixed(2).toString()
+                + ' meters in the last 5 days! See your own stats here: https://goo.gl/MphjgD ')
+                + '%23heatmaptrackingapp';
             }
 
             if (i == (length - 1)) {
