@@ -8,14 +8,23 @@ export class ConfigService {
 
   static googleMapsKey: string = 'AIzaSyBqmy5AGFZnvnu6VtgBkEJo-pIDFuLRsLY';
 
+  /**
+   * Default Lat Lng point 
+   */
   static getDefaultMapCenter() {
     return L.latLng(43.390757, -80.403047);
   }
 
+  /**
+   * Default map zoom
+   */
   static getDefaultMapZoom() {
     return 16;
   }
 
+  /**
+   * Default map options
+   */
   static getDefaultMapOptions() {
     return {
       loaded: false,
@@ -27,9 +36,13 @@ export class ConfigService {
     };
   }
 
+  /**
+   * Attempt to retrieve the users current location
+   */
   static getUserLatLng() {
     return new Promise((resolve, reject) => {
       let onSuccess = ((position) => {
+        // able to get the users location, use it
         let loc = L.latLng(
           position.coords.latitude,
           position.coords.longitude
@@ -39,11 +52,7 @@ export class ConfigService {
       });
       
       let onError = ((error) => {
-        let loc = {
-          lat: 43.390757,
-          lng: -80.403047
-        };
-
+        // could not get users location, use default
         reject(this.getDefaultMapCenter());
       });
 
@@ -51,6 +60,9 @@ export class ConfigService {
     })
   }
 
+  /**
+   * Get all whitelisted place types for Google Maps
+   */
   static getWhitelistedPlaceTypes() {
     return [
       'amusement_park',

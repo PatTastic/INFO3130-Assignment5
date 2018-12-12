@@ -1,10 +1,12 @@
-﻿.chart-container{
+﻿/* Charts */
+.chart-container{
   margin-bottom: 30px;
 }
 .chart-container h3{
   text-align: center;
 }
 
+/* Chart Info */
 .chart-title{
   text-align: center;
 }

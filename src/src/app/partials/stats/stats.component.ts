@@ -28,6 +28,8 @@ export class StatsComponent implements OnInit {
       const objectLength = Object.keys(locationData).length;
       if (objectLength > 0) {
         let totalVists = 0;
+
+        // generate chart data
         for (let i = 0; i < objectLength; i++) {
           locationData[i].type = (UtilitiesService.toTitleCase(locationData[i].type));
           totalVists += locationData[i].count;
@@ -38,6 +40,7 @@ export class StatsComponent implements OnInit {
           }          
         }
 
+        // generate twitter link
         let s = (this.locationLabels.length == 1 ? '' : 's');
         this.twitterShare.locations = encodeURI('https://twitter.com/intent/tweet?text='
           + 'I visited ' + this.locationLabels.length.toString() + ' type' + s
@@ -53,6 +56,7 @@ export class StatsComponent implements OnInit {
       if (res !== false) {
         let length = (res.length < 5 ? res.length : 5);
         for (let i = 0; i < length; i++) {
+          // generate chart data
           this.distanceLabels.push(res[i]);
 
           this._api.getDay(res[i]).then((days: any) => {
@@ -64,6 +68,7 @@ export class StatsComponent implements OnInit {
                 totalDistance += distance;
               }
 
+              // generate twitter link
               this.twitterShare.distance = encodeURI('https://twitter.com/intent/tweet?text='
                 + 'I covered ' + totalDistance.toFixed(2).toString()
                 + ' meters in the last 5 days! See your own stats here: https://goo.gl/MphjgD ')
@@ -79,6 +84,11 @@ export class StatsComponent implements OnInit {
     })
   }
 
+  /**
+   * Generate the Distance chart
+   *
+   * @param {number} length - Number of active days being displayed
+   */
   generateDistanceChart(length: number) {
     this.locationChart = new Chart('distanceCanvas', {
       type: 'line',
@@ -116,6 +126,9 @@ export class StatsComponent implements OnInit {
     });
   }
 
+  /**
+   * Generate the Locations chart
+   */
   generateLocationChart() {
     this.locationChart = new Chart('locationCanvas', {
       type: 'bar',
@@ -151,5 +164,4 @@ export class StatsComponent implements OnInit {
       }
     });
   }
-
 }

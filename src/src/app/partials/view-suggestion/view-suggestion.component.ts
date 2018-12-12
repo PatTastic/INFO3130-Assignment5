@@ -22,6 +22,7 @@ export class ViewSuggestionComponent implements OnInit {
       this.suggestion.allTypes[i] = UtilitiesService.toTitleCase(this.suggestion.allTypes[i]);
     }
 
+    // fetch static map
     this._api.getStaticMap(
       this.suggestion.location.lat,
       this.suggestion.location.lng,

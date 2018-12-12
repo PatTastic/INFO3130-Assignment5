@@ -12,6 +12,10 @@ export class DatabaseService {
     this.createDatabase();
   }
 
+  /**
+   * PRIVATE FUNCTION
+   * Generate the database tables
+   */
   private createDatabase() {
     this.db.transaction((sqlTransactionSync) => {
       sqlTransactionSync.executeSql(
@@ -42,6 +46,9 @@ export class DatabaseService {
     });
   }
 
+  /**
+   * Load test/demo data from json file
+   */
   getTestData() {
     // generate: https://address.patwilken.me/
     // format: https://jsfiddle.net/PatTastic/75w81ax2/embedded/result
@@ -53,6 +60,9 @@ export class DatabaseService {
 
   ////////// geoPoint //////////
 
+  /**
+   * Get all days where data exists
+   */
   getActiveDays() {
     return new Promise((resolve, reject) => {
       try {
@@ -75,6 +85,11 @@ export class DatabaseService {
     })
   }
 
+  /**
+   * Get activity for a specific day
+   *
+   * @param {string} date - Day to get data for
+   */
   getDay(date: string) {
     return new Promise((resolve, reject) => {
       try {
@@ -97,6 +112,12 @@ export class DatabaseService {
     })
   }
 
+  /**
+   * Get activity for days in a range
+   *
+   * @param {string} from - Timestamp of start date
+   * @param {string} to - Timestamp of end date
+   */
   getDaysInRange(from: string, to: string) {
     return new Promise((resolve, reject) => {
       try {
@@ -120,6 +141,11 @@ export class DatabaseService {
     })
   }
 
+  /**
+   * Save a geo point
+   *
+   * @param {any} point - A geopoint
+   */
   saveGeoPoint(point: any) {
     return new Promise((resolve, reject) => {
       try {
@@ -140,6 +166,11 @@ export class DatabaseService {
     })
   }
 
+  /**
+   * Update the weight of a previously-added geopoint
+   *
+   * @param {any} point - A geopoint with updated weight
+   */
   updateGeoPointWeight(point: any) {
     return new Promise((resolve, reject) => {
       try {
@@ -160,6 +191,11 @@ export class DatabaseService {
     })
   }
 
+  /**
+   * Update the address of a previously-added geopoint
+   *
+   * @param {any} point - A geopoint with updated address
+   */
   updateGeoPointAddress(point: any) {
     return new Promise((resolve, reject) => {
       try {
@@ -182,6 +218,9 @@ export class DatabaseService {
 
   ////////// analytics //////////
 
+  /**
+   * Get all analytics
+   */
   getAllAnalytics() {
     return new Promise((resolve, reject) => {
       try {
@@ -204,6 +243,11 @@ export class DatabaseService {
     })
   }
 
+  /**
+   * Get analytics for a specific location type
+   *
+   * @param {string} type - Location type
+   */
   getAnalyticType(type: string) {
     return new Promise((resolve, reject) => {
       try {
@@ -226,6 +270,11 @@ export class DatabaseService {
     })
   }
 
+  /**
+   * Save new analytics row
+   *
+   * @param {any} analytics - New analytics object
+   */
   insertAnalytics(analytics: any) {
     return new Promise((resolve, reject) => {
       try {
@@ -248,6 +297,11 @@ export class DatabaseService {
     })
   }
 
+  /**
+   * Update a field for a previously-added analytics type
+   *
+   * @param {any} analytics - Updated analytics object
+   */
   updateAnalyticType(analytics: any) {
     return new Promise((resolve, reject) => {
       try {

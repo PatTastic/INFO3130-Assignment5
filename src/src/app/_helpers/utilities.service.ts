@@ -5,18 +5,40 @@ import { ConfigService } from './config.service';
 
 @Injectable()
 export class UtilitiesService {
+  /**
+   * Create a deep copy of a variable
+   *
+   * @param {any} elem - Variable to copy
+   */
   static deepCopy(elem: any) {
     return JSON.parse(JSON.stringify(elem));
   }
 
+  /**
+   * Check if a variable exists
+   *
+   * @param {any} elem - Variable to check
+   */
   static doesExist(elem: any) {
     return !(typeof elem == 'undefined' || elem == null);
   }
 
+  /**
+   * Convert any date representation to our internal date format
+   *
+   * @param {string} date - Date representation
+   */
   static convertDateToUniformDate(date: string) {
     return moment(new Date(date)).format(ConfigService.internalDateFormat);
   }
 
+  /**
+   * Get the distance between two sets of lat lng points
+   *
+   * @param {any} coords1 - Lat lng set 1
+   * @param {any} coords2 - Lat lng set 2
+   * @param {boolean} inKilometers - Return value in kilometers (or meters if false)
+   */
   static distance(coords1: any, coords2: any, inKilometers: boolean = false) {
     let d = haversine(coords1, coords2);
 
@@ -27,6 +49,11 @@ export class UtilitiesService {
     return d;
   }
 
+  /**
+   * Generate a random ID
+   *
+   * @param {number} length - Number of characters to generate
+   */
   static generateRandomID(length: number = 10) {
     let id = '';
     let possibilities = 'ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz0123456789';
@@ -38,6 +65,11 @@ export class UtilitiesService {
     return id;
   }
 
+  /**
+   * Compress all location types into one array
+   * 
+   * @param {any} place - Google Maps place object
+   */
   static getPlaceTypesFromPlace(place: any) {
     let types = [];
 
@@ -67,6 +99,10 @@ export class UtilitiesService {
     return types;
   }
 
+  /**
+   * Get only the whitelisted location types as a string
+   * @param {any[]} types - All types
+   */
   static getMostProminentPlaceType(types: any[]) {
     let whitelist = ConfigService.getWhitelistedPlaceTypes();
     let type = '';
@@ -87,6 +123,11 @@ export class UtilitiesService {
     return type;
   }
 
+  /**
+   * Return only whitelisted location types
+   *
+   * @param {any[]} types - All types
+   */
   static filterOnlyWhitelistedPlaceTypes(types: any[]) {
     let whitelist = ConfigService.getWhitelistedPlaceTypes();
 
@@ -106,6 +147,12 @@ export class UtilitiesService {
     return types;
   }
 
+  /**
+   * Build a Google Maps photos URL
+   *
+   * @param {string} photoRef - Google Maps photo reference
+   * @param {number} maxWidth - Width of photo
+   */
   static buildGooglePhotoUrl(photoRef: string, maxWidth: number = 300) {
     let url = 'https://maps.googleapis.com/maps/api/place/photo'
       + '?maxwidth=' + maxWidth.toString()
@@ -116,6 +163,11 @@ export class UtilitiesService {
     return url;
   }
 
+  /**
+   * Convert a string to Title Case
+   *
+   * @param {string} word - Word to convert
+   */
   static toTitleCase(word: string) {
     word = word.replace(/_/g, ' ');
     return word.replace(

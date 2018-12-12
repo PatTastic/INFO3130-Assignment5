@@ -83,6 +83,7 @@ const appRoutes: Routes = [
 })
 export class AppModule {
   constructor() {
+    // make font awesome icons available
     library.add(faCalendarAlt);
     library.add(faCar);
     library.add(faChevronLeft);

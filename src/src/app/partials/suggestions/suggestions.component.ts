@@ -41,6 +41,8 @@ export class SuggestionsComponent implements OnInit {
       let lastNearby: any = localStorage.getItem('last-nearby-fetch');
       let canContinue = false;
 
+      // determine if we need to regenerate analytics data
+      // No = User has not moved at least 10km and 1 hour has not passed
       if (UtilitiesService.doesExist(lastNearby)) {
         lastNearby = JSON.parse(lastNearby);
 
@@ -65,6 +67,7 @@ export class SuggestionsComponent implements OnInit {
                 type: analytics[i].type
               };
 
+              // fetch nearby areas
               this._api.getNearbyAreas(search).then((places: any) => {
                 let count = (places.length <= 3 ? places.length : 3);
                 for (let j = 0; j < count; j++) {
@@ -73,6 +76,7 @@ export class SuggestionsComponent implements OnInit {
                     photo = UtilitiesService.buildGooglePhotoUrl(places[j].photos[0].photo_reference);
                   }
 
+                  // format returned location types
                   let allTypes = UtilitiesService.deepCopy(places[j].types);
                   places[j].types = UtilitiesService.filterOnlyWhitelistedPlaceTypes(places[j].types);
                   for (let k = 0; k < places[j].types.length; k++) {
@@ -83,6 +87,7 @@ export class SuggestionsComponent implements OnInit {
                   let types = places[j].types.splice(0, typeSpliceAt);
                   let typeString = types.join(', ');
 
+                  // add to suggestions
                   this.suggestions.push({
                     location: places[j].geometry.location,
                     id: places[j].id,
@@ -96,6 +101,7 @@ export class SuggestionsComponent implements OnInit {
                   });
                 }
 
+                // save fetched info
                 let lastNearbyFetch = {
                   ts: Date.now(),
                   loc: UtilitiesService.deepCopy(this.userLoc),
@@ -118,6 +124,7 @@ export class SuggestionsComponent implements OnInit {
         })
       }
       else {
+        // new data was not fetched, use previously fetched data
         let lastPlaces: any = localStorage.getItem('nearby-places');
 
         if (UtilitiesService.doesExist(lastPlaces)) {
@@ -133,11 +140,19 @@ export class SuggestionsComponent implements OnInit {
     })
   }
 
+  /**
+   * Load Suggestion popover
+   *
+   * @param {any} suggestion - The selected suggestion
+   */
   selectSuggestion(suggestion: any) {
     this.selectedSuggestion = suggestion;
     this.viewSuggestion = true;
   }
 
+  /**
+   * Close Suggestion popover
+   */
   resetViewSuggestion() {
     this.viewSuggestion = false;
     this.selectedSuggestion = {};

@@ -1,8 +1,11 @@
-﻿#app-nav-bar {
+﻿/* Page */
+#app-nav-bar {
   background-color: #2d2d2d;
   color: #f9f9f9;
   margin-bottom: 10px;
 }
+
+/* Link List */
 #app-nav-bar ul {
   display: flex;
 }

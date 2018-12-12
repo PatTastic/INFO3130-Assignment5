@@ -1,4 +1,5 @@
-﻿#app-view-suggestion {
+﻿/* Page */
+#app-view-suggestion {
   background-color: white;
   top: 0;
   left: 0;
@@ -7,6 +8,7 @@
   position: fixed;
 }
 
+/* Map */
 #view-map {
   width: 100%;
   height: calc(100vh - 160px);
@@ -15,6 +17,7 @@
   border-bottom: 1px solid grey;
 }
 
+/* Suggestion Info */
 #suggestion-info{
   padding: 10px;
 }
