@@ -16,6 +16,9 @@ export class AppComponent {
     this.loadNewGeo();
   }
 
+  /**
+   * Load newly generated geo data
+   */
   loadNewGeo() {
     let geo: any = localStorage.getItem('new-points');
     let notToday = [];
@@ -25,6 +28,7 @@ export class AppComponent {
       let today = UtilitiesService.convertDateToUniformDate(new Date().toString());
       let analytics = {};
 
+      // split data into two arrays, todays data and previous data
       for (let i = (geo.length - 1); i >= 0; i--) {
         if (geo != today) {
           notToday.push(geo[i]);
@@ -34,7 +38,7 @@ export class AppComponent {
 
       let completedAnalytics = ';';
       for (let i = 0; i < notToday.length; i++) {
-        // generate analytics
+        // gather geopoints into list of weighted regions
         if (i == 0) {
           notToday[i].groupId = UtilitiesService.generateRandomID();
           analytics[notToday[i].groupId] = 1;
@@ -59,10 +63,13 @@ export class AppComponent {
             analytics[notToday[i].groupId] = 1;
           }
         }
-        
+
+        // check if region makes the cut to be used in analytics
         if (analytics.hasOwnProperty(notToday[i].groupId)) {
           if (analytics[notToday[i].groupId] > 10 && completedAnalytics.indexOf(notToday[i].groupId) < 0) {
             completedAnalytics += notToday[i].groupId + ';';
+
+            // get more data about region
             this._api.getGeocodingFromCoords(notToday[i]).then((res: any) => {
               let placeTypes = UtilitiesService.getPlaceTypesFromPlace(res);
               let type = UtilitiesService.getMostProminentPlaceType(placeTypes);
@@ -89,25 +96,40 @@ export class AppComponent {
     }
   }
 
+  /**
+   * Loads in demo data
+   * Triggered by typing 'demoData()' in a web browser console
+   */
   demoData() {
     let haveTestData: any = localStorage.getItem('got-test-data');
 
     if (UtilitiesService.doesExist(haveTestData)) {
+      // user already generated demo data
       console.log('Looks like you\'ve already loaded in the demo data!');
       console.log('Demo data ranges from December 3rd to December 7th, 2018.');
     }
     else {
       console.log('Loading demo data...');
 
+      // load demo data
       this._api.getTestData().then((res: any) => {
         if (res !== false) {
+          // load demo data
           localStorage.setItem('new-points', JSON.stringify(res));
           localStorage.setItem('got-test-data', 'true');
           this.loadNewGeo();
-
-          console.log('Demo data loaded.');
-          console.log('Only data points have been loaded, all suggestions/stats/analytics are generated dynamically.');
+          
+          console.log('Only data points will be loaded, all suggestions/stats/analytics are generated dynamically.');
           console.log('Demo data ranges from December 3rd to December 7th, 2018.');
+          console.log('');
+          console.log('The website will reload in 1 minute. Please wait');
+          
+          setTimeout(() => {
+            // page must be reload for data to take effect
+            console.log('');
+            console.log('Reloading page...');
+            window.location.reload();
+          }, 60000);
         }
         else {
           console.log('Demo data could not be loaded');

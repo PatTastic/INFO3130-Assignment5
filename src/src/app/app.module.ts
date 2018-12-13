@@ -6,7 +6,8 @@ import { RouterModule, Routes, Router } from '@angular/router';
 import { FontAwesomeModule } from '@fortawesome/angular-fontawesome';
 import { library } from '@fortawesome/fontawesome-svg-core';
 import { faCalendarAlt } from '@fortawesome/free-regular-svg-icons';
-import { faCar, faChevronLeft } from '@fortawesome/free-solid-svg-icons';
+import { faCar, faChevronLeft, faTimes } from '@fortawesome/free-solid-svg-icons';
+import { faTwitter } from '@fortawesome/free-brands-svg-icons';
 import { LeafletModule } from '@asymmetrik/ngx-leaflet';
 import { HttpClientModule } from '@angular/common/http';
 
@@ -82,8 +83,11 @@ const appRoutes: Routes = [
 })
 export class AppModule {
   constructor() {
+    // make font awesome icons available
     library.add(faCalendarAlt);
     library.add(faCar);
     library.add(faChevronLeft);
+    library.add(faTimes);
+    library.add(faTwitter);
   }
 }

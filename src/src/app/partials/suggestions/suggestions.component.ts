@@ -1,6 +1,5 @@
 ﻿import { Component, OnInit } from '@angular/core';
 import * as moment from 'moment';
-import * as haversine from 'haversine-distance';
 
 import { ConfigService } from '../../_helpers/config.service';
 import { UtilitiesService } from '../../_helpers/utilities.service';
@@ -14,14 +13,18 @@ import { ApiService } from '../../_services/api.service';
 export class SuggestionsComponent implements OnInit {
   private userLoc: any;
 
+  selectedSuggestion: any;
   suggestionTimeframe: any;
   suggestions: any[];
   noData: boolean;
+  viewSuggestion: boolean;
 
   constructor(private _api: ApiService) {
     this.suggestions = [];
     this.noData = false;
     this.userLoc = {};
+    this.selectedSuggestion = {};
+    this.viewSuggestion = false;
 
     let from = moment(new Date()).subtract(30, 'days');
     this.suggestionTimeframe = {
@@ -38,11 +41,13 @@ export class SuggestionsComponent implements OnInit {
       let lastNearby: any = localStorage.getItem('last-nearby-fetch');
       let canContinue = false;
 
+      // determine if we need to regenerate analytics data
+      // No = User has not moved at least 10km and 1 hour has not passed
       if (UtilitiesService.doesExist(lastNearby)) {
         lastNearby = JSON.parse(lastNearby);
 
         let timeDiff = (Date.now() - lastNearby.ts);
-        let locDiff = (haversine(lastNearby.loc, this.userLoc));
+        let locDiff = UtilitiesService.distance(lastNearby.loc, this.userLoc);
 
         if (timeDiff >= 3600000 || locDiff >= 10000 || lastNearby.places == 0) {
           canContinue = true;
@@ -62,6 +67,7 @@ export class SuggestionsComponent implements OnInit {
                 type: analytics[i].type
               };
 
+              // fetch nearby areas
               this._api.getNearbyAreas(search).then((places: any) => {
                 let count = (places.length <= 3 ? places.length : 3);
                 for (let j = 0; j < count; j++) {
@@ -70,6 +76,8 @@ export class SuggestionsComponent implements OnInit {
                     photo = UtilitiesService.buildGooglePhotoUrl(places[j].photos[0].photo_reference);
                   }
 
+                  // format returned location types
+                  let allTypes = UtilitiesService.deepCopy(places[j].types);
                   places[j].types = UtilitiesService.filterOnlyWhitelistedPlaceTypes(places[j].types);
                   for (let k = 0; k < places[j].types.length; k++) {
                     places[j].types[k] = UtilitiesService.toTitleCase(places[j].types[k]);
@@ -79,18 +87,21 @@ export class SuggestionsComponent implements OnInit {
                   let types = places[j].types.splice(0, typeSpliceAt);
                   let typeString = types.join(', ');
 
+                  // add to suggestions
                   this.suggestions.push({
                     location: places[j].geometry.location,
                     id: places[j].id,
                     name: places[j].name,
                     rating: places[i].rating,
-                    distance: (haversine(this.userLoc, places[j].geometry.location)),
+                    distance: UtilitiesService.distance(this.userLoc, places[j].geometry.location),
                     photo: photo,
+                    allTypes: allTypes,
                     types: places[j].types,
                     typesString: typeString
                   });
                 }
 
+                // save fetched info
                 let lastNearbyFetch = {
                   ts: Date.now(),
                   loc: UtilitiesService.deepCopy(this.userLoc),
@@ -113,6 +124,7 @@ export class SuggestionsComponent implements OnInit {
         })
       }
       else {
+        // new data was not fetched, use previously fetched data
         let lastPlaces: any = localStorage.getItem('nearby-places');
 
         if (UtilitiesService.doesExist(lastPlaces)) {
@@ -126,5 +138,23 @@ export class SuggestionsComponent implements OnInit {
     }).catch((err) => {
       console.error(err);
     })
+  }
+
+  /**
+   * Load Suggestion popover
+   *
+   * @param {any} suggestion - The selected suggestion
+   */
+  selectSuggestion(suggestion: any) {
+    this.selectedSuggestion = suggestion;
+    this.viewSuggestion = true;
+  }
+
+  /**
+   * Close Suggestion popover
+   */
+  resetViewSuggestion() {
+    this.viewSuggestion = false;
+    this.selectedSuggestion = {};
   }
 }

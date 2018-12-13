@@ -1,3 +1,20 @@
-.centered-text {
-    text-align: center;
+﻿/* Charts */
+.chart-container{
+  margin-bottom: 30px;
+}
+.chart-container h3{
+  text-align: center;
+}
+
+/* Chart Info */
+.chart-title{
+  text-align: center;
+}
+.chart-title *{
+  display: inline-block;
+}
+.chart-title a {
+  vertical-align: top;
+  padding: 0 10px;
+  cursor: pointer;
 }

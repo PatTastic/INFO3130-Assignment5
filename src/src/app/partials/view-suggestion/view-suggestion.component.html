@@ -1,3 +1,16 @@
-<p>
-  view-suggestion works!
-</p>
+﻿<section id="app-view-suggestion">
+  <div id="view-map" [ngStyle]="{'background-image': staticMap }"></div>
+  <div id="suggestion-info">
+    <h2>{{suggestion.name}}</h2>
+    <p>Distance: {{(suggestion.distance / 1000).toFixed(2)}}km</p>
+    <p>Rating: {{suggestion.rating}}/5</p>
+    <div id="type-list-container">
+      <p>Types:</p>
+      <ul id="type-list" *ngIf="suggestion.allTypes.length > 0">
+        <li *ngFor="let type of suggestion.allTypes" class="view-type">
+          {{type}}
+        </li>
+      </ul>
+    </div>
+  </div>
+</section>
