@@ -1,12 +1,29 @@
-﻿#app-timeline {
+﻿/* Page */
+#app-timeline {
   height: calc(100vh - 125px);
   margin-top: -15px;
 }
 
+/* Map */
 .leaflet-container{
   height: 100%;
 }
 
+#last-update {
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  z-index: 9999;
+  margin: 0;
+  padding: 1px 10px;
+  width: 100%;
+  background-color: white;
+  border-top: 1px solid grey;
+  opacity: 0;
+  transition: opacity 0.5s;
+}
+
+/* Page Header */
 .top-content h2{
   display: inline-block;
   margin: 0;
@@ -24,6 +41,7 @@
   cursor: pointer;
 }
 
+/* Calendar Popup */
 .calendar-container h3 {
   position: absolute;
   top: 0;
@@ -32,4 +50,32 @@
   text-align: center;
   padding: 10px 5px;
   background-color: white;
+}
+
+/* Icons */
+.live-tracking-icon {
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  z-index: 9999;
+  font-size: 220%;
+  background-color: white;
+  width: 70px;
+  height: 70px;
+  text-align: center;
+  padding-top: 8px;
+  border-radius: 50%;
+  border: 1px solid grey;
+  box-shadow: 2px 3px 3px 2px rgba(0, 0, 0, 0.3);
+  cursor: pointer;
+}
+
+.back-icon {
+  position: absolute;
+  left: 20px;
+  font-size: 150%;
+  padding-top: 2px;
+  cursor: pointer;
+  width: 100px;
+  text-align: left;
 }

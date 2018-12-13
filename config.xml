@@ -26,9 +26,9 @@
     <plugin name="cordova-android-play-services-gradle-release" spec="^2.0.0">
         <variable name="PLAY_SERVICES_VERSION" value="11.6.2" />
     </plugin>
-    <plugin name="cordova-plugin-mauron85-background-geolocation" spec="^2.3.6">
+    <plugin name="cordova-plugin-mauron85-background-geolocation" spec="^3.0.0-alpha.47">
         <variable name="GOOGLE_PLAY_SERVICES_VERSION" value="11+" />
-        <variable name="ANDROID_SUPPORT_LIBRARY_VERSION" value="23+" />
+        <variable name="ANDROID_SUPPORT_LIBRARY_VERSION" value="26+" />
         <variable name="ICON" value="@mipmap/icon" />
         <variable name="SMALL_ICON" value="@mipmap/icon" />
         <variable name="ACCOUNT_NAME" value="@string/app_name" />

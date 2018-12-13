@@ -1,0 +1,3449 @@
+﻿[
+  {
+    "id": 1,
+    "lat": 43.390622,
+    "lng": -80.403003,
+    "address": "299 Doon Valley Dr, Kitchener, Ontario, Canada",
+    "ts": 1543896468420,
+    "day": "03-12-2018",
+    "weight": 1
+  },
+  {
+    "id": 2,
+    "lat": 43.390614,
+    "lng": -80.402992,
+    "address": "299 Doon Valley Dr, Kitchener, Ontario, Canada",
+    "ts": 1543896408420,
+    "day": "03-12-2018",
+    "weight": 1
+  },
+  {
+    "id": 3,
+    "lat": 43.390626,
+    "lng": -80.402927,
+    "address": "299 Doon Valley Dr, Kitchener, Ontario, Canada",
+    "ts": 1543896348420,
+    "day": "03-12-2018",
+    "weight": 1
+  },
+  {
+    "id": 4,
+    "lat": 43.390637,
+    "lng": -80.402852,
+    "address": "299 Doon Valley Dr, Kitchener, Ontario, Canada",
+    "ts": 1543896288420,
+    "day": "03-12-2018",
+    "weight": 1
+  },
+  {
+    "id": 5,
+    "lat": 43.390559,
+    "lng": -80.40282,
+    "address": "299 Doon Valley Dr, Kitchener, Ontario, Canada",
+    "ts": 1543896228420,
+    "day": "03-12-2018",
+    "weight": 1
+  },
+  {
+    "id": 6,
+    "lat": 43.390481,
+    "lng": -80.402804,
+    "address": "299 Doon Valley Dr, Kitchener, Ontario, Canada",
+    "ts": 1543896168420,
+    "day": "03-12-2018",
+    "weight": 1
+  },
+  {
+    "id": 7,
+    "lat": 43.390446,
+    "lng": -80.402863,
+    "address": "299 Doon Valley Dr, Kitchener, Ontario, Canada",
+    "ts": 1543896108420,
+    "day": "03-12-2018",
+    "weight": 1
+  },
+  {
+    "id": 8,
+    "lat": 43.390442,
+    "lng": -80.402922,
+    "address": "299 Doon Valley Dr, Kitchener, Ontario, Canada",
+    "ts": 1543896048420,
+    "day": "03-12-2018",
+    "weight": 1
+  },
+  {
+    "id": 9,
+    "lat": 43.390411,
+    "lng": -80.40304,
+    "address": "299 Doon Valley Dr, Kitchener, Ontario, Canada",
+    "ts": 1543895988420,
+    "day": "03-12-2018",
+    "weight": 1
+  },
+  {
+    "id": 10,
+    "lat": 43.3904,
+    "lng": -80.403126,
+    "address": "299 Doon Valley Dr, Kitchener, Ontario, Canada",
+    "ts": 1543895928420,
+    "day": "03-12-2018",
+    "weight": 1
+  },
+  {
+    "id": 11,
+    "lat": 43.3904,
+    "lng": -80.403201,
+    "address": "299 Doon Valley Dr, Kitchener, Ontario, Canada",
+    "ts": 1543895868420,
+    "day": "03-12-2018",
+    "weight": 1
+  },
+  {
+    "id": 12,
+    "lat": 43.390458,
+    "lng": -80.403217,
+    "address": "299 Doon Valley Dr, Kitchener, Ontario, Canada",
+    "ts": 1543895808420,
+    "day": "03-12-2018",
+    "weight": 1
+  },
+  {
+    "id": 13,
+    "lat": 43.390462,
+    "lng": -80.403319,
+    "address": "299 Doon Valley Dr, Kitchener, Ontario, Canada",
+    "ts": 1543895748420,
+    "day": "03-12-2018",
+    "weight": 1
+  },
+  {
+    "id": 14,
+    "lat": 43.390462,
+    "lng": -80.403314,
+    "address": "299 Doon Valley Dr, Kitchener, Ontario, Canada",
+    "ts": 1543895688420,
+    "day": "03-12-2018",
+    "weight": 1
+  },
+  {
+    "id": 15,
+    "lat": 43.390493,
+    "lng": -80.403335,
+    "address": "299 Doon Valley Dr, Kitchener, Ontario, Canada",
+    "ts": 1543895628420,
+    "day": "03-12-2018",
+    "weight": 1
+  },
+  {
+    "id": 16,
+    "lat": 43.390466,
+    "lng": -80.403319,
+    "address": "299 Doon Valley Dr, Kitchener, Ontario, Canada",
+    "ts": 1543895568420,
+    "day": "03-12-2018",
+    "weight": 1
+  },
+  {
+    "id": 17,
+    "lat": 43.390462,
+    "lng": -80.403324,
+    "address": "299 Doon Valley Dr, Kitchener, Ontario, Canada",
+    "ts": 1543895508420,
+    "day": "03-12-2018",
+    "weight": 1
+  },
+  {
+    "id": 18,
+    "lat": 43.390489,
+    "lng": -80.403255,
+    "address": "299 Doon Valley Dr, Kitchener, Ontario, Canada",
+    "ts": 1543895448420,
+    "day": "03-12-2018",
+    "weight": 1
+  },
+  {
+    "id": 19,
+    "lat": 43.390559,
+    "lng": -80.403265,
+    "address": "299 Doon Valley Dr, Kitchener, Ontario, Canada",
+    "ts": 1543895388420,
+    "day": "03-12-2018",
+    "weight": 1
+  },
+  {
+    "id": 20,
+    "lat": 43.390618,
+    "lng": -80.403276,
+    "address": "299 Doon Valley Dr, Kitchener, Ontario, Canada",
+    "ts": 1543895328420,
+    "day": "03-12-2018",
+    "weight": 1
+  },
+  {
+    "id": 21,
+    "lat": 43.390676,
+    "lng": -80.403287,
+    "address": "299 Doon Valley Dr, Kitchener, Ontario, Canada",
+    "ts": 1543895268420,
+    "day": "03-12-2018",
+    "weight": 1
+  },
+  {
+    "id": 22,
+    "lat": 43.390719,
+    "lng": -80.403298,
+    "address": "299 Doon Valley Dr, Kitchener, Ontario, Canada",
+    "ts": 1543895208420,
+    "day": "03-12-2018",
+    "weight": 1
+  },
+  {
+    "id": 23,
+    "lat": 43.390739,
+    "lng": -80.40319,
+    "address": "299 Doon Valley Dr, Kitchener, Ontario, Canada",
+    "ts": 1543895148420,
+    "day": "03-12-2018",
+    "weight": 1
+  },
+  {
+    "id": 24,
+    "lat": 43.390762,
+    "lng": -80.403088,
+    "address": "299 Doon Valley Dr, Kitchener, Ontario, Canada",
+    "ts": 1543895088420,
+    "day": "03-12-2018",
+    "weight": 1
+  },
+  {
+    "id": 25,
+    "lat": 43.390766,
+    "lng": -80.402986,
+    "address": "299 Doon Valley Dr, Kitchener, Ontario, Canada",
+    "ts": 1543895028420,
+    "day": "03-12-2018",
+    "weight": 1
+  },
+  {
+    "id": 26,
+    "lat": 43.390778,
+    "lng": -80.402906,
+    "address": "299 Doon Valley Dr, Kitchener, Ontario, Canada",
+    "ts": 1543894968420,
+    "day": "03-12-2018",
+    "weight": 1
+  },
+  {
+    "id": 27,
+    "lat": 43.390793,
+    "lng": -80.402825,
+    "address": "299 Doon Valley Dr, Kitchener, Ontario, Canada",
+    "ts": 1543894908420,
+    "day": "03-12-2018",
+    "weight": 1
+  },
+  {
+    "id": 28,
+    "lat": 43.390813,
+    "lng": -80.402724,
+    "address": "299 Doon Valley Dr, Kitchener, Ontario, Canada",
+    "ts": 1543894848420,
+    "day": "03-12-2018",
+    "weight": 1
+  },
+  {
+    "id": 29,
+    "lat": 43.390821,
+    "lng": -80.402659,
+    "address": "299 Doon Valley Dr, Kitchener, Ontario, Canada",
+    "ts": 1543894788420,
+    "day": "03-12-2018",
+    "weight": 1
+  },
+  {
+    "id": 30,
+    "lat": 43.390836,
+    "lng": -80.402568,
+    "address": "299 Doon Valley Dr, Kitchener, Ontario, Canada",
+    "ts": 1543894728420,
+    "day": "03-12-2018",
+    "weight": 1
+  },
+  {
+    "id": 31,
+    "lat": 43.390863,
+    "lng": -80.402509,
+    "address": "299 Doon Valley Dr, Kitchener, Ontario, Canada",
+    "ts": 1543894668420,
+    "day": "03-12-2018",
+    "weight": 1
+  },
+  {
+    "id": 32,
+    "lat": 43.390883,
+    "lng": -80.402429,
+    "address": "299 Doon Valley Dr, Kitchener, Ontario, Canada",
+    "ts": 1543894608420,
+    "day": "03-12-2018",
+    "weight": 1
+  },
+  {
+    "id": 33,
+    "lat": 43.390895,
+    "lng": -80.402327,
+    "address": "299 Doon Valley Dr, Kitchener, Ontario, Canada",
+    "ts": 1543894548420,
+    "day": "03-12-2018",
+    "weight": 1
+  },
+  {
+    "id": 34,
+    "lat": 43.390902,
+    "lng": -80.402251,
+    "address": "299 Doon Valley Dr, Kitchener, Ontario, Canada",
+    "ts": 1543894488420,
+    "day": "03-12-2018",
+    "weight": 1
+  },
+  {
+    "id": 35,
+    "lat": 43.390926,
+    "lng": -80.402192,
+    "address": "299 Doon Valley Dr, Kitchener, Ontario, Canada",
+    "ts": 1543894428420,
+    "day": "03-12-2018",
+    "weight": 1
+  },
+  {
+    "id": 36,
+    "lat": 43.390996,
+    "lng": -80.402198,
+    "address": "299 Doon Valley Dr, Kitchener, Ontario, Canada",
+    "ts": 1543894368420,
+    "day": "03-12-2018",
+    "weight": 1
+  },
+  {
+    "id": 37,
+    "lat": 43.391062,
+    "lng": -80.402225,
+    "address": "299 Doon Valley Dr, Kitchener, Ontario, Canada",
+    "ts": 1543894308420,
+    "day": "03-12-2018",
+    "weight": 1
+  },
+  {
+    "id": 38,
+    "lat": 43.391136,
+    "lng": -80.402241,
+    "address": "299 Doon Valley Dr, Kitchener, Ontario, Canada",
+    "ts": 1543894248420,
+    "day": "03-12-2018",
+    "weight": 1
+  },
+  {
+    "id": 39,
+    "lat": 43.391207,
+    "lng": -80.402262,
+    "address": "299 Doon Valley Dr, Kitchener, Ontario, Canada",
+    "ts": 1543894188420,
+    "day": "03-12-2018",
+    "weight": 1
+  },
+  {
+    "id": 40,
+    "lat": 43.391257,
+    "lng": -80.402278,
+    "address": "299 Doon Valley Dr, Kitchener, Ontario, Canada",
+    "ts": 1543894128420,
+    "day": "03-12-2018",
+    "weight": 1
+  },
+  {
+    "id": 41,
+    "lat": 43.391323,
+    "lng": -80.4023,
+    "address": "299 Doon Valley Dr, Kitchener, Ontario, Canada",
+    "ts": 1543894068420,
+    "day": "03-12-2018",
+    "weight": 1
+  },
+  {
+    "id": 42,
+    "lat": 43.39137,
+    "lng": -80.402337,
+    "address": "299 Doon Valley Dr, Kitchener, Ontario, Canada",
+    "ts": 1543894008420,
+    "day": "03-12-2018",
+    "weight": 1
+  },
+  {
+    "id": 43,
+    "lat": 43.391448,
+    "lng": -80.402348,
+    "address": "299 Doon Valley Dr, Kitchener, Ontario, Canada",
+    "ts": 1543893948420,
+    "day": "03-12-2018",
+    "weight": 1
+  },
+  {
+    "id": 44,
+    "lat": 43.391499,
+    "lng": -80.402364,
+    "address": "Doon Valley Drive, Kitchener, Ontario, Canada",
+    "ts": 1543893888420,
+    "day": "03-12-2018",
+    "weight": 1
+  },
+  {
+    "id": 45,
+    "lat": 43.391561,
+    "lng": -80.402396,
+    "address": "Doon Valley Drive, Kitchener, Ontario, Canada",
+    "ts": 1543893828420,
+    "day": "03-12-2018",
+    "weight": 1
+  },
+  {
+    "id": 46,
+    "lat": 43.391573,
+    "lng": -80.402305,
+    "address": "Doon Valley Drive, Kitchener, Ontario, Canada",
+    "ts": 1543893768420,
+    "day": "03-12-2018",
+    "weight": 1
+  },
+  {
+    "id": 47,
+    "lat": 43.391604,
+    "lng": -80.40223,
+    "address": "Doon Valley Drive, Kitchener, Ontario, Canada",
+    "ts": 1543893708420,
+    "day": "03-12-2018",
+    "weight": 1
+  },
+  {
+    "id": 48,
+    "lat": 43.391674,
+    "lng": -80.402268,
+    "address": "Doon Valley Drive, Kitchener, Ontario, Canada",
+    "ts": 1543893648420,
+    "day": "03-12-2018",
+    "weight": 1
+  },
+  {
+    "id": 49,
+    "lat": 43.39176,
+    "lng": -80.402294,
+    "address": "Doon Valley Drive, Kitchener, Ontario, Canada",
+    "ts": 1543893588420,
+    "day": "03-12-2018",
+    "weight": 1
+  },
+  {
+    "id": 50,
+    "lat": 43.39185,
+    "lng": -80.402321,
+    "address": "Doon Valley Drive, Kitchener, Ontario, Canada",
+    "ts": 1543893528420,
+    "day": "03-12-2018",
+    "weight": 1
+  },
+  {
+    "id": 51,
+    "lat": 43.391951,
+    "lng": -80.40231,
+    "address": "Doon Valley Drive, Kitchener, Ontario, Canada",
+    "ts": 1543893468420,
+    "day": "03-12-2018",
+    "weight": 1
+  },
+  {
+    "id": 52,
+    "lat": 43.391928,
+    "lng": -80.402321,
+    "address": "Doon Valley Drive, Kitchener, Ontario, Canada",
+    "ts": 1543893408420,
+    "day": "03-12-2018",
+    "weight": 1
+  },
+  {
+    "id": 53,
+    "lat": 43.391951,
+    "lng": -80.402343,
+    "address": "Doon Valley Drive, Kitchener, Ontario, Canada",
+    "ts": 1543893348420,
+    "day": "03-12-2018",
+    "weight": 1
+  },
+  {
+    "id": 54,
+    "lat": 43.391943,
+    "lng": -80.402321,
+    "address": "Doon Valley Drive, Kitchener, Ontario, Canada",
+    "ts": 1543893288420,
+    "day": "03-12-2018",
+    "weight": 1
+  },
+  {
+    "id": 55,
+    "lat": 43.391971,
+    "lng": -80.402268,
+    "address": "Doon Valley Drive, Kitchener, Ontario, Canada",
+    "ts": 1543893228420,
+    "day": "03-12-2018",
+    "weight": 1
+  },
+  {
+    "id": 56,
+    "lat": 43.392041,
+    "lng": -80.402262,
+    "address": "Doon Valley Drive, Kitchener, Ontario, Canada",
+    "ts": 1543893168420,
+    "day": "03-12-2018",
+    "weight": 1
+  },
+  {
+    "id": 57,
+    "lat": 43.392119,
+    "lng": -80.402289,
+    "address": "Doon Valley Drive, Kitchener, Ontario, Canada",
+    "ts": 1543893108420,
+    "day": "03-12-2018",
+    "weight": 1
+  },
+  {
+    "id": 58,
+    "lat": 43.39222,
+    "lng": -80.402273,
+    "address": "Doon Valley Drive, Kitchener, Ontario, Canada",
+    "ts": 1543893048420,
+    "day": "03-12-2018",
+    "weight": 1
+  },
+  {
+    "id": 59,
+    "lat": 43.392306,
+    "lng": -80.402219,
+    "address": "Doon Valley Drive, Kitchener, Ontario, Canada",
+    "ts": 1543892988420,
+    "day": "03-12-2018",
+    "weight": 1
+  },
+  {
+    "id": 60,
+    "lat": 43.392392,
+    "lng": -80.40215,
+    "address": "Doon Valley Drive, Kitchener, Ontario, Canada",
+    "ts": 1543892928420,
+    "day": "03-12-2018",
+    "weight": 1
+  },
+  {
+    "id": 61,
+    "lat": 43.392446,
+    "lng": -80.402096,
+    "address": "Doon Valley Drive, Kitchener, Ontario, Canada",
+    "ts": 1543892868420,
+    "day": "03-12-2018",
+    "weight": 1
+  },
+  {
+    "id": 62,
+    "lat": 43.392505,
+    "lng": -80.402005,
+    "address": "Doon Valley Drive, Kitchener, Ontario, Canada",
+    "ts": 1543892808420,
+    "day": "03-12-2018",
+    "weight": 1
+  },
+  {
+    "id": 63,
+    "lat": 43.39252,
+    "lng": -80.40186,
+    "address": "Doon Valley Drive, Kitchener, Ontario, Canada",
+    "ts": 1543892748420,
+    "day": "03-12-2018",
+    "weight": 1
+  },
+  {
+    "id": 64,
+    "lat": 43.392544,
+    "lng": -80.401704,
+    "address": "Doon Valley Drive, Kitchener, Ontario, Canada",
+    "ts": 1543892688420,
+    "day": "03-12-2018",
+    "weight": 1
+  },
+  {
+    "id": 65,
+    "lat": 43.392559,
+    "lng": -80.401618,
+    "address": "Doon Valley Drive, Kitchener, Ontario, Canada",
+    "ts": 1543892628420,
+    "day": "03-12-2018",
+    "weight": 1
+  },
+  {
+    "id": 66,
+    "lat": 43.392618,
+    "lng": -80.401635,
+    "address": "Doon Valley Drive, Kitchener, Ontario, Canada",
+    "ts": 1543892568420,
+    "day": "03-12-2018",
+    "weight": 1
+  },
+  {
+    "id": 67,
+    "lat": 43.392715,
+    "lng": -80.401667,
+    "address": "Doon Valley Drive, Kitchener, Ontario, Canada",
+    "ts": 1543892508420,
+    "day": "03-12-2018",
+    "weight": 1
+  },
+  {
+    "id": 68,
+    "lat": 43.392742,
+    "lng": -80.401844,
+    "address": "Doon Valley Drive, Kitchener, Ontario, Canada",
+    "ts": 1543892448420,
+    "day": "03-12-2018",
+    "weight": 1
+  },
+  {
+    "id": 69,
+    "lat": 43.392711,
+    "lng": -80.402069,
+    "address": "Doon Valley Drive, Kitchener, Ontario, Canada",
+    "ts": 1543892388420,
+    "day": "03-12-2018",
+    "weight": 1
+  },
+  {
+    "id": 70,
+    "lat": 43.392649,
+    "lng": -80.402386,
+    "address": "Doon Valley Drive, Kitchener, Ontario, Canada",
+    "ts": 1543892328420,
+    "day": "03-12-2018",
+    "weight": 1
+  },
+  {
+    "id": 71,
+    "lat": 43.392567,
+    "lng": -80.402884,
+    "address": "Doon Valley Drive, Kitchener, Ontario, Canada",
+    "ts": 1543892268420,
+    "day": "03-12-2018",
+    "weight": 1
+  },
+  {
+    "id": 72,
+    "lat": 43.392466,
+    "lng": -80.40348,
+    "address": "Doon Valley Drive, Kitchener, Ontario, Canada",
+    "ts": 1543892208420,
+    "day": "03-12-2018",
+    "weight": 1
+  },
+  {
+    "id": 73,
+    "lat": 43.392329,
+    "lng": -80.404354,
+    "address": "Doon Valley Drive, Kitchener, Ontario, Canada",
+    "ts": 1543892148420,
+    "day": "03-12-2018",
+    "weight": 1
+  },
+  {
+    "id": 74,
+    "lat": 43.392162,
+    "lng": -80.40539,
+    "address": "Doon Valley Drive, Kitchener, Ontario, Canada",
+    "ts": 1543892088420,
+    "day": "03-12-2018",
+    "weight": 1
+  },
+  {
+    "id": 75,
+    "lat": 43.39201,
+    "lng": -80.406312,
+    "address": "Doon Valley Drive, Kitchener, Ontario, Canada",
+    "ts": 1543892028420,
+    "day": "03-12-2018",
+    "weight": 1
+  },
+  {
+    "id": 76,
+    "lat": 43.39185,
+    "lng": -80.407219,
+    "address": "Doon Valley Drive, Kitchener, Ontario, Canada",
+    "ts": 1543891968420,
+    "day": "03-12-2018",
+    "weight": 1
+  },
+  {
+    "id": 77,
+    "lat": 43.391717,
+    "lng": -80.407965,
+    "address": "Doon Valley Drive, Kitchener, Ontario, Canada",
+    "ts": 1543891908420,
+    "day": "03-12-2018",
+    "weight": 1
+  },
+  {
+    "id": 78,
+    "lat": 43.3916,
+    "lng": -80.408694,
+    "address": "Doon Valley Drive, Kitchener, Ontario, Canada",
+    "ts": 1543891848420,
+    "day": "03-12-2018",
+    "weight": 1
+  },
+  {
+    "id": 79,
+    "lat": 43.391464,
+    "lng": -80.409134,
+    "address": "Doon Valley Drive, Kitchener, Ontario, Canada",
+    "ts": 1543891788420,
+    "day": "03-12-2018",
+    "weight": 1
+  },
+  {
+    "id": 80,
+    "lat": 43.391316,
+    "lng": -80.409504,
+    "address": "Doon Valley Drive, Kitchener, Ontario, Canada",
+    "ts": 1543891728420,
+    "day": "03-12-2018",
+    "weight": 1
+  },
+  {
+    "id": 81,
+    "lat": 43.391082,
+    "lng": -80.409805,
+    "address": "Doon Valley Drive, Kitchener, Ontario, Canada",
+    "ts": 1543891668420,
+    "day": "03-12-2018",
+    "weight": 1
+  },
+  {
+    "id": 82,
+    "lat": 43.390785,
+    "lng": -80.41003,
+    "address": "Doon Valley Drive, Kitchener, Ontario, Canada",
+    "ts": 1543891608420,
+    "day": "03-12-2018",
+    "weight": 1
+  },
+  {
+    "id": 83,
+    "lat": 43.390501,
+    "lng": -80.41018,
+    "address": "Doon Valley Drive, Kitchener, Ontario, Canada",
+    "ts": 1543891548420,
+    "day": "03-12-2018",
+    "weight": 1
+  },
+  {
+    "id": 84,
+    "lat": 43.390212,
+    "lng": -80.41032,
+    "address": "Doon Valley Drive, Kitchener, Ontario, Canada",
+    "ts": 1543891488420,
+    "day": "03-12-2018",
+    "weight": 1
+  },
+  {
+    "id": 85,
+    "lat": 43.389912,
+    "lng": -80.410454,
+    "address": "Doon Valley Drive, Kitchener, Ontario, Canada",
+    "ts": 1543891428420,
+    "day": "03-12-2018",
+    "weight": 1
+  },
+  {
+    "id": 86,
+    "lat": 43.389581,
+    "lng": -80.410593,
+    "address": "Doon Valley Drive, Kitchener, Ontario, Canada",
+    "ts": 1543891368420,
+    "day": "03-12-2018",
+    "weight": 1
+  },
+  {
+    "id": 87,
+    "lat": 43.389222,
+    "lng": -80.410738,
+    "address": "Doon Valley Drive, Kitchener, Ontario, Canada",
+    "ts": 1543891308420,
+    "day": "03-12-2018",
+    "weight": 1
+  },
+  {
+    "id": 88,
+    "lat": 43.388949,
+    "lng": -80.410894,
+    "address": "Doon Valley Drive, Kitchener, Ontario, Canada",
+    "ts": 1543891248420,
+    "day": "03-12-2018",
+    "weight": 1
+  },
+  {
+    "id": 89,
+    "lat": 43.38868,
+    "lng": -80.411012,
+    "address": "Doon Valley Drive, Kitchener, Ontario, Canada",
+    "ts": 1543891188420,
+    "day": "03-12-2018",
+    "weight": 1
+  },
+  {
+    "id": 90,
+    "lat": 43.388408,
+    "lng": -80.411173,
+    "address": "Doon Valley Drive, Kitchener, Ontario, Canada",
+    "ts": 1543891128420,
+    "day": "03-12-2018",
+    "weight": 1
+  },
+  {
+    "id": 91,
+    "lat": 43.388162,
+    "lng": -80.41128,
+    "address": "Doon Valley Drive, Kitchener, Ontario, Canada",
+    "ts": 1543891068420,
+    "day": "03-12-2018",
+    "weight": 1
+  },
+  {
+    "id": 92,
+    "lat": 43.387936,
+    "lng": -80.411403,
+    "address": "Doon Valley Drive, Kitchener, Ontario, Canada",
+    "ts": 1543891008420,
+    "day": "03-12-2018",
+    "weight": 1
+  },
+  {
+    "id": 93,
+    "lat": 43.38769,
+    "lng": -80.411521,
+    "address": "Doon Valley Drive, Kitchener, Ontario, Canada",
+    "ts": 1543890948420,
+    "day": "03-12-2018",
+    "weight": 1
+  },
+  {
+    "id": 94,
+    "lat": 43.38748,
+    "lng": -80.411645,
+    "address": "Doon Valley Drive, Kitchener, Ontario, Canada",
+    "ts": 1543890888420,
+    "day": "03-12-2018",
+    "weight": 1
+  },
+  {
+    "id": 95,
+    "lat": 43.387273,
+    "lng": -80.411736,
+    "address": "Doon Valley Drive, Kitchener, Ontario, Canada",
+    "ts": 1543890828420,
+    "day": "03-12-2018",
+    "weight": 1
+  },
+  {
+    "id": 96,
+    "lat": 43.387059,
+    "lng": -80.411822,
+    "address": "Doon Valley Drive, Kitchener, Ontario, Canada",
+    "ts": 1543890768420,
+    "day": "03-12-2018",
+    "weight": 1
+  },
+  {
+    "id": 97,
+    "lat": 43.386844,
+    "lng": -80.411929,
+    "address": "Conestoga College Boulevard, Kitchener, Ontario, Canada",
+    "ts": 1543890708420,
+    "day": "03-12-2018",
+    "weight": 1
+  },
+  {
+    "id": 98,
+    "lat": 43.386634,
+    "lng": -80.412036,
+    "address": "Conestoga College Boulevard, Kitchener, Ontario, Canada",
+    "ts": 1543890648420,
+    "day": "03-12-2018",
+    "weight": 1
+  },
+  {
+    "id": 99,
+    "lat": 43.385612,
+    "lng": -80.412605,
+    "address": "100 Conestoga College Boulevard, Kitchener, Ontario, Canada",
+    "ts": 1543890588420,
+    "day": "03-12-2018",
+    "weight": 1
+  },
+  {
+    "id": 100,
+    "lat": 43.385382,
+    "lng": -80.412728,
+    "address": "102 Conestoga College Boulevard, Kitchener, Ontario, Canada",
+    "ts": 1543890528420,
+    "day": "03-12-2018",
+    "weight": 1
+  },
+  {
+    "id": 101,
+    "lat": 43.385191,
+    "lng": -80.41276,
+    "address": "104 Conestoga College Boulevard, Kitchener, Ontario, Canada",
+    "ts": 1543890468420,
+    "day": "03-12-2018",
+    "weight": 1
+  },
+  {
+    "id": 102,
+    "lat": 43.385031,
+    "lng": -80.412744,
+    "address": "106 Conestoga College Boulevard, Kitchener, Ontario, Canada",
+    "ts": 1543890408420,
+    "day": "03-12-2018",
+    "weight": 1
+  },
+  {
+    "id": 103,
+    "lat": 43.38486,
+    "lng": -80.412691,
+    "address": "108 Conestoga College Boulevard, Kitchener, Ontario, Canada",
+    "ts": 1543890348420,
+    "day": "03-12-2018",
+    "weight": 1
+  },
+  {
+    "id": 104,
+    "lat": 43.384688,
+    "lng": -80.412562,
+    "address": "110 Conestoga College Boulevard, Kitchener, Ontario, Canada",
+    "ts": 1543890288420,
+    "day": "03-12-2018",
+    "weight": 1
+  },
+  {
+    "id": 105,
+    "lat": 43.384552,
+    "lng": -80.412396,
+    "address": "112 Conestoga College Boulevard, Kitchener, Ontario, Canada",
+    "ts": 1543890228420,
+    "day": "03-12-2018",
+    "weight": 1
+  },
+  {
+    "id": 106,
+    "lat": 43.38447,
+    "lng": -80.412208,
+    "address": "114 Conestoga College Boulevard, Kitchener, Ontario, Canada",
+    "ts": 1543890168420,
+    "day": "03-12-2018",
+    "weight": 1
+  },
+  {
+    "id": 107,
+    "lat": 43.3844,
+    "lng": -80.411983,
+    "address": "116 Conestoga College Boulevard, Kitchener, Ontario, Canada",
+    "ts": 1543890108420,
+    "day": "03-12-2018",
+    "weight": 1
+  },
+  {
+    "id": 108,
+    "lat": 43.384373,
+    "lng": -80.411848,
+    "address": "118 Conestoga College Boulevard, Kitchener, Ontario, Canada",
+    "ts": 1543890048420,
+    "day": "03-12-2018",
+    "weight": 1
+  },
+  {
+    "id": 109,
+    "lat": 43.384361,
+    "lng": -80.411682,
+    "address": "120 Conestoga College Boulevard, Kitchener, Ontario, Canada",
+    "ts": 1543889988420,
+    "day": "03-12-2018",
+    "weight": 1
+  },
+  {
+    "id": 110,
+    "lat": 43.384376,
+    "lng": -80.411596,
+    "address": "120 Conestoga College Boulevard, Kitchener, Ontario, Canada",
+    "ts": 1543889928420,
+    "day": "03-12-2018",
+    "weight": 1
+  },
+  {
+    "id": 111,
+    "lat": 43.384427,
+    "lng": -80.411543,
+    "address": "120 Conestoga College Boulevard, Kitchener, Ontario, Canada",
+    "ts": 1543889868420,
+    "day": "03-12-2018",
+    "weight": 1
+  },
+  {
+    "id": 112,
+    "lat": 43.384513,
+    "lng": -80.4115,
+    "address": "99 Conestoga College Boulevard, Kitchener, Ontario, Canada",
+    "ts": 1543889808420,
+    "day": "03-12-2018",
+    "weight": 1
+  },
+  {
+    "id": 113,
+    "lat": 43.384564,
+    "lng": -80.411419,
+    "address": "99 Conestoga College Boulevard, Kitchener, Ontario, Canada",
+    "ts": 1543889748420,
+    "day": "03-12-2018",
+    "weight": 1
+  },
+  {
+    "id": 114,
+    "lat": 43.384571,
+    "lng": -80.411323,
+    "address": "99 Conestoga College Boulevard, Kitchener, Ontario, Canada",
+    "ts": 1543889688420,
+    "day": "03-12-2018",
+    "weight": 1
+  },
+  {
+    "id": 115,
+    "lat": 43.384579,
+    "lng": -80.411226,
+    "address": "99 Conestoga College Boulevard, Kitchener, Ontario, Canada",
+    "ts": 1543889628420,
+    "day": "03-12-2018",
+    "weight": 1
+  },
+  {
+    "id": 116,
+    "lat": 43.384579,
+    "lng": -80.411124,
+    "address": "99 Conestoga College Boulevard, Kitchener, Ontario, Canada",
+    "ts": 1543889568420,
+    "day": "03-12-2018",
+    "weight": 1
+  },
+  {
+    "id": 117,
+    "lat": 43.384591,
+    "lng": -80.411033,
+    "address": "99 Conestoga College Boulevard, Kitchener, Ontario, Canada",
+    "ts": 1543889508420,
+    "day": "03-12-2018",
+    "weight": 1
+  },
+  {
+    "id": 118,
+    "lat": 43.384657,
+    "lng": -80.41099,
+    "address": "99 Conestoga College Boulevard, Kitchener, Ontario, Canada",
+    "ts": 1543889448420,
+    "day": "03-12-2018",
+    "weight": 1
+  },
+  {
+    "id": 119,
+    "lat": 43.384743,
+    "lng": -80.410963,
+    "address": "99 Conestoga College Boulevard, Kitchener, Ontario, Canada",
+    "ts": 1543889388420,
+    "day": "03-12-2018",
+    "weight": 1
+  },
+  {
+    "id": 120,
+    "lat": 43.384825,
+    "lng": -80.410963,
+    "address": "99 Conestoga College Boulevard, Kitchener, Ontario, Canada",
+    "ts": 1543889328420,
+    "day": "03-12-2018",
+    "weight": 1
+  },
+  {
+    "id": 121,
+    "lat": 43.384914,
+    "lng": -80.410953,
+    "address": "99 Conestoga College Boulevard, Kitchener, Ontario, Canada",
+    "ts": 1543889268420,
+    "day": "03-12-2018",
+    "weight": 1
+  },
+  {
+    "id": 122,
+    "lat": 43.384996,
+    "lng": -80.410953,
+    "address": "99 Conestoga College Boulevard, Kitchener, Ontario, Canada",
+    "ts": 1543889208420,
+    "day": "03-12-2018",
+    "weight": 1
+  },
+  {
+    "id": 123,
+    "lat": 43.385074,
+    "lng": -80.410947,
+    "address": "99 Conestoga College Boulevard, Kitchener, Ontario, Canada",
+    "ts": 1543889148420,
+    "day": "03-12-2018",
+    "weight": 1
+  },
+  {
+    "id": 124,
+    "lat": 43.385047,
+    "lng": -80.41099,
+    "address": "99 Conestoga College Boulevard, Kitchener, Ontario, Canada",
+    "ts": 1543889088420,
+    "day": "03-12-2018",
+    "weight": 1
+  },
+  {
+    "id": 125,
+    "lat": 43.385063,
+    "lng": -80.411081,
+    "address": "99 Conestoga College Boulevard, Kitchener, Ontario, Canada",
+    "ts": 1543889028420,
+    "day": "03-12-2018",
+    "weight": 1
+  },
+  {
+    "id": 126,
+    "lat": 43.385067,
+    "lng": -80.41106,
+    "address": "99 Conestoga College Boulevard, Kitchener, Ontario, Canada",
+    "ts": 1543888968420,
+    "day": "03-12-2018",
+    "weight": 1
+  },
+  {
+    "id": 127,
+    "lat": 43.385039,
+    "lng": -80.411071,
+    "address": "99 Conestoga College Boulevard, Kitchener, Ontario, Canada",
+    "ts": 1543888908420,
+    "day": "03-12-2018",
+    "weight": 1
+  },
+  {
+    "id": 128,
+    "lat": 43.385059,
+    "lng": -80.411108,
+    "address": "99 Conestoga College Boulevard, Kitchener, Ontario, Canada",
+    "ts": 1543888848420,
+    "day": "03-12-2018",
+    "weight": 1
+  },
+  {
+    "id": 129,
+    "lat": 43.385137,
+    "lng": -80.411108,
+    "address": "99 Conestoga College Boulevard, Kitchener, Ontario, Canada",
+    "ts": 1543888788420,
+    "day": "03-12-2018",
+    "weight": 1
+  },
+  {
+    "id": 130,
+    "lat": 43.385226,
+    "lng": -80.411114,
+    "address": "99 Conestoga College Boulevard, Kitchener, Ontario, Canada",
+    "ts": 1543888728420,
+    "day": "03-12-2018",
+    "weight": 1
+  },
+  {
+    "id": 131,
+    "lat": 43.385293,
+    "lng": -80.411226,
+    "address": "99 Conestoga College Boulevard, Kitchener, Ontario, Canada",
+    "ts": 1543888668420,
+    "day": "03-12-2018",
+    "weight": 1
+  },
+  {
+    "id": 132,
+    "lat": 43.385312,
+    "lng": -80.411371,
+    "address": "99 Conestoga College Boulevard, Kitchener, Ontario, Canada",
+    "ts": 1543888608420,
+    "day": "03-12-2018",
+    "weight": 1
+  },
+  {
+    "id": 133,
+    "lat": 43.385304,
+    "lng": -80.411521,
+    "address": "99 Conestoga College Boulevard, Kitchener, Ontario, Canada",
+    "ts": 1543888548420,
+    "day": "03-12-2018",
+    "weight": 1
+  },
+  {
+    "id": 134,
+    "lat": 43.385304,
+    "lng": -80.411666,
+    "address": "99 Conestoga College Boulevard, Kitchener, Ontario, Canada",
+    "ts": 1543888488420,
+    "day": "03-12-2018",
+    "weight": 1
+  },
+  {
+    "id": 135,
+    "lat": 43.385246,
+    "lng": -80.411736,
+    "address": "99 Conestoga College Boulevard, Kitchener, Ontario, Canada",
+    "ts": 1543888428420,
+    "day": "03-12-2018",
+    "weight": 1
+  },
+  {
+    "id": 136,
+    "lat": 43.385148,
+    "lng": -80.411714,
+    "address": "99 Conestoga College Boulevard, Kitchener, Ontario, Canada",
+    "ts": 1543888368420,
+    "day": "03-12-2018",
+    "weight": 1
+  },
+  {
+    "id": 137,
+    "lat": 43.385152,
+    "lng": -80.411575,
+    "address": "99 Conestoga College Boulevard, Kitchener, Ontario, Canada",
+    "ts": 1543888308420,
+    "day": "03-12-2018",
+    "weight": 1
+  },
+  {
+    "id": 138,
+    "lat": 43.385152,
+    "lng": -80.411457,
+    "address": "99 Conestoga College Boulevard, Kitchener, Ontario, Canada",
+    "ts": 1543888248420,
+    "day": "03-12-2018",
+    "weight": 1
+  },
+  {
+    "id": 139,
+    "lat": 43.38516,
+    "lng": -80.411323,
+    "address": "99 Conestoga College Boulevard, Kitchener, Ontario, Canada",
+    "ts": 1543888188420,
+    "day": "03-12-2018",
+    "weight": 1
+  },
+  {
+    "id": 140,
+    "lat": 43.385113,
+    "lng": -80.411264,
+    "address": "99 Conestoga College Boulevard, Kitchener, Ontario, Canada",
+    "ts": 1543888128420,
+    "day": "03-12-2018",
+    "weight": 1
+  },
+  {
+    "id": 141,
+    "lat": 43.385024,
+    "lng": -80.411253,
+    "address": "99 Conestoga College Boulevard, Kitchener, Ontario, Canada",
+    "ts": 1543888068420,
+    "day": "03-12-2018",
+    "weight": 1
+  },
+  {
+    "id": 142,
+    "lat": 43.384911,
+    "lng": -80.411242,
+    "address": "99 Conestoga College Boulevard, Kitchener, Ontario, Canada",
+    "ts": 1543888008420,
+    "day": "03-12-2018",
+    "weight": 1
+  },
+  {
+    "id": 143,
+    "lat": 43.384848,
+    "lng": -80.411189,
+    "address": "99 Conestoga College Boulevard, Kitchener, Ontario, Canada",
+    "ts": 1543887948420,
+    "day": "03-12-2018",
+    "weight": 1
+  },
+  {
+    "id": 1,
+    "lat": 43.41936846605356,
+    "lng": -80.45040249824525,
+    "address": "",
+    "ts": 1544410095106,
+    "day": "04-12-2018",
+    "weight": 1
+  },
+  {
+    "id": 2,
+    "lat": 43.41939184447348,
+    "lng": -80.45038640499116,
+    "address": "",
+    "ts": 1544410095102,
+    "day": "04-12-2018",
+    "weight": 1
+  },
+  {
+    "id": 3,
+    "lat": 43.419372362457494,
+    "lng": -80.45033276081087,
+    "address": "",
+    "ts": 1544410095110,
+    "day": "04-12-2018",
+    "weight": 1
+  },
+  {
+    "id": 4,
+    "lat": 43.41934508762461,
+    "lng": -80.4503756761551,
+    "address": "",
+    "ts": 1544410095102,
+    "day": "04-12-2018",
+    "weight": 1
+  },
+  {
+    "id": 5,
+    "lat": 43.419356776840225,
+    "lng": -80.45046687126161,
+    "address": "",
+    "ts": 1544410095103,
+    "day": "04-12-2018",
+    "weight": 1
+  },
+  {
+    "id": 6,
+    "lat": 43.41939963727813,
+    "lng": -80.45046687126161,
+    "address": "",
+    "ts": 1544410095109,
+    "day": "04-12-2018",
+    "weight": 1
+  },
+  {
+    "id": 7,
+    "lat": 43.41945808328091,
+    "lng": -80.45038104057313,
+    "address": "",
+    "ts": 1544410095105,
+    "day": "04-12-2018",
+    "weight": 1
+  },
+  {
+    "id": 8,
+    "lat": 43.41939963727813,
+    "lng": -80.45034348964693,
+    "address": "",
+    "ts": 1544410095107,
+    "day": "04-12-2018",
+    "weight": 1
+  },
+  {
+    "id": 9,
+    "lat": 43.41938015526464,
+    "lng": -80.45044004917146,
+    "address": "",
+    "ts": 1544410095107,
+    "day": "04-12-2018",
+    "weight": 1
+  },
+  {
+    "id": 10,
+    "lat": 43.41940743008177,
+    "lng": -80.4504293203354,
+    "address": "",
+    "ts": 1544410095108,
+    "day": "04-12-2018",
+    "weight": 1
+  },
+  {
+    "id": 11,
+    "lat": 43.419337294812934,
+    "lng": -80.45041859149934,
+    "address": "",
+    "ts": 1544410095106,
+    "day": "04-12-2018",
+    "weight": 1
+  },
+  {
+    "id": 12,
+    "lat": 43.41938405166783,
+    "lng": -80.45050442218782,
+    "address": "",
+    "ts": 1544410095105,
+    "day": "04-12-2018",
+    "weight": 1
+  },
+  {
+    "id": 13,
+    "lat": 43.41945029048381,
+    "lng": -80.45043468475343,
+    "address": "",
+    "ts": 1544410095105,
+    "day": "04-12-2018",
+    "weight": 1
+  },
+  {
+    "id": 14,
+    "lat": 43.419434704886584,
+    "lng": -80.450359582901,
+    "address": "",
+    "ts": 1544410095109,
+    "day": "04-12-2018",
+    "weight": 1
+  },
+  {
+    "id": 15,
+    "lat": 43.41935288043528,
+    "lng": -80.45038104057313,
+    "address": "",
+    "ts": 1544410095107,
+    "day": "04-12-2018",
+    "weight": 1
+  },
+  {
+    "id": 16,
+    "lat": 43.419329502000295,
+    "lng": -80.45046150684358,
+    "address": "",
+    "ts": 1544410095104,
+    "day": "04-12-2018",
+    "weight": 1
+  },
+  {
+    "id": 17,
+    "lat": 43.41938405166783,
+    "lng": -80.45049905776979,
+    "address": "",
+    "ts": 1544410095102,
+    "day": "04-12-2018",
+    "weight": 1
+  },
+  {
+    "id": 18,
+    "lat": 43.419442497685694,
+    "lng": -80.45045077800752,
+    "address": "",
+    "ts": 1544410095106,
+    "day": "04-12-2018",
+    "weight": 1
+  },
+  {
+    "id": 19,
+    "lat": 43.419356776840225,
+    "lng": -80.4503756761551,
+    "address": "",
+    "ts": 1544410095105,
+    "day": "04-12-2018",
+    "weight": 1
+  },
+  {
+    "id": 20,
+    "lat": 43.41932560559359,
+    "lng": -80.45043468475343,
+    "address": "",
+    "ts": 1544410095103,
+    "day": "04-12-2018",
+    "weight": 1
+  },
+  {
+    "id": 21,
+    "lat": 43.419341191218905,
+    "lng": -80.45048832893373,
+    "address": "",
+    "ts": 1544410095106,
+    "day": "04-12-2018",
+    "weight": 1
+  },
+  {
+    "id": 22,
+    "lat": 43.419403533680054,
+    "lng": -80.45047223567964,
+    "address": "",
+    "ts": 1544410095109,
+    "day": "04-12-2018",
+    "weight": 1
+  },
+  {
+    "id": 23,
+    "lat": 43.41939963727813,
+    "lng": -80.45040249824525,
+    "address": "",
+    "ts": 1544410095106,
+    "day": "04-12-2018",
+    "weight": 1
+  },
+  {
+    "id": 24,
+    "lat": 43.41936067324492,
+    "lng": -80.45036494731904,
+    "address": "",
+    "ts": 1544410095104,
+    "day": "04-12-2018",
+    "weight": 1
+  },
+  {
+    "id": 25,
+    "lat": 43.41936846605356,
+    "lng": -80.45044004917146,
+    "address": "",
+    "ts": 1544410095108,
+    "day": "04-12-2018",
+    "weight": 1
+  },
+  {
+    "id": 26,
+    "lat": 43.41937625886119,
+    "lng": -80.45036494731904,
+    "address": "",
+    "ts": 1544410095104,
+    "day": "04-12-2018",
+    "weight": 1
+  },
+  {
+    "id": 27,
+    "lat": 43.41932170918663,
+    "lng": -80.45032739639284,
+    "address": "",
+    "ts": 1544410095101,
+    "day": "04-12-2018",
+    "weight": 1
+  },
+  {
+    "id": 28,
+    "lat": 43.41921260969003,
+    "lng": -80.45033812522888,
+    "address": "",
+    "ts": 1544410095104,
+    "day": "04-12-2018",
+    "weight": 1
+  },
+  {
+    "id": 29,
+    "lat": 43.41918143836917,
+    "lng": -80.45044004917146,
+    "address": "",
+    "ts": 1544410095107,
+    "day": "04-12-2018",
+    "weight": 1
+  },
+  {
+    "id": 30,
+    "lat": 43.41915805986804,
+    "lng": -80.45059561729433,
+    "address": "",
+    "ts": 1544410095103,
+    "day": "04-12-2018",
+    "weight": 1
+  },
+  {
+    "id": 31,
+    "lat": 43.41926715946291,
+    "lng": -80.45065462589265,
+    "address": "",
+    "ts": 1544410095101,
+    "day": "04-12-2018",
+    "weight": 1
+  },
+  {
+    "id": 32,
+    "lat": 43.4193879480708,
+    "lng": -80.45069217681885,
+    "address": "",
+    "ts": 1544410095108,
+    "day": "04-12-2018",
+    "weight": 1
+  },
+  {
+    "id": 33,
+    "lat": 43.41950873643773,
+    "lng": -80.45074582099916,
+    "address": "",
+    "ts": 1544410095102,
+    "day": "04-12-2018",
+    "weight": 1
+  },
+  {
+    "id": 34,
+    "lat": 43.41959835345747,
+    "lng": -80.45077264308931,
+    "address": "",
+    "ts": 1544410095109,
+    "day": "04-12-2018",
+    "weight": 1
+  },
+  {
+    "id": 35,
+    "lat": 43.419676281192906,
+    "lng": -80.45083701610567,
+    "address": "",
+    "ts": 1544410095103,
+    "day": "04-12-2018",
+    "weight": 1
+  },
+  {
+    "id": 36,
+    "lat": 43.41966459203897,
+    "lng": -80.4509335756302,
+    "address": "",
+    "ts": 1544410095110,
+    "day": "04-12-2018",
+    "weight": 1
+  },
+  {
+    "id": 37,
+    "lat": 43.41976200158602,
+    "lng": -80.45032739639284,
+    "address": "",
+    "ts": 1544410095106,
+    "day": "04-12-2018",
+    "weight": 1
+  },
+  {
+    "id": 38,
+    "lat": 43.41965290288278,
+    "lng": -80.45105695724487,
+    "address": "",
+    "ts": 1544410095101,
+    "day": "04-12-2018",
+    "weight": 1
+  },
+  {
+    "id": 39,
+    "lat": 43.419481461666244,
+    "lng": -80.45191526412965,
+    "address": "",
+    "ts": 1544410095109,
+    "day": "04-12-2018",
+    "weight": 1
+  },
+  {
+    "id": 40,
+    "lat": 43.41936456964938,
+    "lng": -80.45263409614564,
+    "address": "",
+    "ts": 1544410095104,
+    "day": "04-12-2018",
+    "weight": 1
+  },
+  {
+    "id": 41,
+    "lat": 43.41926326305219,
+    "lng": -80.45317053794862,
+    "address": "",
+    "ts": 1544410095103,
+    "day": "04-12-2018",
+    "weight": 1
+  },
+  {
+    "id": 42,
+    "lat": 43.419169749119725,
+    "lng": -80.45387864112855,
+    "address": "",
+    "ts": 1544410095106,
+    "day": "04-12-2018",
+    "weight": 1
+  },
+  {
+    "id": 43,
+    "lat": 43.41919312761638,
+    "lng": -80.4546618461609,
+    "address": "",
+    "ts": 1544410095107,
+    "day": "04-12-2018",
+    "weight": 1
+  },
+  {
+    "id": 44,
+    "lat": 43.41933339840674,
+    "lng": -80.45535922050477,
+    "address": "",
+    "ts": 1544410095101,
+    "day": "04-12-2018",
+    "weight": 1
+  },
+  {
+    "id": 45,
+    "lat": 43.41962173178861,
+    "lng": -80.45599222183229,
+    "address": "",
+    "ts": 1544410095103,
+    "day": "04-12-2018",
+    "weight": 1
+  },
+  {
+    "id": 46,
+    "lat": 43.41991006379742,
+    "lng": -80.45652866363527,
+    "address": "",
+    "ts": 1544410095104,
+    "day": "04-12-2018",
+    "weight": 1
+  },
+  {
+    "id": 47,
+    "lat": 43.420276321396294,
+    "lng": -80.45703291893007,
+    "address": "",
+    "ts": 1544410095105,
+    "day": "04-12-2018",
+    "weight": 1
+  },
+  {
+    "id": 48,
+    "lat": 43.420478931031056,
+    "lng": -80.45734405517578,
+    "address": "",
+    "ts": 1544410095109,
+    "day": "04-12-2018",
+    "weight": 1
+  },
+  {
+    "id": 49,
+    "lat": 43.420642576779564,
+    "lng": -80.45752644538881,
+    "address": "",
+    "ts": 1544410095104,
+    "day": "04-12-2018",
+    "weight": 1
+  },
+  {
+    "id": 50,
+    "lat": 43.420728295804636,
+    "lng": -80.45767664909363,
+    "address": "",
+    "ts": 1544410095110,
+    "day": "04-12-2018",
+    "weight": 1
+  },
+  {
+    "id": 51,
+    "lat": 43.420837392570114,
+    "lng": -80.45770883560182,
+    "address": "",
+    "ts": 1544410095108,
+    "day": "04-12-2018",
+    "weight": 1
+  },
+  {
+    "id": 52,
+    "lat": 43.420946489139006,
+    "lng": -80.45753717422487,
+    "address": "",
+    "ts": 1544410095108,
+    "day": "04-12-2018",
+    "weight": 1
+  },
+  {
+    "id": 53,
+    "lat": 43.42106337810182,
+    "lng": -80.45745134353639,
+    "address": "",
+    "ts": 1544410095101,
+    "day": "04-12-2018",
+    "weight": 1
+  },
+  {
+    "id": 54,
+    "lat": 43.4211568891096,
+    "lng": -80.45730113983156,
+    "address": "",
+    "ts": 1544410095109,
+    "day": "04-12-2018",
+    "weight": 1
+  },
+  {
+    "id": 55,
+    "lat": 43.421281570228594,
+    "lng": -80.45711874961854,
+    "address": "",
+    "ts": 1544410095104,
+    "day": "04-12-2018",
+    "weight": 1
+  },
+  {
+    "id": 56,
+    "lat": 43.42138287344875,
+    "lng": -80.45695781707765,
+    "address": "",
+    "ts": 1544410095108,
+    "day": "04-12-2018",
+    "weight": 1
+  },
+  {
+    "id": 57,
+    "lat": 43.42146079888737,
+    "lng": -80.45681834220888,
+    "address": "",
+    "ts": 1544410095106,
+    "day": "04-12-2018",
+    "weight": 1
+  },
+  {
+    "id": 58,
+    "lat": 43.4215075541024,
+    "lng": -80.4566788673401,
+    "address": "",
+    "ts": 1544410095105,
+    "day": "04-12-2018",
+    "weight": 1
+  },
+  {
+    "id": 59,
+    "lat": 43.42164002701555,
+    "lng": -80.45663595199585,
+    "address": "",
+    "ts": 1544410095108,
+    "day": "04-12-2018",
+    "weight": 1
+  },
+  {
+    "id": 60,
+    "lat": 43.42175691463938,
+    "lng": -80.4567861557007,
+    "address": "",
+    "ts": 1544410095110,
+    "day": "04-12-2018",
+    "weight": 1
+  },
+  {
+    "id": 61,
+    "lat": 43.42185821706414,
+    "lng": -80.45693635940553,
+    "address": "",
+    "ts": 1544410095110,
+    "day": "04-12-2018",
+    "weight": 1
+  },
+  {
+    "id": 62,
+    "lat": 43.42195951931942,
+    "lng": -80.4570758342743,
+    "address": "",
+    "ts": 1544410095105,
+    "day": "04-12-2018",
+    "weight": 1
+  },
+  {
+    "id": 63,
+    "lat": 43.42203744401583,
+    "lng": -80.45714020729066,
+    "address": "",
+    "ts": 1544410095108,
+    "day": "04-12-2018",
+    "weight": 1
+  },
+  {
+    "id": 64,
+    "lat": 43.42213095351912,
+    "lng": -80.4572367668152,
+    "address": "",
+    "ts": 1544410095109,
+    "day": "04-12-2018",
+    "weight": 1
+  },
+  {
+    "id": 65,
+    "lat": 43.42216991576952,
+    "lng": -80.45736551284791,
+    "address": "",
+    "ts": 1544410095101,
+    "day": "04-12-2018",
+    "weight": 1
+  },
+  {
+    "id": 66,
+    "lat": 43.42208419878553,
+    "lng": -80.45753717422487,
+    "address": "",
+    "ts": 1544410095106,
+    "day": "04-12-2018",
+    "weight": 1
+  },
+  {
+    "id": 67,
+    "lat": 43.42204523647996,
+    "lng": -80.45752644538881,
+    "address": "",
+    "ts": 1544410095101,
+    "day": "04-12-2018",
+    "weight": 1
+  },
+  {
+    "id": 68,
+    "lat": 43.422091991243626,
+    "lng": -80.45749425888063,
+    "address": "",
+    "ts": 1544410095107,
+    "day": "04-12-2018",
+    "weight": 1
+  },
+  {
+    "id": 69,
+    "lat": 43.42206082140519,
+    "lng": -80.45756936073305,
+    "address": "",
+    "ts": 1544410095110,
+    "day": "04-12-2018",
+    "weight": 1
+  },
+  {
+    "id": 70,
+    "lat": 43.42209978370074,
+    "lng": -80.45750498771669,
+    "address": "",
+    "ts": 1544410095110,
+    "day": "04-12-2018",
+    "weight": 1
+  },
+  {
+    "id": 1,
+    "lat": 43.386009959463294,
+    "lng": -80.41389763355255,
+    "address": "",
+    "ts": 1544410296300,
+    "day": "05-12-2018",
+    "weight": 1
+  },
+  {
+    "id": 2,
+    "lat": 43.38602555366178,
+    "lng": -80.41393518447877,
+    "address": "",
+    "ts": 1544410296301,
+    "day": "05-12-2018",
+    "weight": 1
+  },
+  {
+    "id": 3,
+    "lat": 43.38602945221078,
+    "lng": -80.41402101516725,
+    "address": "",
+    "ts": 1544410296294,
+    "day": "05-12-2018",
+    "weight": 1
+  },
+  {
+    "id": 4,
+    "lat": 43.38603724930801,
+    "lng": -80.41406929492952,
+    "address": "",
+    "ts": 1544410296294,
+    "day": "05-12-2018",
+    "weight": 1
+  },
+  {
+    "id": 5,
+    "lat": 43.38602555366178,
+    "lng": -80.41409611701967,
+    "address": "",
+    "ts": 1544410296299,
+    "day": "05-12-2018",
+    "weight": 1
+  },
+  {
+    "id": 6,
+    "lat": 43.3859709739495,
+    "lng": -80.41423559188844,
+    "address": "",
+    "ts": 1544410296296,
+    "day": "05-12-2018",
+    "weight": 1
+  },
+  {
+    "id": 7,
+    "lat": 43.385974872502004,
+    "lng": -80.4141926765442,
+    "address": "",
+    "ts": 1544410296292,
+    "day": "05-12-2018",
+    "weight": 1
+  },
+  {
+    "id": 8,
+    "lat": 43.385982669606264,
+    "lng": -80.4141014814377,
+    "address": "",
+    "ts": 1544410296294,
+    "day": "05-12-2018",
+    "weight": 1
+  },
+  {
+    "id": 9,
+    "lat": 43.38599826381179,
+    "lng": -80.41402101516725,
+    "address": "",
+    "ts": 1544410296300,
+    "day": "05-12-2018",
+    "weight": 1
+  },
+  {
+    "id": 10,
+    "lat": 43.38592419129987,
+    "lng": -80.41398346424104,
+    "address": "",
+    "ts": 1544410296296,
+    "day": "05-12-2018",
+    "weight": 1
+  },
+  {
+    "id": 11,
+    "lat": 43.3859202927441,
+    "lng": -80.41401028633119,
+    "address": "",
+    "ts": 1544410296293,
+    "day": "05-12-2018",
+    "weight": 1
+  },
+  {
+    "id": 12,
+    "lat": 43.3859202927441,
+    "lng": -80.41404247283936,
+    "address": "",
+    "ts": 1544410296301,
+    "day": "05-12-2018",
+    "weight": 1
+  },
+  {
+    "id": 13,
+    "lat": 43.38591639418808,
+    "lng": -80.4141014814377,
+    "address": "",
+    "ts": 1544410296294,
+    "day": "05-12-2018",
+    "weight": 1
+  },
+  {
+    "id": 14,
+    "lat": 43.38591639418808,
+    "lng": -80.41423559188844,
+    "address": "",
+    "ts": 1544410296301,
+    "day": "05-12-2018",
+    "weight": 1
+  },
+  {
+    "id": 15,
+    "lat": 43.38591639418808,
+    "lng": -80.41429460048677,
+    "address": "",
+    "ts": 1544410296298,
+    "day": "05-12-2018",
+    "weight": 1
+  },
+  {
+    "id": 16,
+    "lat": 43.38591249563181,
+    "lng": -80.41436970233919,
+    "address": "",
+    "ts": 1544410296298,
+    "day": "05-12-2018",
+    "weight": 1
+  },
+  {
+    "id": 17,
+    "lat": 43.38594368407493,
+    "lng": -80.41436970233919,
+    "address": "",
+    "ts": 1544410296293,
+    "day": "05-12-2018",
+    "weight": 1
+  },
+  {
+    "id": 18,
+    "lat": 43.38600606091305,
+    "lng": -80.41435897350313,
+    "address": "",
+    "ts": 1544410296296,
+    "day": "05-12-2018",
+    "weight": 1
+  },
+  {
+    "id": 19,
+    "lat": 43.38604504640425,
+    "lng": -80.41433751583101,
+    "address": "",
+    "ts": 1544410296296,
+    "day": "05-12-2018",
+    "weight": 1
+  },
+  {
+    "id": 20,
+    "lat": 43.38610742313807,
+    "lng": -80.41433751583101,
+    "address": "",
+    "ts": 1544410296301,
+    "day": "05-12-2018",
+    "weight": 1
+  },
+  {
+    "id": 21,
+    "lat": 43.386126915854206,
+    "lng": -80.41426777839662,
+    "address": "",
+    "ts": 1544410296296,
+    "day": "05-12-2018",
+    "weight": 1
+  },
+  {
+    "id": 22,
+    "lat": 43.386103524594084,
+    "lng": -80.41423559188844,
+    "address": "",
+    "ts": 1544410296300,
+    "day": "05-12-2018",
+    "weight": 1
+  },
+  {
+    "id": 23,
+    "lat": 43.386060640593726,
+    "lng": -80.41421949863434,
+    "address": "",
+    "ts": 1544410296294,
+    "day": "05-12-2018",
+    "weight": 1
+  },
+  {
+    "id": 24,
+    "lat": 43.38604504640425,
+    "lng": -80.4141390323639,
+    "address": "",
+    "ts": 1544410296297,
+    "day": "05-12-2018",
+    "weight": 1
+  },
+  {
+    "id": 25,
+    "lat": 43.38606453914046,
+    "lng": -80.41408002376558,
+    "address": "",
+    "ts": 1544410296293,
+    "day": "05-12-2018",
+    "weight": 1
+  },
+  {
+    "id": 26,
+    "lat": 43.38610742313807,
+    "lng": -80.41406393051147,
+    "address": "",
+    "ts": 1544410296298,
+    "day": "05-12-2018",
+    "weight": 1
+  },
+  {
+    "id": 27,
+    "lat": 43.38614640856408,
+    "lng": -80.41406393051147,
+    "address": "",
+    "ts": 1544410296298,
+    "day": "05-12-2018",
+    "weight": 1
+  },
+  {
+    "id": 28,
+    "lat": 43.3861736983474,
+    "lng": -80.41404247283936,
+    "address": "",
+    "ts": 1544410296294,
+    "day": "05-12-2018",
+    "weight": 1
+  },
+  {
+    "id": 29,
+    "lat": 43.38615420564628,
+    "lng": -80.41401028633119,
+    "address": "",
+    "ts": 1544410296296,
+    "day": "05-12-2018",
+    "weight": 1
+  },
+  {
+    "id": 30,
+    "lat": 43.38610742313807,
+    "lng": -80.4139941930771,
+    "address": "",
+    "ts": 1544410296296,
+    "day": "05-12-2018",
+    "weight": 1
+  },
+  {
+    "id": 31,
+    "lat": 43.38607233623319,
+    "lng": -80.4139941930771,
+    "address": "",
+    "ts": 1544410296295,
+    "day": "05-12-2018",
+    "weight": 1
+  },
+  {
+    "id": 32,
+    "lat": 43.38604114785627,
+    "lng": -80.41401028633119,
+    "address": "",
+    "ts": 1544410296298,
+    "day": "05-12-2018",
+    "weight": 1
+  },
+  {
+    "id": 33,
+    "lat": 43.38604114785627,
+    "lng": -80.41394591331483,
+    "address": "",
+    "ts": 1544410296294,
+    "day": "05-12-2018",
+    "weight": 1
+  },
+  {
+    "id": 34,
+    "lat": 43.38604114785627,
+    "lng": -80.41387617588043,
+    "address": "",
+    "ts": 1544410296293,
+    "day": "05-12-2018",
+    "weight": 1
+  },
+  {
+    "id": 35,
+    "lat": 43.386048944952,
+    "lng": -80.41377961635591,
+    "address": "",
+    "ts": 1544410296301,
+    "day": "05-12-2018",
+    "weight": 1
+  },
+  {
+    "id": 36,
+    "lat": 43.386048944952,
+    "lng": -80.41367232799531,
+    "address": "",
+    "ts": 1544410296294,
+    "day": "05-12-2018",
+    "weight": 1
+  },
+  {
+    "id": 37,
+    "lat": 43.385994365260785,
+    "lng": -80.4136508703232,
+    "address": "",
+    "ts": 1544410296296,
+    "day": "05-12-2018",
+    "weight": 1
+  },
+  {
+    "id": 38,
+    "lat": 43.38591639418808,
+    "lng": -80.4136508703232,
+    "address": "",
+    "ts": 1544410296292,
+    "day": "05-12-2018",
+    "weight": 1
+  },
+  {
+    "id": 39,
+    "lat": 43.38583452445381,
+    "lng": -80.41362941265108,
+    "address": "",
+    "ts": 1544410296300,
+    "day": "05-12-2018",
+    "weight": 1
+  },
+  {
+    "id": 40,
+    "lat": 43.38577994456953,
+    "lng": -80.41359186172487,
+    "address": "",
+    "ts": 1544410296300,
+    "day": "05-12-2018",
+    "weight": 1
+  },
+  {
+    "id": 41,
+    "lat": 43.38579164026316,
+    "lng": -80.41348457336427,
+    "address": "",
+    "ts": 1544410296299,
+    "day": "05-12-2018",
+    "weight": 1
+  },
+  {
+    "id": 42,
+    "lat": 43.38581503164363,
+    "lng": -80.41334509849548,
+    "address": "",
+    "ts": 1544410296300,
+    "day": "05-12-2018",
+    "weight": 1
+  },
+  {
+    "id": 43,
+    "lat": 43.38582282876845,
+    "lng": -80.41322171688081,
+    "address": "",
+    "ts": 1544410296296,
+    "day": "05-12-2018",
+    "weight": 1
+  },
+  {
+    "id": 44,
+    "lat": 43.38581113308084,
+    "lng": -80.41310369968416,
+    "address": "",
+    "ts": 1544410296292,
+    "day": "05-12-2018",
+    "weight": 1
+  },
+  {
+    "id": 45,
+    "lat": 43.385795538827196,
+    "lng": -80.41292667388917,
+    "address": "",
+    "ts": 1544410296300,
+    "day": "05-12-2018",
+    "weight": 1
+  },
+  {
+    "id": 46,
+    "lat": 43.38577214743919,
+    "lng": -80.41280865669252,
+    "address": "",
+    "ts": 1544410296297,
+    "day": "05-12-2018",
+    "weight": 1
+  },
+  {
+    "id": 47,
+    "lat": 43.38574485747511,
+    "lng": -80.41267454624177,
+    "address": "",
+    "ts": 1544410296294,
+    "day": "05-12-2018",
+    "weight": 1
+  },
+  {
+    "id": 48,
+    "lat": 43.38572926320442,
+    "lng": -80.41256189346315,
+    "address": "",
+    "ts": 1544410296293,
+    "day": "05-12-2018",
+    "weight": 1
+  },
+  {
+    "id": 49,
+    "lat": 43.38568637893929,
+    "lng": -80.4124277830124,
+    "address": "",
+    "ts": 1544410296299,
+    "day": "05-12-2018",
+    "weight": 1
+  },
+  {
+    "id": 50,
+    "lat": 43.38565519036377,
+    "lng": -80.41233122348787,
+    "address": "",
+    "ts": 1544410296295,
+    "day": "05-12-2018",
+    "weight": 1
+  },
+  {
+    "id": 51,
+    "lat": 43.38562400177223,
+    "lng": -80.412175655365,
+    "address": "",
+    "ts": 1544410296296,
+    "day": "05-12-2018",
+    "weight": 1
+  },
+  {
+    "id": 52,
+    "lat": 43.38562400177223,
+    "lng": -80.41204690933229,
+    "address": "",
+    "ts": 1544410296301,
+    "day": "05-12-2018",
+    "weight": 1
+  },
+  {
+    "id": 53,
+    "lat": 43.38556162454097,
+    "lng": -80.41202545166017,
+    "address": "",
+    "ts": 1544410296297,
+    "day": "05-12-2018",
+    "weight": 1
+  },
+  {
+    "id": 54,
+    "lat": 43.38546805857377,
+    "lng": -80.41207373142244,
+    "address": "",
+    "ts": 1544410296296,
+    "day": "05-12-2018",
+    "weight": 1
+  },
+  {
+    "id": 55,
+    "lat": 43.385347202319025,
+    "lng": -80.41214883327484,
+    "address": "",
+    "ts": 1544410296293,
+    "day": "05-12-2018",
+    "weight": 1
+  },
+  {
+    "id": 56,
+    "lat": 43.385199055613576,
+    "lng": -80.4121917486191,
+    "address": "",
+    "ts": 1544410296300,
+    "day": "05-12-2018",
+    "weight": 1
+  },
+  {
+    "id": 57,
+    "lat": 43.385132779338626,
+    "lng": -80.412175655365,
+    "address": "",
+    "ts": 1544410296300,
+    "day": "05-12-2018",
+    "weight": 1
+  },
+  {
+    "id": 58,
+    "lat": 43.38512888073197,
+    "lng": -80.4120844602585,
+    "address": "",
+    "ts": 1544410296301,
+    "day": "05-12-2018",
+    "weight": 1
+  },
+  {
+    "id": 59,
+    "lat": 43.38514057655122,
+    "lng": -80.41191279888154,
+    "address": "",
+    "ts": 1544410296299,
+    "day": "05-12-2018",
+    "weight": 1
+  },
+  {
+    "id": 60,
+    "lat": 43.385101590478286,
+    "lng": -80.41190207004549,
+    "address": "",
+    "ts": 1544410296292,
+    "day": "05-12-2018",
+    "weight": 1
+  },
+  {
+    "id": 61,
+    "lat": 43.38517176539149,
+    "lng": -80.41194498538972,
+    "address": "",
+    "ts": 1544410296292,
+    "day": "05-12-2018",
+    "weight": 1
+  },
+  {
+    "id": 62,
+    "lat": 43.38515227236819,
+    "lng": -80.41191816329957,
+    "address": "",
+    "ts": 1544410296300,
+    "day": "05-12-2018",
+    "weight": 1
+  },
+  {
+    "id": 63,
+    "lat": 43.38512498212506,
+    "lng": -80.41195571422578,
+    "address": "",
+    "ts": 1544410296300,
+    "day": "05-12-2018",
+    "weight": 1
+  },
+  {
+    "id": 1,
+    "lat": 43.45037589853588,
+    "lng": -80.49112915992738,
+    "address": "",
+    "ts": 1544410433453,
+    "day": "06-12-2018",
+    "weight": 1
+  },
+  {
+    "id": 2,
+    "lat": 43.45035253208284,
+    "lng": -80.49113452434541,
+    "address": "",
+    "ts": 1544410433458,
+    "day": "06-12-2018",
+    "weight": 1
+  },
+  {
+    "id": 3,
+    "lat": 43.450348637673116,
+    "lng": -80.4911720752716,
+    "address": "",
+    "ts": 1544410433458,
+    "day": "06-12-2018",
+    "weight": 1
+  },
+  {
+    "id": 4,
+    "lat": 43.45035642649231,
+    "lng": -80.49120962619783,
+    "address": "",
+    "ts": 1544410433457,
+    "day": "06-12-2018",
+    "weight": 1
+  },
+  {
+    "id": 5,
+    "lat": 43.45040705379257,
+    "lng": -80.49113452434541,
+    "address": "",
+    "ts": 1544410433453,
+    "day": "06-12-2018",
+    "weight": 1
+  },
+  {
+    "id": 6,
+    "lat": 43.45035642649231,
+    "lng": -80.49108624458314,
+    "address": "",
+    "ts": 1544410433457,
+    "day": "06-12-2018",
+    "weight": 1
+  },
+  {
+    "id": 7,
+    "lat": 43.45032527120954,
+    "lng": -80.49116671085359,
+    "address": "",
+    "ts": 1544410433458,
+    "day": "06-12-2018",
+    "weight": 1
+  },
+  {
+    "id": 8,
+    "lat": 43.45034084885294,
+    "lng": -80.49118816852571,
+    "address": "",
+    "ts": 1544410433454,
+    "day": "06-12-2018",
+    "weight": 1
+  },
+  {
+    "id": 9,
+    "lat": 43.4504187370097,
+    "lng": -80.49117743968965,
+    "address": "",
+    "ts": 1544410433456,
+    "day": "06-12-2018",
+    "weight": 1
+  },
+  {
+    "id": 10,
+    "lat": 43.45043820903322,
+    "lng": -80.49106478691102,
+    "address": "",
+    "ts": 1544410433457,
+    "day": "06-12-2018",
+    "weight": 1
+  },
+  {
+    "id": 11,
+    "lat": 43.450391476166224,
+    "lng": -80.4910433292389,
+    "address": "",
+    "ts": 1544410433458,
+    "day": "06-12-2018",
+    "weight": 1
+  },
+  {
+    "id": 12,
+    "lat": 43.450360320901524,
+    "lng": -80.49107551574708,
+    "address": "",
+    "ts": 1544410433452,
+    "day": "06-12-2018",
+    "weight": 1
+  },
+  {
+    "id": 13,
+    "lat": 43.450348637673116,
+    "lng": -80.49114525318147,
+    "address": "",
+    "ts": 1544410433456,
+    "day": "06-12-2018",
+    "weight": 1
+  },
+  {
+    "id": 14,
+    "lat": 43.45037979294385,
+    "lng": -80.49115598201753,
+    "address": "",
+    "ts": 1544410433457,
+    "day": "06-12-2018",
+    "weight": 1
+  },
+  {
+    "id": 15,
+    "lat": 43.45042652581986,
+    "lng": -80.49112915992738,
+    "address": "",
+    "ts": 1544410433456,
+    "day": "06-12-2018",
+    "weight": 1
+  },
+  {
+    "id": 16,
+    "lat": 43.45051220266539,
+    "lng": -80.49107015132905,
+    "address": "",
+    "ts": 1544410433452,
+    "day": "06-12-2018",
+    "weight": 1
+  },
+  {
+    "id": 17,
+    "lat": 43.4505667242312,
+    "lng": -80.49114525318147,
+    "address": "",
+    "ts": 1544410433455,
+    "day": "06-12-2018",
+    "weight": 1
+  },
+  {
+    "id": 18,
+    "lat": 43.45055114664597,
+    "lng": -80.491059422493,
+    "address": "",
+    "ts": 1544410433455,
+    "day": "06-12-2018",
+    "weight": 1
+  },
+  {
+    "id": 19,
+    "lat": 43.45062903453191,
+    "lng": -80.49123108386995,
+    "address": "",
+    "ts": 1544410433459,
+    "day": "06-12-2018",
+    "weight": 1
+  },
+  {
+    "id": 20,
+    "lat": 43.450703027930636,
+    "lng": -80.49148857593538,
+    "address": "",
+    "ts": 1544410433453,
+    "day": "06-12-2018",
+    "weight": 1
+  },
+  {
+    "id": 21,
+    "lat": 43.45080038752789,
+    "lng": -80.49171924591066,
+    "address": "",
+    "ts": 1544410433456,
+    "day": "06-12-2018",
+    "weight": 1
+  },
+  {
+    "id": 22,
+    "lat": 43.45091332446438,
+    "lng": -80.49194991588594,
+    "address": "",
+    "ts": 1544410433457,
+    "day": "06-12-2018",
+    "weight": 1
+  },
+  {
+    "id": 23,
+    "lat": 43.451006789355766,
+    "lng": -80.49231469631196,
+    "address": "",
+    "ts": 1544410433454,
+    "day": "06-12-2018",
+    "weight": 1
+  },
+  {
+    "id": 24,
+    "lat": 43.45105352174731,
+    "lng": -80.49238979816437,
+    "address": "",
+    "ts": 1544410433461,
+    "day": "06-12-2018",
+    "weight": 1
+  },
+  {
+    "id": 25,
+    "lat": 43.45108467665495,
+    "lng": -80.49251317977907,
+    "address": "",
+    "ts": 1544410433461,
+    "day": "06-12-2018",
+    "weight": 1
+  },
+  {
+    "id": 26,
+    "lat": 43.451034049921894,
+    "lng": -80.4925721883774,
+    "address": "",
+    "ts": 1544410433457,
+    "day": "06-12-2018",
+    "weight": 1
+  },
+  {
+    "id": 27,
+    "lat": 43.45089385259383,
+    "lng": -80.49265265464784,
+    "address": "",
+    "ts": 1544410433458,
+    "day": "06-12-2018",
+    "weight": 1
+  },
+  {
+    "id": 28,
+    "lat": 43.45066408404786,
+    "lng": -80.4927706718445,
+    "address": "",
+    "ts": 1544410433453,
+    "day": "06-12-2018",
+    "weight": 1
+  },
+  {
+    "id": 29,
+    "lat": 43.45047715306144,
+    "lng": -80.49288868904115,
+    "address": "",
+    "ts": 1544410433456,
+    "day": "06-12-2018",
+    "weight": 1
+  },
+  {
+    "id": 30,
+    "lat": 43.45027853825532,
+    "lng": -80.49297451972963,
+    "address": "",
+    "ts": 1544410433458,
+    "day": "06-12-2018",
+    "weight": 1
+  },
+  {
+    "id": 31,
+    "lat": 43.4501110782061,
+    "lng": -80.4930764436722,
+    "address": "",
+    "ts": 1544410433459,
+    "day": "06-12-2018",
+    "weight": 1
+  },
+  {
+    "id": 32,
+    "lat": 43.449994245339056,
+    "lng": -80.49313545227052,
+    "address": "",
+    "ts": 1544410433453,
+    "day": "06-12-2018",
+    "weight": 1
+  },
+  {
+    "id": 33,
+    "lat": 43.44990467332149,
+    "lng": -80.49317836761476,
+    "address": "",
+    "ts": 1544410433454,
+    "day": "06-12-2018",
+    "weight": 1
+  },
+  {
+    "id": 34,
+    "lat": 43.449807312282346,
+    "lng": -80.49322664737703,
+    "address": "",
+    "ts": 1544410433458,
+    "day": "06-12-2018",
+    "weight": 1
+  },
+  {
+    "id": 35,
+    "lat": 43.449729423338205,
+    "lng": -80.49326419830322,
+    "address": "",
+    "ts": 1544410433454,
+    "day": "06-12-2018",
+    "weight": 1
+  },
+  {
+    "id": 36,
+    "lat": 43.449659323202745,
+    "lng": -80.49328029155733,
+    "address": "",
+    "ts": 1544410433458,
+    "day": "06-12-2018",
+    "weight": 1
+  },
+  {
+    "id": 37,
+    "lat": 43.44958922298601,
+    "lng": -80.49333393573762,
+    "address": "",
+    "ts": 1544410433453,
+    "day": "06-12-2018",
+    "weight": 1
+  },
+  {
+    "id": 38,
+    "lat": 43.44951912268804,
+    "lng": -80.4933661222458,
+    "address": "",
+    "ts": 1544410433453,
+    "day": "06-12-2018",
+    "weight": 1
+  },
+  {
+    "id": 39,
+    "lat": 43.449456811243834,
+    "lng": -80.49338221549989,
+    "address": "",
+    "ts": 1544410433453,
+    "day": "06-12-2018",
+    "weight": 1
+  },
+  {
+    "id": 40,
+    "lat": 43.44936334395719,
+    "lng": -80.49340367317201,
+    "address": "",
+    "ts": 1544410433460,
+    "day": "06-12-2018",
+    "weight": 1
+  },
+  {
+    "id": 41,
+    "lat": 43.44929324339741,
+    "lng": -80.49340903759004,
+    "address": "",
+    "ts": 1544410433460,
+    "day": "06-12-2018",
+    "weight": 1
+  },
+  {
+    "id": 42,
+    "lat": 43.449219248273955,
+    "lng": -80.49355387687685,
+    "address": "",
+    "ts": 1544410433459,
+    "day": "06-12-2018",
+    "weight": 1
+  },
+  {
+    "id": 43,
+    "lat": 43.44921535379128,
+    "lng": -80.49367725849153,
+    "address": "",
+    "ts": 1544410433460,
+    "day": "06-12-2018",
+    "weight": 1
+  },
+  {
+    "id": 44,
+    "lat": 43.44923093172055,
+    "lng": -80.49379527568817,
+    "address": "",
+    "ts": 1544410433461,
+    "day": "06-12-2018",
+    "weight": 1
+  },
+  {
+    "id": 45,
+    "lat": 43.44924261516485,
+    "lng": -80.49391329288484,
+    "address": "",
+    "ts": 1544410433453,
+    "day": "06-12-2018",
+    "weight": 1
+  },
+  {
+    "id": 46,
+    "lat": 43.449265982046676,
+    "lng": -80.49409031867982,
+    "address": "",
+    "ts": 1544410433453,
+    "day": "06-12-2018",
+    "weight": 1
+  },
+  {
+    "id": 47,
+    "lat": 43.44927766548421,
+    "lng": -80.49418687820436,
+    "address": "",
+    "ts": 1544410433457,
+    "day": "06-12-2018",
+    "weight": 1
+  },
+  {
+    "id": 48,
+    "lat": 43.449304926829704,
+    "lng": -80.49427807331087,
+    "address": "",
+    "ts": 1544410433459,
+    "day": "06-12-2018",
+    "weight": 1
+  },
+  {
+    "id": 49,
+    "lat": 43.449328293687465,
+    "lng": -80.49438536167146,
+    "address": "",
+    "ts": 1544410433460,
+    "day": "06-12-2018",
+    "weight": 1
+  },
+  {
+    "id": 50,
+    "lat": 43.44934776606205,
+    "lng": -80.49448192119598,
+    "address": "",
+    "ts": 1544410433454,
+    "day": "06-12-2018",
+    "weight": 1
+  },
+  {
+    "id": 51,
+    "lat": 43.44939060526406,
+    "lng": -80.49461603164674,
+    "address": "",
+    "ts": 1544410433452,
+    "day": "06-12-2018",
+    "weight": 1
+  },
+  {
+    "id": 52,
+    "lat": 43.44942176102828,
+    "lng": -80.49475550651552,
+    "address": "",
+    "ts": 1544410433458,
+    "day": "06-12-2018",
+    "weight": 1
+  },
+  {
+    "id": 53,
+    "lat": 43.449355555010115,
+    "lng": -80.49479305744173,
+    "address": "",
+    "ts": 1544410433457,
+    "day": "06-12-2018",
+    "weight": 1
+  },
+  {
+    "id": 54,
+    "lat": 43.44925819308706,
+    "lng": -80.49481987953187,
+    "address": "",
+    "ts": 1544410433456,
+    "day": "06-12-2018",
+    "weight": 1
+  },
+  {
+    "id": 55,
+    "lat": 43.44923482620223,
+    "lng": -80.49478232860567,
+    "address": "",
+    "ts": 1544410433461,
+    "day": "06-12-2018",
+    "weight": 1
+  },
+  {
+    "id": 56,
+    "lat": 43.449199775858006,
+    "lng": -80.4947340488434,
+    "address": "",
+    "ts": 1544410433460,
+    "day": "06-12-2018",
+    "weight": 1
+  },
+  {
+    "id": 57,
+    "lat": 43.449219248273955,
+    "lng": -80.49473941326143,
+    "address": "",
+    "ts": 1544410433461,
+    "day": "06-12-2018",
+    "weight": 1
+  },
+  {
+    "id": 58,
+    "lat": 43.44921535379128,
+    "lng": -80.49470186233522,
+    "address": "",
+    "ts": 1544410433455,
+    "day": "06-12-2018",
+    "weight": 1
+  },
+  {
+    "id": 59,
+    "lat": 43.44920756482515,
+    "lng": -80.4947340488434,
+    "address": "",
+    "ts": 1544410433453,
+    "day": "06-12-2018",
+    "weight": 1
+  },
+  {
+    "id": 1,
+    "lat": 43.589716596758905,
+    "lng": -80.56228280067445,
+    "address": "",
+    "ts": 1544410610376,
+    "day": "07-12-2018",
+    "weight": 1
+  },
+  {
+    "id": 2,
+    "lat": 43.58968551335492,
+    "lng": -80.56219696998598,
+    "address": "",
+    "ts": 1544410610382,
+    "day": "07-12-2018",
+    "weight": 1
+  },
+  {
+    "id": 3,
+    "lat": 43.58961557563726,
+    "lng": -80.56241154670717,
+    "address": "",
+    "ts": 1544410610375,
+    "day": "07-12-2018",
+    "weight": 1
+  },
+  {
+    "id": 4,
+    "lat": 43.589677742501415,
+    "lng": -80.56241154670717,
+    "address": "",
+    "ts": 1544410610376,
+    "day": "07-12-2018",
+    "weight": 1
+  },
+  {
+    "id": 5,
+    "lat": 43.58976322183477,
+    "lng": -80.56240081787111,
+    "address": "",
+    "ts": 1544410610382,
+    "day": "07-12-2018",
+    "weight": 1
+  },
+  {
+    "id": 6,
+    "lat": 43.58987978436645,
+    "lng": -80.56233644485475,
+    "address": "",
+    "ts": 1544410610376,
+    "day": "07-12-2018",
+    "weight": 1
+  },
+  {
+    "id": 7,
+    "lat": 43.58987978436645,
+    "lng": -80.56228280067445,
+    "address": "",
+    "ts": 1544410610378,
+    "day": "07-12-2018",
+    "weight": 1
+  },
+  {
+    "id": 8,
+    "lat": 43.58975545099131,
+    "lng": -80.56207895278932,
+    "address": "",
+    "ts": 1544410610381,
+    "day": "07-12-2018",
+    "weight": 1
+  },
+  {
+    "id": 9,
+    "lat": 43.589716596758905,
+    "lng": -80.5620574951172,
+    "address": "",
+    "ts": 1544410610374,
+    "day": "07-12-2018",
+    "weight": 1
+  },
+  {
+    "id": 10,
+    "lat": 43.58957672131457,
+    "lng": -80.56204676628114,
+    "address": "",
+    "ts": 1544410610381,
+    "day": "07-12-2018",
+    "weight": 1
+  },
+  {
+    "id": 11,
+    "lat": 43.58957672131457,
+    "lng": -80.5622720718384,
+    "address": "",
+    "ts": 1544410610376,
+    "day": "07-12-2018",
+    "weight": 1
+  },
+  {
+    "id": 12,
+    "lat": 43.589607804774744,
+    "lng": -80.56234717369081,
+    "address": "",
+    "ts": 1544410610382,
+    "day": "07-12-2018",
+    "weight": 1
+  },
+  {
+    "id": 13,
+    "lat": 43.58970105505891,
+    "lng": -80.56230425834657,
+    "address": "",
+    "ts": 1544410610379,
+    "day": "07-12-2018",
+    "weight": 1
+  },
+  {
+    "id": 14,
+    "lat": 43.589732138454856,
+    "lng": -80.56223988533021,
+    "address": "",
+    "ts": 1544410610375,
+    "day": "07-12-2018",
+    "weight": 1
+  },
+  {
+    "id": 15,
+    "lat": 43.589677742501415,
+    "lng": -80.56215405464174,
+    "address": "",
+    "ts": 1544410610380,
+    "day": "07-12-2018",
+    "weight": 1
+  },
+  {
+    "id": 16,
+    "lat": 43.589545637838356,
+    "lng": -80.56217551231386,
+    "address": "",
+    "ts": 1544410610381,
+    "day": "07-12-2018",
+    "weight": 1
+  },
+  {
+    "id": 17,
+    "lat": 43.58947569995818,
+    "lng": -80.56225061416627,
+    "address": "",
+    "ts": 1544410610382,
+    "day": "07-12-2018",
+    "weight": 1
+  },
+  {
+    "id": 18,
+    "lat": 43.5894057619967,
+    "lng": -80.5622720718384,
+    "address": "",
+    "ts": 1544410610382,
+    "day": "07-12-2018",
+    "weight": 1
+  },
+  {
+    "id": 19,
+    "lat": 43.58934359485164,
+    "lng": -80.56220769882204,
+    "address": "",
+    "ts": 1544410610376,
+    "day": "07-12-2018",
+    "weight": 1
+  },
+  {
+    "id": 20,
+    "lat": 43.58934359485164,
+    "lng": -80.56208968162538,
+    "address": "",
+    "ts": 1544410610380,
+    "day": "07-12-2018",
+    "weight": 1
+  },
+  {
+    "id": 21,
+    "lat": 43.589320282155704,
+    "lng": -80.56202530860901,
+    "address": "",
+    "ts": 1544410610382,
+    "day": "07-12-2018",
+    "weight": 1
+  },
+  {
+    "id": 22,
+    "lat": 43.589320282155704,
+    "lng": -80.56177854537965,
+    "address": "",
+    "ts": 1544410610376,
+    "day": "07-12-2018",
+    "weight": 1
+  },
+  {
+    "id": 23,
+    "lat": 43.58931251125502,
+    "lng": -80.5616068840027,
+    "address": "",
+    "ts": 1544410610375,
+    "day": "07-12-2018",
+    "weight": 1
+  },
+  {
+    "id": 24,
+    "lat": 43.58921926036886,
+    "lng": -80.5615532398224,
+    "address": "",
+    "ts": 1544410610380,
+    "day": "07-12-2018",
+    "weight": 1
+  },
+  {
+    "id": 25,
+    "lat": 43.58906384190422,
+    "lng": -80.56154251098634,
+    "address": "",
+    "ts": 1544410610380,
+    "day": "07-12-2018",
+    "weight": 1
+  },
+  {
+    "id": 26,
+    "lat": 43.58887733921692,
+    "lng": -80.56157469749452,
+    "address": "",
+    "ts": 1544410610379,
+    "day": "07-12-2018",
+    "weight": 1
+  },
+  {
+    "id": 27,
+    "lat": 43.5885276451206,
+    "lng": -80.56161761283876,
+    "address": "",
+    "ts": 1544410610381,
+    "day": "07-12-2018",
+    "weight": 1
+  },
+  {
+    "id": 28,
+    "lat": 43.587960359265445,
+    "lng": -80.5616819858551,
+    "address": "",
+    "ts": 1544410610380,
+    "day": "07-12-2018",
+    "weight": 1
+  },
+  {
+    "id": 29,
+    "lat": 43.58740861035968,
+    "lng": -80.5617678165436,
+    "address": "",
+    "ts": 1544410610380,
+    "day": "07-12-2018",
+    "weight": 1
+  },
+  {
+    "id": 30,
+    "lat": 43.58697342455647,
+    "lng": -80.56181073188783,
+    "address": "",
+    "ts": 1544410610380,
+    "day": "07-12-2018",
+    "weight": 1
+  },
+  {
+    "id": 31,
+    "lat": 43.58670143183174,
+    "lng": -80.56182146072389,
+    "address": "",
+    "ts": 1544410610377,
+    "day": "07-12-2018",
+    "weight": 1
+  },
+  {
+    "id": 32,
+    "lat": 43.58653046434715,
+    "lng": -80.56187510490419,
+    "address": "",
+    "ts": 1544410610377,
+    "day": "07-12-2018",
+    "weight": 1
+  },
+  {
+    "id": 33,
+    "lat": 43.58635949637695,
+    "lng": -80.56190729141237,
+    "address": "",
+    "ts": 1544410610378,
+    "day": "07-12-2018",
+    "weight": 1
+  },
+  {
+    "id": 34,
+    "lat": 43.586375038939764,
+    "lng": -80.56207895278932,
+    "address": "",
+    "ts": 1544410610376,
+    "day": "07-12-2018",
+    "weight": 1
+  },
+  {
+    "id": 35,
+    "lat": 43.586398352776456,
+    "lng": -80.56223988533021,
+    "address": "",
+    "ts": 1544410610382,
+    "day": "07-12-2018",
+    "weight": 1
+  },
+  {
+    "id": 36,
+    "lat": 43.586429437877996,
+    "lng": -80.5625081062317,
+    "address": "",
+    "ts": 1544410610374,
+    "day": "07-12-2018",
+    "weight": 1
+  },
+  {
+    "id": 37,
+    "lat": 43.58644498042275,
+    "lng": -80.56275486946107,
+    "address": "",
+    "ts": 1544410610382,
+    "day": "07-12-2018",
+    "weight": 1
+  },
+  {
+    "id": 38,
+    "lat": 43.586476065500214,
+    "lng": -80.56290507316591,
+    "address": "",
+    "ts": 1544410610377,
+    "day": "07-12-2018",
+    "weight": 1
+  },
+  {
+    "id": 39,
+    "lat": 43.58668588935322,
+    "lng": -80.5629587173462,
+    "address": "",
+    "ts": 1544410610381,
+    "day": "07-12-2018",
+    "weight": 1
+  },
+  {
+    "id": 40,
+    "lat": 43.58659263439773,
+    "lng": -80.56290507316591,
+    "address": "",
+    "ts": 1544410610377,
+    "day": "07-12-2018",
+    "weight": 1
+  },
+  {
+    "id": 41,
+    "lat": 43.58682577151555,
+    "lng": -80.56302309036256,
+    "address": "",
+    "ts": 1544410610377,
+    "day": "07-12-2018",
+    "weight": 1
+  },
+  {
+    "id": 42,
+    "lat": 43.58693456852819,
+    "lng": -80.56315183639528,
+    "address": "",
+    "ts": 1544410610379,
+    "day": "07-12-2018",
+    "weight": 1
+  },
+  {
+    "id": 43,
+    "lat": 43.5870200517573,
+    "lng": -80.56310892105104,
+    "address": "",
+    "ts": 1544410610378,
+    "day": "07-12-2018",
+    "weight": 1
+  },
+  {
+    "id": 44,
+    "lat": 43.58710553486504,
+    "lng": -80.56305527687073,
+    "address": "",
+    "ts": 1544410610375,
+    "day": "07-12-2018",
+    "weight": 1
+  },
+  {
+    "id": 45,
+    "lat": 43.58714439078296,
+    "lng": -80.56288361549379,
+    "address": "",
+    "ts": 1544410610381,
+    "day": "07-12-2018",
+    "weight": 1
+  },
+  {
+    "id": 46,
+    "lat": 43.587113306050654,
+    "lng": -80.56303381919862,
+    "address": "",
+    "ts": 1544410610382,
+    "day": "07-12-2018",
+    "weight": 1
+  },
+  {
+    "id": 47,
+    "lat": 43.58716770432168,
+    "lng": -80.56302309036256,
+    "address": "",
+    "ts": 1544410610381,
+    "day": "07-12-2018",
+    "weight": 1
+  },
+  {
+    "id": 48,
+    "lat": 43.58714439078296,
+    "lng": -80.56299090385438,
+    "address": "",
+    "ts": 1544410610383,
+    "day": "07-12-2018",
+    "weight": 1
+  }
+]

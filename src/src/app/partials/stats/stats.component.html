@@ -1,3 +1,22 @@
-<p>
-  stats works!
-</p>
+﻿<section id="app-stats">
+  <div *ngIf="distanceChart" class="chart-container">
+    <div class="chart-title">
+      <h3>Distance Travelled</h3>
+      <a [href]="twitterShare.distance" target="_blank">
+        <fa-icon [icon]="['fab', 'twitter']" class="twitter-icon"></fa-icon>
+      </a>
+    </div>
+    <canvas id="distanceCanvas">{{chart}}</canvas>
+  </div>
+  <div *ngIf="locationChart" class="chart-container">
+    <div class="chart-title">
+      <h3>Locations Visited</h3>
+      <a [href]="twitterShare.locations" target="_blank">
+        <fa-icon [icon]="['fab', 'twitter']" class="twitter-icon"></fa-icon>
+      </a>
+    </div>
+    <canvas id="locationCanvas">{{chart}}</canvas>
+  </div>
+  <h3 *ngIf="!distanceChartDisplay" class="text-center">Don't have enough data to provide<wbr> a distance chart.</h3>
+  <h3 *ngIf="!locationChartDisplay" class="text-center">Don't have enough data to provide<wbr> a location chart.</h3>
+</section>

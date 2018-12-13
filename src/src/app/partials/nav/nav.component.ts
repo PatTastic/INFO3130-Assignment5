@@ -12,6 +12,7 @@ export class NavComponent {
   constructor( private _router: Router) {
     this.activeLink = window.location.pathname;
 
+    // update active tab
     this._router.events.subscribe((event: Event) => {
       if (event instanceof NavigationEnd) {
         let activeLink = '';
